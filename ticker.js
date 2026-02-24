@@ -192,7 +192,7 @@ function setupTickerObserver() {
 }
 
 let messages = ["Hello, $AUTHOR$ number $RAND10$$RAND10$$RAND10$. This is a placeholder text. If you're seeing this, the ticker failed. You must restart Nansenz in order for it to work properly. You can do this by simply clicking the back button or hit the ESCAPE key and reopen this menu. Once you do, the ticker should start fetching data straight from $CHANNEL$ into your device and serves you with our highest quality nonsense. We apologize for the inconvenience. - This message was sent at $TIME$"];
-fetch('https://artifyber.xyz/nonsense.txt')
+fetch('./nonsense.txt')
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

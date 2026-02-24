@@ -5577,7 +5577,7 @@ let menuItems = [
 // Beecat
 if (Math.floor(Math.random() * 1) == 0) {
     menuItems.forEach(menu => {
-        if (menu.name == "Information") {
+        if (menu.title == "Information") {
             menu.labels.unshift({
                 cardId: 'beecat',
                 title: 'Beecat',

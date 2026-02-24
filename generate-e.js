@@ -1,7 +1,7 @@
 // generate-e.js
 // Creates /e/<menuId>/index.html and /e/<menuId>/<cardId>/index.html
 
-const DOMAIN = 'https://artifyber.xyz';
+const DOMAIN = 'https://jonaykon.github.io/fyberverse';
 const fs = require("fs");
 const path = require("path");
 const { menuItems } = require("./data.js");

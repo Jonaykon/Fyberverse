@@ -4667,7 +4667,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Genotheta',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/GENOTHETAEX.ttf" target="_blank">Download Genotheta Font</a><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/GENOTHETAEX.ttf" target="_blank">Download Genotheta Font</a><br>
                     <h2>Latin to Genotheta</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4766,7 +4766,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Starstroke',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/starstroke.ttf" target="_blank">Download Starstroke Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/starstroke.ttf" target="_blank">Download Starstroke Font</a><br><br>
                     <h2>Latin to Starstroke</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4831,7 +4831,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to NADIRUNE',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/NADIRUNE.ttf" target="_blank">Download NADIRUNE Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/NADIRUNE.ttf" target="_blank">Download NADIRUNE Font</a><br><br>
                     <h2>Latin to NADIRUNE</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4896,7 +4896,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Zenpen',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/zenpen.ttf" target="_blank">Download Zenpen Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/zenpen.ttf" target="_blank">Download Zenpen Font</a><br><br>
                     <h2>Latin to Zenpen</h2>
                     Latin input
                     <div style="margin-top:10px;">

@@ -5167,6 +5167,13 @@ let menuItems = [
                 image: 'icons/l-carrd.png'
             },
             {
+                cardId: 'kofi',
+                title: 'Ko-Fi',
+                subtitle: '',
+                url: 'https://ko-fi.com/artifyber',
+                image: 'icons/comm-kofi.png'
+            },
+            {
                 cardId: 'alts',
                 title: 'Alternates',
                 subtitle: 'All of my alternative accounts on various platforms',

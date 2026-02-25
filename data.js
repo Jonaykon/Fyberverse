@@ -4620,8 +4620,7 @@ let menuItems = [
         ]
     },
 
-
-
+    // Orbit 3
     {
         title: 'Daily Art+',
         showTitle: true,
@@ -4669,7 +4668,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Genotheta',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/GENOTHETAEX.ttf" target="_blank">Download Genotheta Font</a><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/GENOTHETAEX.ttf" target="_blank">Download Genotheta Font</a><br>
                     <h2>Latin to Genotheta</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4768,7 +4767,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Starstroke',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/starstroke.ttf" target="_blank">Download Starstroke Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/starstroke.ttf" target="_blank">Download Starstroke Font</a><br><br>
                     <h2>Latin to Starstroke</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4833,7 +4832,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to NADIRUNE',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/NADIRUNE.ttf" target="_blank">Download NADIRUNE Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/NADIRUNE.ttf" target="_blank">Download NADIRUNE Font</a><br><br>
                     <h2>Latin to NADIRUNE</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4898,7 +4897,7 @@ let menuItems = [
                 subtitle: 'Convert Latin to Zenpen',
                 detail:
                     `
-                    <a href="https://artifyber.xyz/fonts/zenpen.ttf" target="_blank">Download Zenpen Font</a><br><br>
+                    <a href="https://jonaykon.github.io/fyberverse/fonts/zenpen.ttf" target="_blank">Download Zenpen Font</a><br><br>
                     <h2>Latin to Zenpen</h2>
                     Latin input
                     <div style="margin-top:10px;">
@@ -4970,6 +4969,21 @@ let menuItems = [
                 image: 'icons/zenpen.png'
             },
         ]
+    },
+    {
+        title: 'Random Character',
+        menuId: 'random',
+        showTitle: true,
+        image: 'icons/oc-random.png',
+        color: 'var(--color-12)',
+        orbit: 3,
+        scale: 1.5,
+        invisible: true,
+        labels: [
+            {
+                cardId: 'random',
+            }
+        ],
     },
 
     // Orbit 4
@@ -5155,6 +5169,13 @@ let menuItems = [
                 image: 'icons/l-carrd.png'
             },
             {
+                cardId: 'kofi',
+                title: 'Ko-Fi',
+                subtitle: '',
+                url: 'https://ko-fi.com/artifyber',
+                image: 'icons/comm-kofi.png'
+            },
+            {
                 cardId: 'alts',
                 title: 'Alternates',
                 subtitle: 'All of my alternative accounts on various platforms',
@@ -5188,7 +5209,7 @@ let menuItems = [
         color: 'var(--color-11)',
         orbit: 4,
         scale: 1.5,
-        hidden: true,
+        hidden: false,
         labels: [
             {
                 cardId: 'kofi',
@@ -5370,22 +5391,6 @@ let menuItems = [
 
 
     {
-        // Random
-        title: 'Random Character',
-        menuId: 'random',
-        showTitle: true,
-        image: 'icons/oc-random.png',
-        color: 'var(--color-12)',
-        orbit: 3,
-        scale: 1.5,
-        invisible: true,
-        labels: [
-            {
-                cardId: 'random',
-            }
-        ],
-    },
-    {
         // Settings
         menuId: 'settings',
         title: 'Settings',
@@ -5561,7 +5566,7 @@ let menuItems = [
         subtitle: '',
         image: '',
         color: 'var(--color-10)',
-        orbit: 127,
+        orbit: 10,
         scale: 0.5,
         invisible: true,
         labels: [
@@ -5579,9 +5584,9 @@ let menuItems = [
 ];
 
 // Beecat
-if (Math.floor(Math.random() * 333) == 0) {
+if (Math.floor(Math.random() * 1) == 0) {
     menuItems.forEach(menu => {
-        if (menu.name == "Information") {
+        if (menu.title == "Information") {
             menu.labels.unshift({
                 cardId: 'beecat',
                 title: 'Beecat',

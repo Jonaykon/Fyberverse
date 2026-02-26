@@ -23,7 +23,10 @@
 
     <!-- App -->
     <div class="app">
-        <div id="loading">loading assets...</div>
+        <div id="loading" style="text-align: center;">
+            <img src="icons/loading.gif" width="200">
+            <div id="loadingText" style="margin-top: -35px;">Loading website</div>
+        </div>
         <!-- Starfield -->
         <div id="starfield"></div>
 
@@ -89,7 +92,7 @@
         </dialog>
 
         <!-- Interface -->
-        <div id="UIPanelTop">
+        <div id="UIPanelTop" class="hidden">
 
             <!-- search button -->
             <button id="searchBtn" class="search-btn ui-btn visible" title="Search">
@@ -115,7 +118,16 @@
 
         </div>
 
-        <div id="UIPanelBottom">
+        <div id="UIPanelBottom" class="hidden">
+
+            <div id="downloadingAssets" class="hidden" style="display: flex;">
+                <div id="loadingProgress">
+                    Loading...
+                </div>
+                <div style="width: 48px; height: 48px; position: relative;">
+                    <img src="icons/loading.gif" style="position: absolute; top: -14px; left: -14px; height: 76px;">
+                </div>
+            </div>
 
             <!-- play bgm button -->
             <button id="playBgmBtn" class="playBgm-btn ui-btn visible" title="Play Background Music">

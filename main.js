@@ -1795,6 +1795,19 @@ function resetLayoutTransition() {
     imageView.classList.remove("no-transition");
 }
 
+const assetsLoaded = [];
+let assetsProgress = 0;
+function preloadAssets(priority, assetsArray, onProgress) {
+    return Promise.all(
+        assetsArray.map(src =>
+            fetch(src, {priority}).then(() => {
+                assetsProgress++;
+                if (onProgress) onProgress(assetsProgress, assetsArray.length);
+            }).catch(() => {})
+        )
+    );
+}
+
 // disable most transitions if simple mode is activated
 if (SIMPLE_MODE) {
     contentView.classList.add("no-transition-at-all");
@@ -1805,14 +1818,36 @@ if (SIMPLE_MODE) {
 if (!SIMPLE_MODE) createStarfield();
 initCardData();
 initLayoutViz();
-
-setLayoutViz(UIPanelTop, false);
-setLayoutViz(UIPanelBottom, false);
-window.addEventListener('load', () => {
-    setLayoutViz(loading, false);
-    setLayoutViz(UIPanelTop, true);
-    setLayoutViz(UIPanelBottom, true);
-    initMainMenu();
-    appLoaded = true;
+window.addEventListener('load', async () => {
+    const loadingText = document.getElementById('loadingText')
+    loadingText.innerText = `Loading main menu assets`;
+    preloadAssets("high", [
+        "icons/deltadim.png",
+        "icons/floriverse.png",
+        "icons/digirel.png",
+        "icons/nansenz.png",
+        "icons/hizen.png",
+        "icons/nadir.png",
+        "icons/dailyartplus.png",
+        "icons/converters.png",
+        "icons/oc-random.png",
+        "icons/info.png",
+        "icons/earth.png",
+        "icons/dollar.png"
+    ]).then(async () => {
+        setLayoutViz(loading, false);
+        setLayoutViz(UIPanelTop, true);
+        setLayoutViz(UIPanelBottom, true);
+        initMainMenu();
+        appLoaded = true;
+        if (!navigator.connection?.saveData) {
+            setLayoutViz(downloadingAssets, true);
+            const loadingProgress = document.getElementById('loadingProgress');
+            const data = await fetch('assets.json').then(res => res.json());
+            await preloadAssets("low", data, (loaded, total) => {
+                if (loadingProgress) loadingProgress.innerText = `Loading ${loaded} / ${total}`;
+            });
+            setLayoutViz(downloadingAssets, false);
+        }
+    })
 });
-

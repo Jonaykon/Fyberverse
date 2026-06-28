@@ -1111,7 +1111,7 @@ function cardHTMLBuilder(c) {
     if (c.isCharacter) {
         const refsheet = c.refsheet ? `<h2>Reference Art:</h2><br><img src="${c.refsheet}"><br><br>` : '';
         const hasMoreArt = c.gallery.length > 6;
-        const hasMoreArtArrowSVG = `<span><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 -2 16 18">
+        const hasMoreArtArrowSVG = `<span><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 -2 16 18">
                                         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
                                     </svg></span>`
         const gallery = c.gallery
@@ -1536,14 +1536,15 @@ function initLazyLoader(root = document) {
     images.forEach(img => {
         if (img.classList.contains("card-thumb-flip") || img.classList.contains("emoji")) return;
         const originalSrc = img.getAttribute('src');
+        const d = dimensionsData[originalSrc];
 
         img.style.opacity = '0.1';
-        img.style.backgroundColor = 'var(--lazy-placeholder-bg)';
+        /* img.style.backgroundColor = 'var(--lazy-placeholder-bg)'; */
+        img.style.border = '3px solid #ffffff';
 
         if (root == detailView && !img.classList.contains("thumb")) {
             img.style.display = 'block';
-            img.style.aspectRatio = '4 / 5';
-            img.style.width = '90%';
+            img.style.aspectRatio = d ? `${d.width} / ${d.height}` : `4 / 5`;
             img.style.objectFit = 'cover';
         }
 
@@ -1591,6 +1592,7 @@ function observeLazyImages() {
                     img.style.width = "";
                     img.style.aspectRatio = "";
                     img.style.objectFit = "";
+                    img.style.border = '';
                     // if (img.dataset.lazyRoot == "detailView") img.style.backgroundColor = "";
                 };
 

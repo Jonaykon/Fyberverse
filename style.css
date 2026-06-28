@@ -1167,7 +1167,7 @@ a[data-open-card] {
     justify-content: center;
     align-items: center;
     width: 30%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: linear-gradient(to bottom, var(--detail-view-content-bg-2), var(--detail-view-content-bg));
     border: 12px solid var(--accent2);
     border-radius: calc(10px * var(--rounding));

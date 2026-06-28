@@ -32,7 +32,7 @@ orbitData = [
         desc: "The 6 sections of Fyberverse",
         direction: 1,
     },
-    {
+    /* {
         orbit: 3,
         title: "Canon",
         desc: "Fyberverse-related menus",
@@ -53,7 +53,7 @@ orbitData = [
         center: "info",
         scaleX: 1,
         scaleY: 1,
-    },
+    }, */
     {
         orbit: 127,
         scaleX: 1,

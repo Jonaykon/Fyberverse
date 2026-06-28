@@ -904,6 +904,7 @@ function handlePointerDown(e) {
     if (!menuId) return;
     if (menuId === 'logoHitbox') {
         openLogo();
+        hoveredNode = undefined;
         return;
     }
     openMainMenu(menuId);

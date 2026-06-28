@@ -241,6 +241,8 @@ splashLines = [
     "Now in Kotabaru!",
     "pickSplash()",
     "the font is called Righteous btw",
+    "GEM ALERT",
+    "MY. FYBERVERSE...",
 ];
 
 totalSplash = splashLines.length;

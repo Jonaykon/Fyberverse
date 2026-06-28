@@ -44,12 +44,12 @@
 
 
     /* Layout variables */
-    --menu-radius: 200px;
+    --menu-radius: 150px;
     --menu-orbit-offset-x: 0px;
     --menu-orbit-offset-y: 0px;
     --menu-orbit-scale-x: 1;
-    --menu-orbit-scale-y: 0.6;
-    --menu-stage-scale: 1;
+    --menu-orbit-scale-y: 1;
+    --menu-stage-scale: 1.125;
     --menu-stage-rotation: 0deg;
     --menu-stage-scale-zoom: 1.5;
     --button-size: 100px;
@@ -225,10 +225,10 @@
 }
 
 @font-face {
-    font-family: 'squaracters';
+    font-family: 'zenpen';
     font-weight: 800;
     font-display: swap;
-    src: url(fonts/squaracters.ttf) format('truetype');
+    src: url(fonts/zenpen.ttf) format('truetype');
 }
 
 @font-face {
@@ -583,8 +583,9 @@ hr {
     justify-content: center;
     align-content: flex-start;
     gap: calc(var(--card-scale) * var(--card-gap));
-    margin: 20px auto 80px auto;
-    padding: calc(11px * var(--card-scale));
+    /* margin: 20px auto 80px auto; */
+    margin: 20px auto 20px auto;
+    padding: calc(22px * var(--card-scale))calc(11px * var(--card-scale));
     flex: 0 0 auto;
     max-width: calc((250px * var(--card-scale) * var(--content-view-grid-max-columns, 3)) + (var(--card-gap) * (var(--content-view-grid-max-columns, 3) - 1)));
     border: 2px solid var(--content-view-grid-outline-color);
@@ -1168,6 +1169,27 @@ a[data-open-card] {
     transform: scale(1.03);
 }
 
+.show-more-art {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom, var(--detail-view-content-bg-2), var(--detail-view-content-bg));
+    border: 12px solid var(--accent2);
+    border-radius: calc(10px * var(--rounding));
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.4s ease;
+}
+
+.show-more-art:hover {
+    transform: scale(1.03);
+}
+
 .character-info {
     display: flex;
     gap: 12px;
@@ -1268,6 +1290,12 @@ a[data-open-card] {
     margin-bottom: 10px;
     object-fit: cover;
     break-inside: avoid;
+}
+
+.container.character-gallery {
+    background: color-mix(in srgb, var(--accent2) 50%, transparent);
+    border: 2px solid var(--table-color);
+    border-radius: calc(10px * var(--rounding));
 }
 
 /* internal cards */
@@ -1639,6 +1667,16 @@ textarea#starstrokeOutput {
 
 textarea#nadiruneOutput {
     font-family: nadirune, Main, Ubuntu, verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+.zenpen {
+    font-family: zenpen, Main, Ubuntu, verdana, sans-serif;
+    font-size: 2rem;
+}
+
+textarea#zenpenOutput {
+    font-family: zenpen, Main, Ubuntu, verdana, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -2021,7 +2059,8 @@ textarea#squaractersOutput {
     justify-content: center;
     font-size: 1.5rem;
     cursor: pointer;
-    background: var(--detail-view-content-bg);
+    border: 12px solid var(--accent2);
+    background: linear-gradient(to bottom, var(--detail-view-content-bg-2), var(--detail-view-content-bg));
 }
 
 .snapshot.local {

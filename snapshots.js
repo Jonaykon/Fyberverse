@@ -227,6 +227,7 @@ function snapshotViewer() {
         addMoreBtn.addEventListener('click', () => {
             fetchPosts('artifyber.xyz');
             addMoreBtn.remove();
+            playSound('sfxClick', SFX_CLICK_VOL);
         });
 
         function updateLocalVisibility() {

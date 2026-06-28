@@ -685,12 +685,16 @@ function separatorBehavior(card, c) {
             <div class="card-separator-subtitle">${c.subtitle || ''}</div>
         `;
         return;
+    } else if (c.separatorType === "break") {
+        card.innerHTML = ``;
+        card.style.margin = "0";
+    } else {
+        card.innerHTML = `
+            <div class="card-separator-title">${c.title || ''}</div>
+            <div class="card-separator-subtitle">${c.subtitle || ''}</div>
+            <hr>
+            `;
     }
-    card.innerHTML = `
-        <div class="card-separator-title">${c.title || ''}</div>
-        <div class="card-separator-subtitle">${c.subtitle || ''}</div>
-        <hr>
-        `;
 }
 
 // render the content grid from a menu data
@@ -956,7 +960,7 @@ function emojiHandler() {
             const emojiName = match[1].toLowerCase();
             if (emojiList.includes(emojiName)) {
                 const img = document.createElement('img');
-                img.src = `/emojis/${emojiName}.png`;
+                img.src = `emojis/${emojiName}.png`;
                 img.alt = match[0];
                 img.className = 'emoji';
                 img.draggable = false;
@@ -1032,6 +1036,9 @@ function handleDetailViewTabs(c, open = null) {
 
     activateTab(0);
 
+    const gallerySec = Array.prototype.indexOf.call(secs, detailViewContent.querySelector('.detail-gallery'));
+    detailViewContent.querySelector(".show-more-art")?.addEventListener('click', () => { activateTab(gallerySec); playSound('sfxClick', SFX_CLICK_VOL); });
+
     btns.forEach((b, i) => {
         b.addEventListener('click', () => activateTab(i));
     });
@@ -1098,11 +1105,20 @@ function getSexualityFlagName(sexuality) {
 
 // HTML builder for character cards
 const CHARACTER_RULES_URL = `<a data-open-card="info:ocrules">`;
+const useShowMoreArtButton = true;
 function cardHTMLBuilder(c) {
     let html = c.detail + (c.html || '') || '';
     if (c.isCharacter) {
         const refsheet = c.refsheet ? `<h2>Reference Art:</h2><br><img src="${c.refsheet}"><br><br>` : '';
-        const gallery = c.gallery ? c.gallery.length > 1 ? `<hr><h2>Top Images:</h2><div class="container">` + c.gallery.slice(1, 6).map(imgSrc => `<img src="${imgSrc}">`).join('') + `</div><br>` : '' : '';
+        const hasMoreArt = c.gallery.length > 6;
+        const hasMoreArtArrowSVG = `<span><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 -2 16 18">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                    </svg></span>`
+        const gallery = c.gallery
+            ? c.gallery.length > 1
+                ? `<h2>Top Images:</h2><div class="container character-gallery">` + c.gallery.slice(1, 6).map(imgSrc => `<img src="${imgSrc}">`).join('') + `${hasMoreArt && useShowMoreArtButton ? `<div class="show-more-art">Show More${hasMoreArtArrowSVG}</div>` : ''}` + `</div><br>`
+                : ''
+            : '';
         let details = c.detail ? `${c.detail}<br>` : '';
         const extraHTML = c.html ? `<hr>${c.html}<br>` : '';
 
@@ -1144,14 +1160,24 @@ function cardHTMLBuilder(c) {
                 ${rows}
             </table>` : '';
 
-        html = `
-        <div class="character-info">
-            ${details ? `<div class="character-detail">${details}</div>` : ''}
-            ${table}
-        </div>
-        ${extraHTML}
-        ${gallery}
-        `;
+        if (!refsheet) {
+            html = `
+                <div class="character-info">
+                    ${details || (!refsheet && c.gallery.length > 1) ? `<div class="character-detail">${details}${gallery}</div>` : ''}
+                    ${table}
+                </div>
+                ${extraHTML}
+            `;
+        } else {
+            html = `
+                <div class="character-info">
+                    ${details ? `<div class="character-detail">${details}</div>` : ''}
+                    ${table}
+                </div>
+                ${extraHTML}
+                ${gallery}
+            `;
+        }
     }
     return html;
 }
@@ -1476,6 +1502,7 @@ function initSearchUI() {
     `
     const searchText = document.getElementById('searchText');
     const cancelSearch = document.getElementById('cancelSearch');
+    searchText.focus();
     searchText.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();

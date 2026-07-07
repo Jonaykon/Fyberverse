@@ -3,8 +3,8 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = 'June 28th, 2026';
-const version = '1.2.2';
+const lastUpdated = "July 7, 2026";
+const version = '1.2.3';
 
 // menu logo redirection
 menuLogoRedirect = 'info';
@@ -1023,6 +1023,14 @@ let menuItems = [
                 extra: '',
                 refsheet: '',
                 gallery: [
+                    'images/c/articat-c14.png',
+                    'images/c/articat-c15.png',
+                    'images/c/articat-c16.png',
+                    'images/c/articat-c10.png',
+                    'images/c/articat-c8.png',
+                    'images/c/articat-c12.png',
+                    'images/c/articat-c11.png',
+                    'images/c/articat-c13.png',
                     'images/c/articat-c.png',
                     'images/c/articat-c2.png',
                     'images/c/articat-c3.png',
@@ -1030,12 +1038,7 @@ let menuItems = [
                     'images/c/articat-c5.png',
                     'images/c/articat-c6.png',
                     'images/c/articat-c7.png',
-                    'images/c/articat-c8.png',
                     'images/c/articat-c9.png',
-                    'images/c/articat-c10.png',
-                    'images/c/articat-c11.png',
-                    'images/c/articat-c12.png',
-                    'images/c/articat-c13.png',
                 ],
                 relatives: [
                     {

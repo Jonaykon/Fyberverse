@@ -1236,10 +1236,6 @@ a[data-open-card] {
     scroll-behavior: smooth;
     max-width: 100%;
     box-sizing: border-box;
-    justify-content: center;
-}
-
-.container:has(> :nth-child(4)) {
     justify-content: flex-start;
 }
 
@@ -1248,6 +1244,7 @@ a[data-open-card] {
     max-width: 30%;
     margin: auto 0;
     height: auto;
+    max-height: 320px;
     border-radius: calc(10px * var(--rounding));
     object-fit: cover;
     user-select: none;
@@ -1277,6 +1274,7 @@ a[data-open-card] {
 .container.grid img {
     width: 100%;
     max-width: 100%;
+    max-height: 100%;
     display: block;
     margin-bottom: 10px;
     object-fit: cover;
@@ -1287,6 +1285,7 @@ a[data-open-card] {
     background: color-mix(in srgb, var(--accent2) 50%, transparent);
     border: 2px solid var(--table-color);
     border-radius: calc(10px * var(--rounding));
+    max-height: 350px;
 }
 
 /* internal cards */
@@ -2143,7 +2142,7 @@ textarea#zenpenOutput {
     }
 
     .detail-view-content .container img:not([class]) {
-        max-width: 35%;
+        max-width: 40%;
     }
 
     .character-info {

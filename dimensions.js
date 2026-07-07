@@ -152,6 +152,38 @@ dimensionsData = {
     "width": 2048,
     "height": 2048
   },
+  "images/c/articat-c14.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c15.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c16.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c10.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c8.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c12.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/articat-c11.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/c/articat-c13.png": {
+    "width": 2500,
+    "height": 2500
+  },
   "images/c/articat-c.png": {
     "width": 2000,
     "height": 2500
@@ -180,28 +212,8 @@ dimensionsData = {
     "width": 2000,
     "height": 2500
   },
-  "images/c/articat-c8.png": {
-    "width": 2000,
-    "height": 2500
-  },
   "images/c/articat-c9.png": {
     "width": 2000,
-    "height": 2500
-  },
-  "images/c/articat-c10.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/articat-c11.png": {
-    "width": 2000,
-    "height": 2000
-  },
-  "images/c/articat-c12.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/articat-c13.png": {
-    "width": 2500,
     "height": 2500
   },
   "images/i/articat-i.png": {

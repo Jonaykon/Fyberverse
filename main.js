@@ -136,10 +136,14 @@ function extractImagesFromHTML(html) {
     return urls;
 }
 
+function getThumbPath(originalPath) {
+    return `thumb/${originalPath}`;
+}
+
 function isEmojiOnly(str) {
-  const stringToTest = str.replace(/ /g,'');
-  const emojiRegex = /^(?:(?:\p{RI}\p{RI}|\p{Emoji}(?:\p{Emoji_Modifier}|\u{FE0F}\u{20E3}?|[\u{E0020}-\u{E007E}]+\u{E007F})?(?:\u{200D}\p{Emoji}(?:\p{Emoji_Modifier}|\u{FE0F}\u{20E3}?|[\u{E0020}-\u{E007E}]+\u{E007F})?)*)|[\u{1f900}-\u{1f9ff}\u{2600}-\u{26ff}\u{2700}-\u{27bf}])+$/u;
-  return emojiRegex.test(stringToTest) && Number.isNaN(Number(stringToTest));
+    const stringToTest = str.replace(/ /g, '');
+    const emojiRegex = /^(?:(?:\p{RI}\p{RI}|\p{Emoji}(?:\p{Emoji_Modifier}|\u{FE0F}\u{20E3}?|[\u{E0020}-\u{E007E}]+\u{E007F})?(?:\u{200D}\p{Emoji}(?:\p{Emoji_Modifier}|\u{FE0F}\u{20E3}?|[\u{E0020}-\u{E007E}]+\u{E007F})?)*)|[\u{1f900}-\u{1f9ff}\u{2600}-\u{26ff}\u{2700}-\u{27bf}])+$/u;
+    return emojiRegex.test(stringToTest) && Number.isNaN(Number(stringToTest));
 }
 
 function tweenOut(start, target, speed, onUpdate) {
@@ -187,6 +191,8 @@ function checkWideScreen() {
 // --------------------------
 // BUTTON STATES
 // --------------------------
+
+playBgmBtn.style.display = 'none';
 
 const UI_STATES = {
     MAIN_MENU: {
@@ -656,7 +662,7 @@ function setCardHTML(card, c, r = null) {
     }
 
     if (card.dataset.caption) html = `<div class="caption">${card.dataset.caption}</div>` + html;
-    card.innerHTML = html;
+    card.innerHTML = processImagesInHTML(html);
 }
 
 // set card attributes
@@ -927,7 +933,9 @@ function renderCardDetail(c) {
     const relativesSection = relatives ? `<div class="detail-section detail-relatives remove">${relatives}</div>` : '';
     const customSection = sectionData ? sectionData.html ? sectionData.html.map(d => `<div class="detail-section detail-${c.sections[sectionData.html.indexOf(d)].title.replaceAll(" ", "-")} remove">${d}</div>`).join('') : '' : '';
 
-    detailViewContent.innerHTML = `${tabEl}${mainSection}${customSection}${gallerySection}${relativesSection}`;
+    const fullHtml = tabEl + mainSection + customSection + gallerySection + relativesSection;
+    const processedHtml = processImagesInHTML(fullHtml);
+    detailViewContent.innerHTML = processedHtml;
 
     emojiHandler();
     cardDetailScriptHandler(c);
@@ -1196,10 +1204,11 @@ document.addEventListener('click', (e) => {
     if (!img) return;
     if (img.classList.contains("thumb")) return;
 
+    const fullSrc = img.dataset.fullSrc || img.src;
     const caption = img.dataset.caption ? `<h1 style="margin-top: 12px; margin-bottom: -10px;">${img.dataset.caption}</h1>` : '';
     const subcaption = caption && img.dataset.subcaption ? `<p style="color: color-mix(in srgb, var(--accentl) 75%, transparent)">${img.dataset.subcaption}</p>` : '';
 
-    imageView.innerHTML = `<img src="${img.src}" alt="preview" ${caption ? 'data-hasCaption=true' : ''}>${caption}${subcaption}`;
+    imageView.innerHTML = `<img src="${fullSrc}" alt="preview" ${caption ? 'data-hasCaption=true' : ''}>${caption}${subcaption}`;
     disableZoom();
     setLayoutViz(imageView, true);
     applyUIState("IMAGE_VIEW");
@@ -1245,7 +1254,36 @@ function enableZoom() {
 // AUDIOS
 // --------------------------
 
+// Preload all audio files (SFX and BGM) in the background
+async function preloadAudio() {
+    const audioElements = document.querySelectorAll('audio');
+    const promises = [];
 
+    audioElements.forEach(audio => {
+        if (audio.readyState >= 2) return;
+        const p = new Promise((resolve, reject) => {
+            const onCanPlay = () => {
+                audio.removeEventListener('canplaythrough', onCanPlay);
+                resolve();
+            };
+            audio.addEventListener('canplaythrough', onCanPlay);
+            audio.addEventListener('error', () => {
+                audio.removeEventListener('canplaythrough', onCanPlay);
+                resolve();
+            });
+            audio.load();
+        });
+        promises.push(p);
+    });
+
+    await Promise.all(promises);
+    showAudioButton();
+}
+
+function showAudioButton() {
+    playBgmBtn.style.display = '';
+    applyUIState("MAIN_MENU");
+}
 
 // -------- bgm system ----------
 
@@ -1324,12 +1362,13 @@ document.addEventListener('click', (e) => {
 
 // play sfx
 function playSound(soundId, volume = 1) {
-    s = document.getElementById(soundId);
+    const s = document.getElementById(soundId);
     if (!s) return;
+    if (s.readyState === 0) s.load();
     s.pause();
     s.currentTime = 0;
     s.volume = soundId.includes('bgm') ? volume * MASTER_VOL * BGM_MASTER_VOL : volume * MASTER_VOL * SFX_MASTER_VOL;
-    s.play().catch(() => { });
+    s.play().catch(() => {});
 }
 
 const bgmList = Object.values(bgm);
@@ -1531,86 +1570,96 @@ searchBox.addEventListener('close', () => { if (searchText.value.trim() !== '') 
 
 // initialize lazy loader
 function initLazyLoader(root = document) {
-    // if (LOCAL_MODE) return;
-    const images = root.querySelectorAll('img[src]:not([data-lazy-processed])');
+    const images = root.querySelectorAll('img:not([data-lazy-processed])');
     images.forEach(img => {
-        if (img.classList.contains("card-thumb-flip") || img.classList.contains("emoji")) return;
-        const originalSrc = img.getAttribute('src');
-        const d = dimensionsData[originalSrc];
+        let realSrc = img.dataset.src || img.getAttribute('src');
+        if (!realSrc || realSrc === 'icons/loading.gif' || realSrc.startsWith('data:') || realSrc.startsWith('emojis')) {
+            return;
+        }
 
+        const currentSrc = img.getAttribute('src');
+        if (currentSrc && currentSrc !== 'icons/loading.gif' && !currentSrc.startsWith('data:')) {
+            img.dataset.src = currentSrc;
+            realSrc = currentSrc;
+            img.setAttribute('src', 'icons/loading.gif');
+        }
+
+        // Determine dimensions key
+        let dimsKey = realSrc;
+        let d = null;
+        if (realSrc.startsWith("thumb/")) dimsKey = realSrc.replace("thumb/", "");
+        
+        if (thumbDimensionsData[dimsKey]) {
+            d = thumbDimensionsData[dimsKey];
+        } else if (dimensionsData[dimsKey]) {
+            d = dimensionsData[dimsKey];
+        }
+        if (!d) d = { width: 4, height: 5 };
+        if (img.classList.contains('thumb')) d = { width: 1, height: 1 };
+        if (img.parentNode.dataset.blank) d = { width: 4, height: 5 };
+
+        img.style.display = 'block';
+        img.style.aspectRatio = `${d.width} / ${d.height}`;
+        img.style.objectFit = 'cover';
         img.style.opacity = '0.1';
-        /* img.style.backgroundColor = 'var(--lazy-placeholder-bg)'; */
         img.style.border = '3px solid #ffffff';
 
-        if (root == detailView && !img.classList.contains("thumb")) {
-            img.style.display = 'block';
-            img.style.aspectRatio = d ? `${d.width} / ${d.height}` : `4 / 5`;
-            img.style.objectFit = 'cover';
-        }
+        img.dataset.src = realSrc;
+        img.dataset.lazyProcessed = 'true';
 
-        // convert relative path to CDN path
-        /*
-        const finalSrc = originalSrc.startsWith('http')
-            ? originalSrc
-            : LAZY_BASE + originalSrc;
-            */
-
-        const finalSrc = originalSrc;
-
-        img.dataset.src = finalSrc;
-        img.setAttribute('src', 'icons/loading.gif');
-        img.dataset.lazyProcessed = "true";
-        if (root == detailView && !img.classList.contains("thumb")) {
-            const tempImg = new Image();
-            tempImg.onload = () => {
-                img.style.aspectRatio = `${tempImg.naturalWidth} / ${tempImg.naturalHeight}`;
-            };
-            tempImg.src = finalSrc;
-        }
-        if (root == detailView) img.dataset.lazyRoot = "detailView";
-
-        // img.style.transition = "opacity 0.4s ease";
-    });
-
-    observeLazyImages();
-}
-
-// lazy observer handler
-let lazyObserver;
-function observeLazyImages() {
-    // if (LOCAL_MODE) return;
-
-    if (!lazyObserver) {
         lazyObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
-
-                const img = entry.target;
-
-                img.onload = () => {
-                    img.style.opacity = "1";
-                    img.style.width = "";
-                    img.style.aspectRatio = "";
-                    img.style.objectFit = "";
-                    img.style.border = '';
-                    // if (img.dataset.lazyRoot == "detailView") img.style.backgroundColor = "";
-                };
-
-                img.style.backgroundColor = "";
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-
-                observer.unobserve(img);
+                const imgEl = entry.target;
+                const src = imgEl.dataset.src;
+                if (src) {
+                    imgEl.onload = () => {
+                        imgEl.style.opacity = '1';
+                        imgEl.style.border = 'none';
+                    };
+                    imgEl.src = src;
+                    imgEl.removeAttribute('data-src');
+                    imgEl.onerror = () => {
+                        if (this.dataset.fullSrc) {
+                            this.src = this.dataset.fullSrc;
+                            this.removeAttribute('data-src');
+                            this.removeAttribute('data-full-src');
+                        }
+                    };
+                }
+                observer.unobserve(imgEl);
             });
         }, {
             rootMargin: "100px",
             threshold: 0.01
         });
-    }
-
-    document.querySelectorAll('img[data-src]').forEach(img => {
         lazyObserver.observe(img);
     });
+}
+
+// replace all img src with data-src and set src to placeholder
+function processImagesInHTML(htmlString) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    const images = doc.querySelectorAll('img');
+    images.forEach(img => {
+        let src = img.getAttribute('src');
+        if (!src || src.startsWith('data:') || src === 'icons/loading.gif' || src.startsWith('emojis')) return;
+
+        const fullSrc = src;
+        const THUMBNAIL_PREFIXES = ['images/c/', 'images/i/', 'images/flories'];
+
+        const isThumbnailCandidate = THUMBNAIL_PREFIXES.some(prefix => fullSrc.startsWith(prefix));
+        if (isThumbnailCandidate && fullSrc.match(/^(images|icons|drive)\//)) {
+            const thumbSrc = getThumbPath(fullSrc);
+            img.setAttribute('data-src', thumbSrc);
+            img.setAttribute('data-full-src', fullSrc);
+        } else {
+            img.setAttribute('data-src', fullSrc);
+        }
+        img.setAttribute('src', 'icons/loading.gif');
+    });
+    return doc.body.innerHTML;
 }
 
 
@@ -1871,6 +1920,7 @@ window.addEventListener('load', async () => {
     setLayoutViz(UIPanelTop, true);
     setLayoutViz(UIPanelBottom, true);
     initMainMenu();
+    preloadAudio()
     appLoaded = true;
 
     // load any URL parameters after menu is initialized

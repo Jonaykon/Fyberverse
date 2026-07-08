@@ -1282,7 +1282,7 @@ async function preloadAudio() {
 
 function showAudioButton() {
     playBgmBtn.style.display = '';
-    applyUIState("MAIN_MENU");
+    /* applyUIState("MAIN_MENU"); */
 }
 
 // -------- bgm system ----------

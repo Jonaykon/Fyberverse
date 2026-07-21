@@ -288,6 +288,14 @@ thumbDimensionsData = {
     "width": 296,
     "height": 370
   },
+  "images/c/artifish-c16.png": {
+    "width": 296,
+    "height": 370
+  },
+  "images/c/artifish-c17.png": {
+    "width": 296,
+    "height": 370
+  },
   "images/i/artifish-i.png": {
     "width": 370,
     "height": 370
@@ -425,6 +433,10 @@ thumbDimensionsData = {
     "height": 370
   },
   "images/c/artipup-c8.png": {
+    "width": 296,
+    "height": 370
+  },
+  "images/c/artipup-c9.png": {
     "width": 296,
     "height": 370
   },

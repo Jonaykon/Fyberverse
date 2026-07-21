@@ -243,6 +243,7 @@ splashLines = [
     "the font is called Righteous btw",
     "GEM ALERT",
     "MY. FYBERVERSE...",
+    "all of these splashes suck",
 ];
 
 totalSplash = splashLines.length;

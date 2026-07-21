@@ -3,7 +3,7 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = "July 8, 2026";
+const lastUpdated = "July 21, 2026";
 const version = '1.2.3';
 
 // menu logo redirection
@@ -1121,6 +1121,8 @@ let menuItems = [
                     'images/c/artifish-c13.png',
                     'images/c/artifish-c14.png',
                     'images/c/artifish-c15.png',
+                    'images/c/artifish-c16.png',
+                    'images/c/artifish-c17.png',
                 ],
                 relatives: [
                     {
@@ -1245,6 +1247,7 @@ let menuItems = [
                     'images/c/artipup-c6.png',
                     'images/c/artipup-c7.png',
                     'images/c/artipup-c8.png',
+                    'images/c/artipup-c9.png',
                 ],
                 relatives: [
                     {

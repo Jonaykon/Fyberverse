@@ -336,6 +336,14 @@ dimensionsData = {
     "width": 2000,
     "height": 2500
   },
+  "images/c/artifish-c16.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/artifish-c17.png": {
+    "width": 2000,
+    "height": 2500
+  },
   "images/i/artifish-i.png": {
     "width": 845,
     "height": 845
@@ -477,6 +485,10 @@ dimensionsData = {
     "height": 2500
   },
   "images/c/artipup-c8.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/artipup-c9.png": {
     "width": 2000,
     "height": 2500
   },

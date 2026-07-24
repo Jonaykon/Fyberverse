@@ -30,6 +30,10 @@ const MAIN_MENU_TEXT_OFFSET_Y = 90;
 const mainMenuLogo = 'images/menu-logo.png';
 const SIMPLE_MODE_MENU_LOGO_SCALE = 1.5;
 
+// Pagination settings
+const INITIAL_CARD_LOAD = 24;
+const LOAD_MORE_INCREMENT = 24;
+
 function pickSplash() {
     if (new Date().getMonth() == 5) return "Happy pride month!";
     const filtered = splashLines.filter(s => !s.includes('<') /* && s.length < 30 */);
@@ -429,21 +433,19 @@ function setCurrentMenu(id) { contentView.dataset.currentMenuId = id; }
 function currentMenu() { return contentView.dataset.currentMenuId; }
 
 // open menu with menu element and data
-function openMenuById(menuId) {
+function openMenuById(menuId, showAll = false) {
     const targetMenu = menuItems?.find(m => m.menuId === menuId);
     if (!targetMenu) return console.warn(`Menu with id "${menuId}" not found.`);
-    if (typeof openMenu !== 'function') return;
     if (targetMenu.menuId === "random") {
         openRandom();
         setButtonViz(rerollBtn, true);
         return;
     }
-    openMenu(null, targetMenu);
-
+    openMenu(null, targetMenu, showAll);
 }
 
 let currentM;
-function openMenu(menu, m) {
+function openMenu(menu, m, showAll = false) {
     resetLayoutTransition();
 
     blurMainMenu(true);
@@ -482,7 +484,7 @@ function openMenu(menu, m) {
     }
 
     playSound('sfxSwap', SFX_SWAP_VOL);
-    renderContentGrid(m);
+    renderContentGrid(m, true, showAll);
     currentM = m;
     setHistoryState(m.menuId);
 }
@@ -705,7 +707,7 @@ function separatorBehavior(card, c) {
 
 // render the content grid from a menu data
 let lastRenderedMenu = null;
-function renderContentGrid(m, animate = true) {
+function renderContentGrid(m, animate = true, showAll = false) {
     /* contentView.scrollTop = 0; */
     contentViewGrid.innerHTML = '';
     if (m.html) contentViewGrid.innerHTML = `<div class="content-view-html">${m.html}</div>`;
@@ -742,6 +744,34 @@ function renderContentGrid(m, animate = true) {
         defaultCardBehavior(card, c)
     });
     contentViewGrid.appendChild(frag);
+
+    // show more button
+    if (!showAll) {
+        const totalCards = cardArray.length;
+        if (totalCards > INITIAL_CARD_LOAD) {
+            let visibleCount = INITIAL_CARD_LOAD;
+            
+            cardArray.forEach((card, idx) => {
+                if (idx >= visibleCount) card.style.display = 'none';
+            });
+
+            const loadMoreBtn = document.createElement('div');
+            loadMoreBtn.className = 'card load-more-btn';
+            loadMoreBtn.textContent = `+${totalCards - visibleCount}`;
+            contentViewGrid.appendChild(loadMoreBtn);
+
+            loadMoreBtn.addEventListener('click', function handler() {
+                const nextVisible = Math.min(visibleCount + LOAD_MORE_INCREMENT, totalCards);
+                for (let i = visibleCount; i < nextVisible; i++) cardArray[i].style.display = '';
+                visibleCount = nextVisible;
+                if (visibleCount >= totalCards) {
+                    this.remove();
+                } else {
+                    this.textContent = `+${totalCards - visibleCount}`;
+                }
+            });
+        }
+    }
 
     if (lastRenderedMenu?.menuId != m.menuId) {
         contentView.scrollTop = 0;
@@ -783,7 +813,7 @@ function animateCardFirstTime(cardArray) {
 
 // open card by menu id and card id (strings)
 function openCardById(menuId, cardId) {
-    openMenuById(menuId);
+    openMenuById(menuId, true);
 
     const menu = menuItems.find(m => m.menuId === menuId);
     if (!menu) return;

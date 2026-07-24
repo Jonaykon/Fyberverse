@@ -1360,6 +1360,15 @@ a[data-open-card] {
     border-radius: 0 !important;
 }
 
+.load-more-btn {
+    font-size: 3rem;
+    color: var(--accentl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--card-bg-2), transparent);
+}
+
 
 /* preview mode 
 .detail-view.preview-mode img {

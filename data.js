@@ -3,7 +3,7 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = "July 24, 2026";
+const lastUpdated = "July 26, 2026";
 const version = '1.2.3';
 
 // menu logo redirection
@@ -1101,7 +1101,7 @@ let menuItems = [
                 pronouns: 'They/Fish',
                 gender: 'Non-binary',
                 sexuality: 'Demisexual',
-                flags: ['fishgender'],
+                flags: ['lesbian', 'fishgender'],
                 aliases: 'Arti, Fifi',
                 extra: '',
                 refsheet: '',
@@ -1188,6 +1188,7 @@ let menuItems = [
                 pronouns: 'She',
                 gender: 'Female',
                 sexuality: 'Demisexual',
+                flags: ['lesbian'],
                 aliases: 'Arti, Lolo, Jacquie, Jacqueline',
                 extra: '',
                 refsheet: 'images/r/artilope-r.png',

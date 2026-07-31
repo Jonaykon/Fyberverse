@@ -3,8 +3,8 @@
     -------------------------- */
 
 // Metadata
-const lastUpdated = "July 26, 2026";
-const version = '1.2.3';
+const lastUpdated = "July 31, 2026";
+const version = '1.2.4';
 
 // menu logo redirection
 menuLogoRedirect = 'info';
@@ -1943,7 +1943,7 @@ let menuItems = [
                 ],
                 relatives: [
                     {
-                        cardId: 'floriverse-epsilon:fveAurelia',
+                        cardId: 'floriverse:fveAurelia',
                         relation: 'Significant Other'
                     },
                 ],
@@ -2700,7 +2700,7 @@ let menuItems = [
 
 
 
-    {
+        {
         // Floriverse
         title: 'Floriverse',
         menuId: 'floriverse',
@@ -2723,54 +2723,1241 @@ let menuItems = [
                     <br>
                     Anyone that enters Floriverse instantly transforms into a florie. However, flories who leave Floriverse retain their form.<br>
                     <h4>What's in this page</h4>
-                    This page list all flories in separate categories based on the Floriverse album they associate with, as well as uncategorized ones.<br>`,
+                    This page is a list of all Fyberverse characters located in Floriverse. This include character information, reference art, and picture gallery of each character.<br>`,
                 image: 'icons/floriverse.png'
-            },
-            {
-                linkId: 'floriverse-uncat',
-            },
-            {
-                linkId: 'floriverse-vanilla',
-            },
-            {
-                linkId: 'floriverse-delta',
-            },
-            {
-                linkId: 'floriverse-epsilon',
             },
             {
                 title: 'Pinned',
                 subtitle: 'You might be looking for these'
             },
             {
-                reference: 'floriverse-epsilon:fveAurelia',
+                reference: 'floriverse:fveAurelia',
             },
             {
-                reference: 'floriverse-uncat:fvArtiflow',
+                reference: 'floriverse:fvArtiflow',
             },
             {
-                reference: 'floriverse-uncat:fvArtidell',
+                reference: 'floriverse:fvArtidell',
             },
             {
-                reference: 'floriverse-vanilla:fvvFurflow',
+                reference: 'floriverse:fvvFurflow',
             },
             {
-                reference: 'floriverse-delta:fvdWina',
+                reference: 'floriverse:fvdWina',
             },
             {
-                reference: 'floriverse-epsilon:fveMisty',
+                reference: 'floriverse:fveMisty',
             },
-        ]
-    },
-    {
-        title: 'Floriverse (Unsorted)',
-        menuId: 'floriverse-uncat',
-        parent: 'floriverse',
-        subtitle: 'Flories with no associated album',
-        image: 'images/fvuncat-i.png',
-        color: 'var(--color-11)',
-        hidden: true,
-        cards: [
+            {
+            },
+            {
+                cardId: 'fvvPotto',
+                title: 'Potto',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Potted plant',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fv-potto.png'],
+                detail: '',
+                image: 'images/flories/fv-potto.png'
+            },
+            {
+                cardId: 'fvvTwinkle',
+                title: 'Twinkle',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Star flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fv-twinkle.png'],
+                detail: '',
+                image: 'images/flories/fv-twinkle.png'
+            },
+            {
+                cardId: 'fvvStrawmon',
+                title: 'Strawmon',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Glass',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fv-strawmon.png'],
+                detail: '',
+                image: 'images/flories/fv-strawmon.png'
+            },
+            {
+                cardId: 'fvvNocto',
+                title: 'Nocto',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Spirit tulip',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fv-nocto.png'],
+                detail: '',
+                image: 'images/flories/fv-nocto.png'
+            },
+            {
+                cardId: 'fvvFurflow',
+                title: 'Furflow',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Catdelion',
+                pronouns: 'She',
+                gender: 'Female',
+                sexuality: 'Lesbian',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/c/furflow-c.png',
+                gallery: [
+                    'images/c/furflow-c2.png',
+                    'images/c/furflow-c3.png',
+                    'images/c/furflow-c4.png',
+                    'images/c/furflow-c5.png',
+                    'images/flories/fv-furflow.png',
+                ],
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveMisty',
+                        relation: 'Significant Other'
+                    },
+                ],
+
+                image: 'images/c/furflow-c.png'
+            },
+            {
+                cardId: 'fvvPana',
+                title: 'Pana',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Pancake tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fv-pana.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvdYana',
+                        relation: 'Younger Sister'
+                    },
+                ],
+                image: 'images/flories/fv-pana.png'
+            },
+            {
+                cardId: 'fvvPinkly',
+                title: 'Pinkly',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fv-pinkly.png'],
+                detail: '',
+                image: 'images/flories/fv-pinkly.png'
+            },
+            {
+                cardId: 'fvvKosmaya',
+                title: 'Kosmaya',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Exotic flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fv-kosmaya.png'],
+                detail: '',
+                image: 'images/flories/fv-kosmaya.png'
+            },
+            {
+                cardId: 'fvvMincha',
+                title: 'Mincha',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Jasmine',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fv-mincha.png'],
+                detail: '',
+                image: 'images/flories/fv-mincha.png'
+            },
+            {
+                cardId: 'fvvLan',
+                title: 'Lan',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Lemon',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fv-lan.png'],
+                detail: '',
+                image: 'images/flories/fv-lan.png'
+            },
+            {
+                cardId: 'fvdStarple',
+                title: 'Starple',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-starple.png'],
+                detail: '',
+                image: 'images/flories/fvd-starple.png'
+            },
+            {
+                cardId: 'fvdChrora',
+                title: 'Chrora',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Exotic flower',
+                pronouns: 'They',
+                gender: 'Non-Binary',
+                gallery: ['images/flories/fvd-chrora.png'],
+                detail: '',
+                image: 'images/flories/fvd-chrora.png'
+            },
+            {
+                cardId: 'fvdOrply',
+                title: 'Orply',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-orply.png'],
+                detail: '',
+                image: 'images/flories/fvd-orply.png'
+            },
+            {
+                cardId: 'fvdTiram',
+                title: 'Tiram',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Mushroom',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-tiram.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveZoey',
+                        relation: 'Sibling'
+                    },
+                ],
+                image: 'images/flories/fvd-tiram.png'
+            },
+            {
+                cardId: 'fvdNimibi',
+                title: 'Nimibi',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cloudy flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-nimibi.png'],
+                detail: '',
+                image: 'images/flories/fvd-nimibi.png'
+            },
+            {
+                cardId: 'fvdSlump',
+                title: 'Slump',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Rock with kelps',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-slump.png'],
+                detail: '',
+                image: 'images/flories/fvd-slump.png'
+            },
+            {
+                cardId: 'fvdPio',
+                title: 'Pio',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Berry',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-pio.png'],
+                detail: '',
+                image: 'images/flories/fvd-pio.png'
+            },
+            {
+                cardId: 'fvdYana',
+                title: 'Yana',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-yana.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveNila',
+                        relation: 'Significant Other'
+                    },
+                    {
+                        cardId: 'floriverse:fvvPana',
+                        relation: 'Older Sister'
+                    },
+                ],
+                image: 'images/flories/fvd-yana.png'
+            },
+            {
+                cardId: 'fvdLooni',
+                title: 'Looni',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Fruit',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-looni.png'],
+                detail: '',
+                image: 'images/flories/fvd-looni.png'
+            },
+            {
+                cardId: 'fvdChocopop',
+                title: 'Chocopop',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Chocoflower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-chocopop.png'],
+                detail: '',
+                image: 'images/flories/fvd-chocopop.png'
+            },
+            {
+                cardId: 'fvdStaz',
+                title: 'Staz',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Pistachio',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-staz.png'],
+                detail: '',
+                image: 'images/flories/fvd-staz.png'
+            },
+            {
+                cardId: 'fvdDelly',
+                title: 'Delly',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Catdelion',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-delly.png'],
+                detail: '',
+                image: 'images/flories/fvd-delly.png'
+            },
+            {
+                cardId: 'fvdSprinkly',
+                title: 'Sprinkly',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Potted cakeflower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-sprinkly.png'],
+                detail: '',
+                image: 'images/flories/fvd-sprinkly.png'
+            },
+            {
+                cardId: 'fvdEcno',
+                title: 'Ecno',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Multi',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fvd-ecno.png'],
+                detail: '',
+                image: 'images/flories/fvd-ecno.png'
+            },
+            {
+                cardId: 'fvdDisaton',
+                title: 'Disaton',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cottonbun',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-disaton.png'],
+                detail: '',
+                image: 'images/flories/fvd-disaton.png'
+            },
+            {
+                cardId: 'fvdProtoberries',
+                title: 'Protoberries',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Berries',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fvd-protoberries.png'],
+                detail: '',
+                image: 'images/flories/fvd-protoberries.png'
+            },
+            {
+                cardId: 'fvdPipix',
+                title: 'Pipix',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Pixel flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-pipix.png'],
+                detail: '',
+                image: 'images/flories/fvd-pipix.png'
+            },
+            {
+                cardId: 'fvdPico',
+                title: 'Pico',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Robot flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-pico.png'],
+                detail: '',
+                image: 'images/flories/fvd-pico.png'
+            },
+            {
+                cardId: 'fvdStarlila',
+                title: 'Starlila',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Transgender flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-starlila.png'],
+                detail: '',
+                image: 'images/flories/fvd-starlila.png'
+            },
+            {
+                cardId: 'fvdWina',
+                title: 'Wina',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Charred flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-wina.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'nansenz:mu',
+                        relation: 'Multiversal Friend'
+                    },
+                    {
+                        cardId: 'floriverse:fveCorrode',
+                        relation: 'Cousin'
+                    },
+                ],
+                image: 'images/flories/fvd-wina.png'
+            },
+            {
+                cardId: 'fvdFret',
+                title: 'Fret',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-fret.png'],
+                detail: '',
+                image: 'images/flories/fvd-fret.png'
+            },
+            {
+                cardId: 'fvdAzka',
+                title: 'Azka',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Angel',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fvd-azka.png'],
+                detail: '',
+                image: 'images/flories/fvd-azka.png'
+            },
+            {
+                cardId: 'fvdCherro',
+                title: 'Cherro',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tomatoes',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fvd-cherro.png'],
+                detail: '',
+                image: 'images/flories/fvd-cherro.png'
+            },
+            {
+                cardId: 'fvdFloorion',
+                title: 'Floorion',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Potted robot flower',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fvd-floorion.png'],
+                detail: '',
+                image: 'images/flories/fvd-floorion.png'
+            },
+            {
+                cardId: 'fvdStellA',
+                title: 'Stell-A',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Black hole flower',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fvd-stell-a.png'],
+                detail: '',
+                image: 'images/flories/fvd-stell-a.png'
+            },
+            {
+                cardId: 'fvdNully',
+                title: 'Nully',
+                subtitle: '',
+                isCharacter: true,
+                species: ' ',
+                pronouns: ' ',
+                gender: ' ',
+                gallery: ['images/flories/fvd-nully.png'],
+                detail: '',
+                image: 'images/flories/fvd-nully.png'
+            },
+            {
+                cardId: 'fvdDatum',
+                title: 'Datum',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Digital flower',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fvd-datum.png'],
+                detail: '',
+                image: 'images/flories/fvd-datum.png'
+            },
+            {
+                cardId: 'fvdPoloniloo',
+                title: 'Poloniloo',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Polonium flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-poloniloo.png'],
+                detail: '',
+                image: 'images/flories/fvd-poloniloo.png'
+            },
+            {
+                cardId: 'fvdGrayscale',
+                title: 'Grayscale',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fvd-grayscale.png'],
+                detail: '',
+                image: 'images/flories/fvd-grayscale.png'
+            },
+            {
+                cardId: 'fvdErwith',
+                title: 'Erwith',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-erwith.png'],
+                detail: '',
+                image: 'images/flories/fvd-erwith.png'
+            },
+            {
+                cardId: 'fvdFyzer',
+                title: 'Fyzer',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Florifyber',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fvd-fyzer.png'],
+                detail: '',
+                image: 'images/flories/fvd-fyzer.png'
+            },
+            {
+                cardId: 'fvdKloroforo',
+                title: 'Kloroforo',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Robot flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fvd-kloroforo.png'],
+                detail: '',
+                image: 'images/flories/fvd-kloroforo.png'
+            },
+            {
+                cardId: 'fveSolaris',
+                title: 'Solaris',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Fire flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-solaris.png'],
+                detail: '',
+                image: 'images/flories/fve-solaris.png'
+            },
+            {
+                cardId: 'fveTrix',
+                title: 'Trix',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Dandelion',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-trix.png'],
+                detail: '',
+                image: 'images/flories/fve-trix.png'
+            },
+            {
+                cardId: 'fveLux',
+                title: 'Lux',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Exotic flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-lux.png'],
+                detail: '',
+                image: 'images/flories/fve-lux.png'
+            },
+            {
+                cardId: 'fveGlitter',
+                title: 'Glitter',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-glitter.png'],
+                detail: '',
+                image: 'images/flories/fve-glitter.png'
+            },
+            {
+                cardId: 'fveFomfz',
+                title: 'Fomfz',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tree',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-fomfz.png'],
+                detail: '',
+                image: 'images/flories/fve-fomfz.png'
+            },
+            {
+                cardId: 'fveBion',
+                title: 'Bion',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Spirit flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-bion.png'],
+                detail: '',
+                image: 'images/flories/fve-bion.png'
+            },
+            {
+                cardId: 'fveZoey',
+                title: 'Zoey',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Mushroom',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-zoey.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvdTiram',
+                        relation: 'Sibling'
+                    },
+                ],
+                image: 'images/flories/fve-zoey.png'
+            },
+            {
+                cardId: 'fveHera',
+                title: 'Hera',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Goddess of time',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-hera.png'],
+                detail: '',
+                image: 'images/flories/fve-hera.png'
+            },
+            {
+                cardId: 'fveIsla',
+                title: 'Isla',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Palm tree',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-isla.png'],
+                detail: '',
+                image: 'images/flories/fve-isla.png'
+            },
+            {
+                cardId: 'fveAzira',
+                title: 'Azira',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Blueberry',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-azira.png'],
+                detail: '',
+                image: 'images/flories/fve-azira.png'
+            },
+            {
+                cardId: 'fveMisty',
+                title: 'Misty',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Catdelion',
+                pronouns: 'She',
+                gender: 'Female',
+                sexuality: 'Lesbian',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/flories/fve-misty.png',
+                gallery: [
+                    'images/c/misty-c.png',
+                ],
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvvFurflow',
+                        relation: 'Significant Other'
+                    },
+                ],
+
+                image: 'images/flories/fve-misty.png'
+            },
+            {
+                cardId: 'fveNya',
+                title: 'Nya',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Catdelion',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-nya.png'],
+                detail: '',
+                image: 'images/flories/fve-nya.png'
+            },
+            {
+                cardId: 'fveAtto',
+                title: 'Atto',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Catdelion',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-atto.png'],
+                detail: '',
+                image: 'images/flories/fve-atto.png'
+            },
+            {
+                cardId: 'fveClara',
+                title: 'Clara',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cottonbun',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-clara.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveLyra',
+                        relation: 'Sibling'
+                    },
+                ],
+                image: 'images/flories/fve-clara.png'
+            },
+            {
+                cardId: 'fveLyra',
+                title: 'Lyra',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cottonbun',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-lyra.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveClara',
+                        relation: 'Sibling'
+                    },
+                ],
+                image: 'images/flories/fve-lyra.png'
+            },
+            {
+                cardId: 'fveStrawnilla',
+                title: 'Strawnilla',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Poptart berry',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-strawnilla.png'],
+                detail: '',
+                image: 'images/flories/fve-strawnilla.png'
+            },
+            {
+                cardId: 'fvePoppers',
+                title: 'Poppers',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Berries',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fve-poppers.png'],
+                detail: '',
+                image: 'images/flories/fve-poppers.png'
+            },
+            {
+                cardId: 'fveAurelia',
+                title: 'Aurelia',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Zinnia',
+                pronouns: 'She',
+                gender: 'Female',
+                sexuality: 'Lesbian',
+                flags: ['floriewlw'],
+                aliases: '',
+                extra: '',
+                detail: `
+                    Aurelia is a green Zinnia with orange petals. She is an archaeologist and museum curator, exploring the ancient ruins of Klorofil and preserving ancient relics. She also enjoys drawing.<br>
+                    <br>
+                    She managed to find Hana through the multiversalnet, and was able to use one of her relics to open a wormhole to meet with her for a short period.
+                `,
+                refsheet: 'images/r/aurelia-r.png',
+                gallery: [
+                    'images/flories/fve-aurelia.png',
+                    'images/c/aurelia-c.png',
+                    'images/c/aurelia-c2.png',
+                    'images/c/aurelia-c3.png',
+                    'images/c/aurelia-c4.png',
+                ],
+                relatives: [
+                    {
+                        cardId: 'deltadim-chromasia:hana',
+                        relation: 'Significant Other'
+                    },
+                    {
+                        cardId: 'floriverse:fveDysis',
+                        relation: 'Older Sister'
+                    },
+                ],
+
+                image: 'images/flories/fve-aurelia.png'
+            },
+            {
+                cardId: 'fveDysis',
+                title: 'Dysis',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-dysis.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fveAurelia',
+                        relation: 'Younger Sister'
+                    },
+                ],
+                image: 'images/flories/fve-dysis.png'
+            },
+            {
+                cardId: 'fveButter',
+                title: 'Butter',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-butter.png'],
+                detail: '',
+                image: 'images/flories/fve-butter.png'
+            },
+            {
+                cardId: 'fveBell',
+                title: 'Bell',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Mistletoe',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-bell.png'],
+                detail: '',
+                image: 'images/flories/fve-bell.png'
+            },
+            {
+                cardId: 'fveNila',
+                title: 'Nila',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Tulip',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-nila.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvdYana',
+                        relation: 'Significant Other'
+                    },
+                ],
+                image: 'images/flories/fve-nila.png'
+            },
+            {
+                cardId: 'fveZest',
+                title: 'Zest',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Lemon',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-zest.png'],
+                detail: '',
+                image: 'images/flories/fve-zest.png'
+            },
+            {
+                cardId: 'fveCorrode',
+                title: 'Corrode',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Charred tulip',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-corrode.png'],
+                detail: '',
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvdWina',
+                        relation: 'Cousin'
+                    },
+                ],
+                image: 'images/flories/fve-corrode.png'
+            },
+            {
+                cardId: 'fveAmalgamapot',
+                title: 'Amalgamapot',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Amalgamation',
+                pronouns: 'They',
+                gender: 'Multi-florie',
+                gallery: ['images/flories/fve-amalgamapot.png'],
+                detail: '',
+                image: 'images/flories/fve-amalgamapot.png'
+            },
+            {
+                cardId: 'fvePosie',
+                title: 'Posie',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Multi',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fve-posie.png'],
+                detail: '',
+                image: 'images/flories/fve-posie.png'
+            },
+            {
+                cardId: 'fveNonsense',
+                title: 'Nonsense',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Shapeshifter',
+                pronouns: 'They',
+                gender: 'Non-binary',
+                gallery: ['images/flories/fve-nonsense.png'],
+                detail: '',
+                image: 'images/flories/fve-nonsense.png'
+            },
+            {
+                cardId: 'fveTorq',
+                title: 'Torq',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Mechanical flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-torq.png'],
+                detail: '',
+                image: 'images/flories/fve-torq.png'
+            },
+            {
+                cardId: 'fvePersen',
+                title: 'Persen',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Exotic flower',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fve-persen.png'],
+                detail: '',
+                image: 'images/flories/fve-persen.png'
+            },
+            {
+                cardId: 'fveTerentia',
+                title: 'Terentia',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-terentia.png'],
+                detail: '',
+                image: 'images/flories/fve-terentia.png'
+            },
+            {
+                cardId: 'fveLumina',
+                title: 'Lumina',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Aquatic mushroom',
+                pronouns: 'They',
+                gender: 'Non-binary',
+                gallery: ['images/flories/fve-lumina.png'],
+                detail: '',
+                image: 'images/flories/fve-lumina.png'
+            },
+            {
+                cardId: 'fveTriplequestionmark',
+                title: '???',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Unknown Florie',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fve-triplequestionmark.png'],
+                detail: '',
+                image: 'images/flories/fve-triplequestionmark.png'
+            },
+            {
+                cardId: 'fveUpsidedowntriplequestionmark',
+                title: '¿¿¿',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Unknown Florie',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fve-upsidedowntriplequestionmark.png'],
+                detail: '',
+                image: 'images/flories/fve-upsidedowntriplequestionmark.png'
+            },
+            {
+                cardId: 'fveGhoargh',
+                title: 'Ghoargh',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Prehistoric plant',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-ghoargh.png'],
+                detail: '',
+                image: 'images/flories/fve-ghoargh.png'
+            },
+            {
+                cardId: 'fveHYD124',
+                title: 'HYD-124',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Black hole flower',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-hyd-124.png'],
+                detail: '',
+                image: 'images/flories/fve-hyd-124.png'
+            },
+            {
+                cardId: 'fveThorn',
+                title: 'Thorn',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Wilted rose',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-thorn.png'],
+                detail: '',
+                image: 'images/flories/fve-thorn.png'
+            },
+            {
+                cardId: 'fveReva',
+                title: 'Reva',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cactus',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-reva.png'],
+                detail: '',
+                image: 'images/flories/fve-reva.png'
+            },
+            {
+                cardId: 'fveAsh',
+                title: 'Ash',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Burning flower',
+                pronouns: 'They',
+                gender: 'Non-binary',
+                gallery: ['images/flories/fve-ash.png'],
+                detail: '',
+                image: 'images/flories/fve-ash.png'
+            },
+            {
+                cardId: 'fveFlailer',
+                title: 'Flailer',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Femtanyl bootleg florie',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-flailer.png'],
+                detail: '',
+                image: 'images/flories/fve-flailer.png'
+            },
+            {
+                cardId: 'fveMang',
+                title: 'Mang',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Potted mango tree',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-mang.png'],
+                detail: '',
+                image: 'images/flories/fve-mang.png'
+            },
+            {
+                cardId: 'fveZappie',
+                title: 'Zappie',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Bee tulip',
+                pronouns: 'He',
+                gender: 'Male',
+                gallery: ['images/flories/fve-zappie.png'],
+                detail: '',
+                image: 'images/flories/fve-zappie.png'
+            },
+            {
+                cardId: 'fveKai',
+                title: 'Kai',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Clouds',
+                pronouns: 'They',
+                gender: 'Non-binary',
+                gallery: ['images/flories/fve-kai.png'],
+                detail: '',
+                image: 'images/flories/fve-kai.png'
+            },
+            {
+                cardId: 'fveConsole',
+                title: 'Console',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Robot bush',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fve-console.png'],
+                detail: '',
+                image: 'images/flories/fve-console.png'
+            },
+            {
+                cardId: 'fveXi',
+                title: 'Xi',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Angel',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fve-xi.png'],
+                detail: '',
+                image: 'images/flories/fve-xi.png'
+            },
+            {
+                cardId: 'fveFloriecookies',
+                title: 'Floriecookies',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Cookies',
+                pronouns: 'They',
+                gender: 'Unknown',
+                gallery: ['images/flories/fve-floriecookies.png'],
+                detail: '',
+                image: 'images/flories/fve-floriecookies.png'
+            },
+            {
+                cardId: 'fveNini',
+                title: 'Nini',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Mystical lemon',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-nini.png'],
+                detail: '',
+                image: 'images/flories/fve-nini.png'
+            },
+            {
+                cardId: 'fveXyxiv',
+                title: 'Xyxiv',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Angel',
+                pronouns: 'It',
+                gender: 'Genderless',
+                gallery: ['images/flories/fve-xyxiv.png'],
+                detail: '',
+                image: 'images/flories/fve-xyxiv.png'
+            },
+            {
+                cardId: 'fveNau',
+                title: 'Nau',
+                subtitle: '',
+                isCharacter: true,
+                species: 'Flower',
+                pronouns: 'She',
+                gender: 'Female',
+                gallery: ['images/flories/fve-nau.png'],
+                detail: '',
+                image: 'images/flories/fve-nau.png'
+            },
             {
                 cardId: 'fvZep',
                 title: 'Zep',
@@ -2940,26 +4127,6 @@ let menuItems = [
                 image: 'images/flories/uncat/Chloe.png'
             },
             {
-                cardId: 'fvTeknia',
-                title: 'Teknia',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Roboflorie',
-                pronouns: 'She/It',
-                gender: 'Female',
-                sexuality: 'Asexual',
-                aliases: '',
-                extra: '',
-                refsheet: 'images/flories/uncat/Teknia.png',
-                gallery: [
-                    'images/c/teknia-c.png',
-                ],
-
-                image: 'images/flories/uncat/Teknia.png'
-            },
-            {
                 cardId: 'fvArtiflow',
                 title: 'Artiflow',
                 subtitle: '',
@@ -2976,7 +4143,7 @@ let menuItems = [
                 ],
                 relatives: [
                     {
-                        cardId: 'floriverse-uncat:fvArtidell',
+                        cardId: 'floriverse:fvArtidell',
                         relation: 'Significant Other'
                     },
                 ],
@@ -2998,7 +4165,7 @@ let menuItems = [
                 ],
                 relatives: [
                     {
-                        cardId: 'floriverse-uncat:fvArtiflow',
+                        cardId: 'floriverse:fvArtiflow',
                         relation: 'Significant Other'
                     },
                 ],
@@ -3417,2135 +4584,6 @@ let menuItems = [
             }
         ]
     },
-    {
-        title: 'Floriverse',
-        menuId: 'floriverse-vanilla',
-        parent: 'floriverse',
-        subtitle: '2023 Album',
-        image: 'images/fv-i.png',
-        color: 'var(--color-16)',
-        hidden: true,
-        cards: [
-            {
-                cardId: 'fvvInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse',
-                banner: true,
-                detail: `
-                    Released: October 5th, 2023<br>
-                    Total tracks: 10<br>
-                    Total length: 32m 16s<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/0AGxggSyuXqGdYLk0D7pbF?si=4Eej22G-RcOnbu8XIagHWQ" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fv-i.png" data-caption="Floriverse" data-subcaption="Album cover for Floriverse"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                            <div class="container">
-                                ${internalCard({ href: "floriverse-vanilla:fvvPotto", banner: true, title: "1 - Grow!", subtitle: "02:19" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvTwinkle", banner: true, title: "2 - Starfruit Garden", subtitle: "02:26" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvStrawmon", banner: true, title: "3 - Fruity Bounce", subtitle: "02:08" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvNocto", banner: true, title: "4 - Nocturnal Photosynthesis", subtitle: "04:41" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvFurflow", banner: true, title: "5 - Catdelions", subtitle: "03:15" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvPana", banner: true, title: "6 - Pancake Pancake Pancake Pancake", subtitle: "02:58" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvPinkly", banner: true, title: "7 - Tulips", subtitle: "02:51" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvKosmaya", banner: true, title: "8 - Exoplants", subtitle: "05:15" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvMincha", banner: true, title: "9 - Jasmine Tea", subtitle: "03:05" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvLan", banner: true, title: "10 - Moonflower", subtitle: "03:12" })}
-                            </div>
-                        `,
-                    }
-                ],
-                image: 'images/fv-i.png'
-            },
-            {
-                cardId: 'fvvPotto',
-                title: 'Potto',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Potted plant',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fv-potto.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4gdYjAljNAoRtL5TM7lZ13?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-potto.png'
-            },
-            {
-                cardId: 'fvvTwinkle',
-                title: 'Twinkle',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Star flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fv-twinkle.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0BZTvGvSh3jy7vAsPgzIq8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-twinkle.png'
-            },
-            {
-                cardId: 'fvvStrawmon',
-                title: 'Strawmon',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Glass',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fv-strawmon.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7nNNU3DWb44jYQ58rhyPhC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-strawmon.png'
-            },
-            {
-                cardId: 'fvvNocto',
-                title: 'Nocto',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Spirit tulip',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fv-nocto.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2wr0z9kPBz3vaUUCeFKyJ0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-nocto.png'
-            },
-            {
-                cardId: 'fvvFurflow',
-                title: 'Furflow',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Catdelion',
-                pronouns: 'She',
-                gender: 'Female',
-                sexuality: 'Lesbian',
-                aliases: '',
-                extra: '',
-                refsheet: 'images/c/furflow-c.png',
-                gallery: [
-                    'images/c/furflow-c2.png',
-                    'images/c/furflow-c3.png',
-                    'images/c/furflow-c4.png',
-                    'images/c/furflow-c5.png',
-                    'images/flories/fv-furflow.png',
-                ],
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveMisty',
-                        relation: 'Significant Other'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6TtpP74DZMui1A1yW2ZkgF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-
-                image: 'images/c/furflow-c.png'
-            },
-            {
-                cardId: 'fvvPana',
-                title: 'Pana',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Pancake tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fv-pana.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-delta:fvdYana',
-                        relation: 'Younger Sister'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5if8Q8xC4zO3c3cnxsrLME?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-pana.png'
-            },
-            {
-                cardId: 'fvvPinkly',
-                title: 'Pinkly',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fv-pinkly.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/41AoLmWUjKgKoXwvuTtOlf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-pinkly.png'
-            },
-            {
-                cardId: 'fvvKosmaya',
-                title: 'Kosmaya',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Exotic flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fv-kosmaya.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0JqRjWreUkC8D8k0jkT1tH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-kosmaya.png'
-            },
-            {
-                cardId: 'fvvMincha',
-                title: 'Mincha',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Jasmine',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fv-mincha.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/71YSihtpFEGwW6KNlrRvwq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-mincha.png'
-            },
-            {
-                cardId: 'fvvLan',
-                title: 'Lan',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Lemon',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fv-lan.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/47gXi6wzLJByNOhF3NHIoh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fv-lan.png'
-            }
-        ]
-    },
-    {
-        title: 'Floriverse : Delta',
-        menuId: 'floriverse-delta',
-        parent: 'floriverse',
-        subtitle: '2024 Album',
-        image: 'images/fvd-i.png',
-        color: 'var(--color-1)',
-        hidden: true,
-        cards: [
-            {
-                cardId: 'fvdInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse : Delta',
-                banner: true,
-                detail: `
-                    Released: March 3rd, 2024<br>
-                    Total tracks: 32<br>
-                    Total length: 1hr 37m<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/2PNIG5k8lEGQ6fSuMUn7ir?si=BO2liD1rSpq7Wna6xTksYQ" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse-delta" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fvd-i.png" data-caption="Floriverse : Delta" data-subcaption="Album cover for Floriverse : Delta"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                        <div class="container">
-                            ${internalCard({ href: "floriverse-delta:fvdStarple", banner: true, title: "1 - Zenith", subtitle: "03:04" })}
-                            ${internalCard({ href: "floriverse-delta:fvdChrora", banner: true, title: "2 - Aurora", subtitle: "02:19" })}
-                            ${internalCard({ href: "floriverse-delta:fvdOrply", banner: true, title: "3 - Midnight Drawing", subtitle: "03:03" })}
-                            ${internalCard({ href: "floriverse-delta:fvdTiram", banner: true, title: "4 - Spores", subtitle: "04:01" })}
-                            ${internalCard({ href: "floriverse-delta:fvdNimibi", banner: true, title: "5 - Dreamy Sunflower", subtitle: "02:40" })}
-                            ${internalCard({ href: "floriverse-delta:fvdSlump", banner: true, title: "6 - Oxygen", subtitle: "02:33" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPio", banner: true, title: "7 - Vitaelek", subtitle: "03:15" })}
-                            ${internalCard({ href: "floriverse-delta:fvdYana", banner: true, title: "8 - Midnight Honey", subtitle: "03:07" })}
-                            ${internalCard({ href: "floriverse-delta:fvdLooni", banner: true, title: "9 - You Are My Star", subtitle: "02:54" })}
-                            ${internalCard({ href: "floriverse-delta:fvdChocopop", banner: true, title: "10 - JUST KIDDING!!", subtitle: "02:56" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStaz", banner: true, title: "11 - Pistachio", subtitle: "02:23" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDelly", banner: true, title: "12 - Catdelions II", subtitle: "03:05" })}
-                            ${internalCard({ href: "floriverse-delta:fvdSprinkly", banner: true, title: "13 - Happy Cakeday", subtitle: "02:49" })}
-                            ${internalCard({ href: "floriverse-delta:fvdEcno", banner: true, title: "14 - Tripetals", subtitle: "02:24" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDisaton", banner: true, title: "15 - WATA KASHI", subtitle: "02:48" })}
-                            ${internalCard({ href: "floriverse-delta:fvdProtoberries", banner: true, title: "16 - Mixed Berries", subtitle: "03:08" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPipix", banner: true, title: "17 - Pixel Florie", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPico", banner: true, title: "18 - Pico", subtitle: "02:47" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStarlila", banner: true, title: "19 - I Love You!!!", subtitle: "02:08" })}
-                            ${internalCard({ href: "floriverse-delta:fvdWina", banner: true, title: "20 - SRLAOANOEETVLEEYDS", subtitle: "04:28" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFret", banner: true, title: "21 - Metal Plate Petal Melta", subtitle: "03:38" })}
-                            ${internalCard({ href: "floriverse-delta:fvdAzka", banner: true, title: "22 - Ascension", subtitle: "02:47" })}
-                            ${internalCard({ href: "floriverse-delta:fvdCherro", banner: true, title: "23 - Tomato", subtitle: "03:13" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFloorion", banner: true, title: "24 - 5122", subtitle: "03:22" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStellA", banner: true, title: "25 - Interstella", subtitle: "03:51" })}
-                            ${internalCard({ href: "floriverse-delta:fvdNully", banner: true, title: "26 - Nu15", subtitle: "02:21" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDatum", banner: true, title: "27 - Artificial Sprouts", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPoloniloo", banner: true, title: "28 - stem.cut", subtitle: "03:09" })}
-                            ${internalCard({ href: "floriverse-delta:fvdGrayscale", banner: true, title: "29 - Colorblind", subtitle: "02:57" })}
-                            ${internalCard({ href: "floriverse-delta:fvdErwith", banner: true, title: "30 - Anxiety", subtitle: "02:40" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFyzer", banner: true, title: "31 - ,", subtitle: "02:25" })}
-                            ${internalCard({ href: "floriverse-delta:fvdKloroforo", banner: true, title: "32 - Xilem", subtitle: "04:44" })}
-                        </div>
-                        `
-                    }
-                ],
-                image: 'images/fvd-i.png'
-            },
-            {
-                cardId: 'fvdStarple',
-                title: 'Starple',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-starple.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6qwqbRGdEyxusUFDCzsZPT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-starple.png'
-            },
-            {
-                cardId: 'fvdChrora',
-                title: 'Chrora',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Exotic flower',
-                pronouns: 'They',
-                gender: 'Non-Binary',
-                gallery: ['images/flories/fvd-chrora.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6hqhGbC6nbp0tJxk3U4Grw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-chrora.png'
-            },
-            {
-                cardId: 'fvdOrply',
-                title: 'Orply',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-orply.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1M31eXSdpJeaDPZpCpQBUG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-orply.png'
-            },
-            {
-                cardId: 'fvdTiram',
-                title: 'Tiram',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Mushroom',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-tiram.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveZoey',
-                        relation: 'Sibling'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4IODkTlrmrOPUGX6tXjCxv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-tiram.png'
-            },
-            {
-                cardId: 'fvdNimibi',
-                title: 'Nimibi',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cloudy flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-nimibi.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2oTb7PEEwCp2HJXGJeboL5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-nimibi.png'
-            },
-            {
-                cardId: 'fvdSlump',
-                title: 'Slump',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Rock with kelps',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-slump.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3OzDbbEDCeN68ODbpCFJ19?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-slump.png'
-            },
-            {
-                cardId: 'fvdPio',
-                title: 'Pio',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Berry',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-pio.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Fc9G9SBRr0tawPhs230nv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-pio.png'
-            },
-            {
-                cardId: 'fvdYana',
-                title: 'Yana',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-yana.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveNila',
-                        relation: 'Significant Other'
-                    },
-                    {
-                        cardId: 'floriverse-vanilla:fvvPana',
-                        relation: 'Older Sister'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6lVBWrXkQDo9lvg3DCvfKk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-yana.png'
-            },
-            {
-                cardId: 'fvdLooni',
-                title: 'Looni',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Fruit',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-looni.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/72hvp8jiR2gEygYGwdI6sP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-looni.png'
-            },
-            {
-                cardId: 'fvdChocopop',
-                title: 'Chocopop',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Chocoflower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-chocopop.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0XEm6ZNg8aJEbJXfXHiw5G?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-chocopop.png'
-            },
-            {
-                cardId: 'fvdStaz',
-                title: 'Staz',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Pistachio',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-staz.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AfF2Wd7GjJHCEtiOXxkUM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-staz.png'
-            },
-            {
-                cardId: 'fvdDelly',
-                title: 'Delly',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Catdelion',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-delly.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5OP8fr2erUsz19SyVoE9LR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-delly.png'
-            },
-            {
-                cardId: 'fvdSprinkly',
-                title: 'Sprinkly',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Potted cakeflower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-sprinkly.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2k4OSOLNmQYkdPHqJiaPKp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-sprinkly.png'
-            },
-            {
-                cardId: 'fvdEcno',
-                title: 'Ecno',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Multi',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fvd-ecno.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3nXURiIDCHS7sgWm5HK3D1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-ecno.png'
-            },
-            {
-                cardId: 'fvdDisaton',
-                title: 'Disaton',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cottonbun',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-disaton.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2OIRp2Szn2NCLasBAa9dLE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-disaton.png'
-            },
-            {
-                cardId: 'fvdProtoberries',
-                title: 'Protoberries',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Berries',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fvd-protoberries.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1CinvvQMgABDkN8XjEOaqr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-protoberries.png'
-            },
-            {
-                cardId: 'fvdPipix',
-                title: 'Pipix',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Pixel flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-pipix.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4ABYxyGWirHUon4Yyn1cI6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-pipix.png'
-            },
-            {
-                cardId: 'fvdPico',
-                title: 'Pico',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Robot flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-pico.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0QNRQ9sOAhJuQ2npMhWTPB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-pico.png'
-            },
-            {
-                cardId: 'fvdStarlila',
-                title: 'Starlila',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Transgender flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-starlila.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4jBPsvM3xLINdFRGFrI6nw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-starlila.png'
-            },
-            {
-                cardId: 'fvdWina',
-                title: 'Wina',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Charred flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-wina.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'nansenz:mu',
-                        relation: 'Multiversal Friend'
-                    },
-                    {
-                        cardId: 'floriverse-epsilon:fveCorrode',
-                        relation: 'Cousin'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2aG9OgByL6HMnuBpbhBtZq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-wina.png'
-            },
-            {
-                cardId: 'fvdFret',
-                title: 'Fret',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-fret.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZgXT9ubENobpWYAwLByuG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-fret.png'
-            },
-            {
-                cardId: 'fvdAzka',
-                title: 'Azka',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Angel',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fvd-azka.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CDOwxkjeeKlUQ9slp7HH1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-azka.png'
-            },
-            {
-                cardId: 'fvdCherro',
-                title: 'Cherro',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tomatoes',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fvd-cherro.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6cWkPhZdRFrEfXHt4VTdaF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-cherro.png'
-            },
-            {
-                cardId: 'fvdFloorion',
-                title: 'Floorion',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Potted robot flower',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fvd-floorion.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/08a6zLGmgnz7E6ERRVs8MG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-floorion.png'
-            },
-            {
-                cardId: 'fvdStellA',
-                title: 'Stell-A',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Black hole flower',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fvd-stell-a.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2gDE5ZevrFWTm2DbAyoKSa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-stell-a.png'
-            },
-            {
-                cardId: 'fvdNully',
-                title: 'Nully',
-                subtitle: '',
-                isCharacter: true,
-                species: ' ',
-                pronouns: ' ',
-                gender: ' ',
-                gallery: ['images/flories/fvd-nully.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0ksaxbYkDiQdUWs9AhuxZv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-nully.png'
-            },
-            {
-                cardId: 'fvdDatum',
-                title: 'Datum',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Digital flower',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fvd-datum.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/16qNFlojlNYe8cGGfawMbj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-datum.png'
-            },
-            {
-                cardId: 'fvdPoloniloo',
-                title: 'Poloniloo',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Polonium flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-poloniloo.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZzHlAWcRPORwAjL1hqOdc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-poloniloo.png'
-            },
-            {
-                cardId: 'fvdGrayscale',
-                title: 'Grayscale',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fvd-grayscale.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/61VIYvsGxstQU65lCIwTyx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-grayscale.png'
-            },
-            {
-                cardId: 'fvdErwith',
-                title: 'Erwith',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-erwith.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5uCO2B4m6lxjOoHOj38JfG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-erwith.png'
-            },
-            {
-                cardId: 'fvdFyzer',
-                title: 'Fyzer',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Florifyber',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fvd-fyzer.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/18hIDsoOvx483ajC3dMLYW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-fyzer.png'
-            },
-            {
-                cardId: 'fvdKloroforo',
-                title: 'Kloroforo',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Robot flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fvd-kloroforo.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6n3dbR0Cw3k6MYwGA2OgDJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fvd-kloroforo.png'
-            }
-        ]
-    },
-    {
-        title: 'Floriverse : Epsilon',
-        menuId: 'floriverse-epsilon',
-        parent: 'floriverse',
-        subtitle: '2025 Album',
-        image: 'images/fve-i.png',
-        color: 'var(--color-8)',
-        hidden: true,
-        cards: [
-            {
-                cardId: 'fveInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse : Epsilon',
-                banner: true,
-                detail: `
-                    Released: June 4th, 2025<br>
-                    Total tracks: 48<br>
-                    Total length: 2hr 36m<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/2qpLiyGRBhRHggKZSJUYbj?si=j0kxk_nfQ9u4bmv1iZmj3Q" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse-epsilon" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fve-i.png" data-caption="Floriverse : Epsilon" data-subcaption="Album cover for Floriverse : Epsilon"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                        <div class="container">
-                            ${internalCard({ href: "floriverse-epsilon:fveSolaris", banner: true, title: "1 - Hitzen", subtitle: "02:33" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTrix", banner: true, title: "2 - touch grass", subtitle: "02:59" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLux", banner: true, title: "3 - Borealis", subtitle: "03:10" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveGlitter", banner: true, title: "4 - Midnight Stargazing", subtitle: "04:03" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFomfz", banner: true, title: "5 - Leaves", subtitle: "02:53" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveBion", banner: true, title: "6 - Vanished Horizons", subtitle: "02:35" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZoey", banner: true, title: "7 - Spores II", subtitle: "02:54" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveHera", banner: true, title: "8 - Timeline", subtitle: "03:49" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveIsla", banner: true, title: "9 - Coconut", subtitle: "03:36" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAzira", banner: true, title: "10 - Blueberry", subtitle: "03:04" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveMisty", banner: true, title: "11 - Catdelions III", subtitle: "03:37" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNya", banner: true, title: "12 - Catdelions IV", subtitle: "04:00" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAtto", banner: true, title: "13 - Catdelions V", subtitle: "03:19" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveClara", banner: true, title: "14 - Cottonbuns", subtitle: "02:53" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLyra", banner: true, title: "15 - Cottonbuns II", subtitle: "04:07" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveStrawnilla", banner: true, title: "16 - Frozen Strawnilla Cream", subtitle: "02:32" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePoppers", banner: true, title: "17 - Vitamin Supplement Commercials", subtitle: "02:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAurelia", banner: true, title: "18 - Weekend255", subtitle: "03:01" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveDysis", banner: true, title: "19 - Afternoon", subtitle: "02:50" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveButter", banner: true, title: "20 - Peanut Butter", subtitle: "02:35" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveBell", banner: true, title: "21 - Under The Mistletoe", subtitle: "02:45" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNila", banner: true, title: "22 - Midnight Honey II", subtitle: "03:24" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZest", banner: true, title: "23 - Zesty Lemonade", subtitle: "02:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveCorrode", banner: true, title: "24 - へへ", subtitle: "03:40" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAmalgamapot", banner: true, title: "25 - Flashbackverse", subtitle: "02:21" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePosie", banner: true, title: "26 - Quintupetals", subtitle: "02:26" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNonsense", banner: true, title: "27 - Nonsense Flower", subtitle: "04:03" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTorq", banner: true, title: "28 - Mechanical Sprouts", subtitle: "03:22" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePersen", banner: true, title: "29 - =fract", subtitle: "03:26" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTerentia", banner: true, title: "30 - Ruins", subtitle: "03:41" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLumina", banner: true, title: "31 - Luciferin", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTriplequestionmark", banner: true, title: "32 - questionmark", subtitle: "02:48" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveUpsidedowntriplequestionmark", banner: true, title: "33 - ε", subtitle: "02:49" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveGhoargh", banner: true, title: "34 - BCE", subtitle: "01:36" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveHYD124", banner: true, title: "35 - Kugelblitz", subtitle: "04:00" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveThorn", banner: true, title: "36 - Livid Life", subtitle: "03:38" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveReva", banner: true, title: "37 - Cactus Storm", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAsh", banner: true, title: "38 - Extreme Painist", subtitle: "02:58" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFlailer", banner: true, title: "39 - PLUCK", subtitle: "02:24" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveMang", banner: true, title: "40 - THOSE WHO GROW", subtitle: "03:12" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZappie", banner: true, title: "41 - SWARM!!!", subtitle: "02:56" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveKai", banner: true, title: "42 - Opinions", subtitle: "03:05" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveConsole", banner: true, title: "43 - h", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveXi", banner: true, title: "44 - 11", subtitle: "08:50" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFloriecookies", banner: true, title: "45 - cookie cutter", subtitle: "04:44" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNini", banner: true, title: "46 - ニニ", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveXyxiv", banner: true, title: "47 - dddddddddddddddddddddddd", subtitle: "02:20" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNau", banner: true, title: "48 - sunrise SUNSET", subtitle: "03:07" })}
-                        </div>
-                        `
-                    }
-                ],
-                image: 'images/fve-i.png'
-            },
-            {
-                cardId: 'fveSolaris',
-                title: 'Solaris',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Fire flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-solaris.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/24g0lFcsVNK02abD2QkNGV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-solaris.png'
-            },
-            {
-                cardId: 'fveTrix',
-                title: 'Trix',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Dandelion',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-trix.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4UEZLy5azpZDUXsSZ7kSd3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-trix.png'
-            },
-            {
-                cardId: 'fveLux',
-                title: 'Lux',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Exotic flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-lux.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6XQtpyrmZqOQ4vkryFebOd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-lux.png'
-            },
-            {
-                cardId: 'fveGlitter',
-                title: 'Glitter',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-glitter.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2XbQRw5LjZ0215KFoXygB5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-glitter.png'
-            },
-            {
-                cardId: 'fveFomfz',
-                title: 'Fomfz',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tree',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-fomfz.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3FLUx25H8AdvUQaqRSUDpj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-fomfz.png'
-            },
-            {
-                cardId: 'fveBion',
-                title: 'Bion',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Spirit flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-bion.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5ttGzQwPCn0N1MvkY8gmPR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-bion.png'
-            },
-            {
-                cardId: 'fveZoey',
-                title: 'Zoey',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Mushroom',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-zoey.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-delta:fvdTiram',
-                        relation: 'Sibling'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0HAWMtwV7i8h5meDcGvEsY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-zoey.png'
-            },
-            {
-                cardId: 'fveHera',
-                title: 'Hera',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Goddess of time',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-hera.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZSUH2r8pOG96MvybtzAA0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-hera.png'
-            },
-            {
-                cardId: 'fveIsla',
-                title: 'Isla',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Palm tree',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-isla.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2nD9OFVC0vSjzqQs6cdrjE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-isla.png'
-            },
-            {
-                cardId: 'fveAzira',
-                title: 'Azira',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Blueberry',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-azira.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0YSzGb5hP2mQjYNlEdnHYT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-azira.png'
-            },
-            {
-                cardId: 'fveMisty',
-                title: 'Misty',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Catdelion',
-                pronouns: 'She',
-                gender: 'Female',
-                sexuality: 'Lesbian',
-                aliases: '',
-                extra: '',
-                refsheet: 'images/flories/fve-misty.png',
-                gallery: [
-                    'images/c/misty-c.png',
-                ],
-                relatives: [
-                    {
-                        cardId: 'floriverse-vanilla:fvvFurflow',
-                        relation: 'Significant Other'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54477floWI0ly0MSbqWPTi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-
-                image: 'images/flories/fve-misty.png'
-            },
-            {
-                cardId: 'fveNya',
-                title: 'Nya',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Catdelion',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-nya.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6UoIaMC0x2Q28sgfmyE4Gw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-nya.png'
-            },
-            {
-                cardId: 'fveAtto',
-                title: 'Atto',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Catdelion',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-atto.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54VLAiBP3zAezPuN4iTsVz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-atto.png'
-            },
-            {
-                cardId: 'fveClara',
-                title: 'Clara',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cottonbun',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-clara.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveLyra',
-                        relation: 'Sibling'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1Kvkl60fp0gCjZhVHLFyDd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-clara.png'
-            },
-            {
-                cardId: 'fveLyra',
-                title: 'Lyra',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cottonbun',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-lyra.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveClara',
-                        relation: 'Sibling'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4IUh6x05XpQKvaVUIAQHSx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-lyra.png'
-            },
-            {
-                cardId: 'fveStrawnilla',
-                title: 'Strawnilla',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Poptart berry',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-strawnilla.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5sbhfCavUipotACA6gTE6K?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-strawnilla.png'
-            },
-            {
-                cardId: 'fvePoppers',
-                title: 'Poppers',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Berries',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fve-poppers.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6YCbIPAxhCXtfeyjCEsZZZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-poppers.png'
-            },
-            {
-                cardId: 'fveAurelia',
-                title: 'Aurelia',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Zinnia',
-                pronouns: 'She',
-                gender: 'Female',
-                sexuality: 'Lesbian',
-                flags: ['floriewlw'],
-                aliases: '',
-                extra: '',
-                detail: `
-                    Aurelia is a green Zinnia with orange petals. She is an archaeologist and museum curator, exploring the ancient ruins of Klorofil and preserving ancient relics. She also enjoys drawing.<br>
-                    <br>
-                    She managed to find Hana through the multiversalnet, and was able to use one of her relics to open a wormhole to meet with her for a short period.
-                `,
-                refsheet: 'images/r/aurelia-r.png',
-                gallery: [
-                    'images/flories/fve-aurelia.png',
-                    'images/c/aurelia-c.png',
-                    'images/c/aurelia-c2.png',
-                    'images/c/aurelia-c3.png',
-                    'images/c/aurelia-c4.png',
-                ],
-                relatives: [
-                    {
-                        cardId: 'deltadim-chromasia:hana',
-                        relation: 'Significant Other'
-                    },
-                    {
-                        cardId: 'floriverse-epsilon:fveDysis',
-                        relation: 'Older Sister'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3utG3VcCFG7wQWsQEM6NdV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-
-                image: 'images/flories/fve-aurelia.png'
-            },
-            {
-                cardId: 'fveDysis',
-                title: 'Dysis',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-dysis.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-epsilon:fveAurelia',
-                        relation: 'Younger Sister'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CPjDuXknQCUUiUsPuVzsc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-dysis.png'
-            },
-            {
-                cardId: 'fveButter',
-                title: 'Butter',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-butter.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6pyJodnFGPhOBP06KQYcAM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-butter.png'
-            },
-            {
-                cardId: 'fveBell',
-                title: 'Bell',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Mistletoe',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-bell.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0OKR8PyOmqjabP48YNFtaf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-bell.png'
-            },
-            {
-                cardId: 'fveNila',
-                title: 'Nila',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Tulip',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-nila.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-delta:fvdYana',
-                        relation: 'Significant Other'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/526q0c2QlCM4BBB8cuiZBl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-nila.png'
-            },
-            {
-                cardId: 'fveZest',
-                title: 'Zest',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Lemon',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-zest.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0WlPypkfkmPstkpnSV2jQ9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-zest.png'
-            },
-            {
-                cardId: 'fveCorrode',
-                title: 'Corrode',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Charred tulip',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-corrode.png'],
-                detail: '',
-                relatives: [
-                    {
-                        cardId: 'floriverse-delta:fvdWina',
-                        relation: 'Cousin'
-                    },
-                ],
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6LUcAFz9TVoxWPeuaoDT7k?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-corrode.png'
-            },
-            {
-                cardId: 'fveAmalgamapot',
-                title: 'Amalgamapot',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Amalgamation',
-                pronouns: 'They',
-                gender: 'Multi-florie',
-                gallery: ['images/flories/fve-amalgamapot.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4Oq6HngWlSqv2zcoMpOof7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-amalgamapot.png'
-            },
-            {
-                cardId: 'fvePosie',
-                title: 'Posie',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Multi',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fve-posie.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0hbkLbvXqRjtPk5GpISMXX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-posie.png'
-            },
-            {
-                cardId: 'fveNonsense',
-                title: 'Nonsense',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Shapeshifter',
-                pronouns: 'They',
-                gender: 'Non-binary',
-                gallery: ['images/flories/fve-nonsense.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2X5FBlUAInQcPuk8z5Wkhc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-nonsense.png'
-            },
-            {
-                cardId: 'fveTorq',
-                title: 'Torq',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Mechanical flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-torq.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4dGOtceG8Uu4NlCpy5tYrz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-torq.png'
-            },
-            {
-                cardId: 'fvePersen',
-                title: 'Persen',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Exotic flower',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fve-persen.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/01IdMK2geYxOVNOeWyOPOr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-persen.png'
-            },
-            {
-                cardId: 'fveTerentia',
-                title: 'Terentia',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-terentia.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/02pDEIJ4SkOpS26x2iAWR4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-terentia.png'
-            },
-            {
-                cardId: 'fveLumina',
-                title: 'Lumina',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Aquatic mushroom',
-                pronouns: 'They',
-                gender: 'Non-binary',
-                gallery: ['images/flories/fve-lumina.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/39ibN3aXuIScvHvsqjTd0V?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-lumina.png'
-            },
-            {
-                cardId: 'fveTriplequestionmark',
-                title: '???',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Unknown Florie',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fve-triplequestionmark.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7BiS2zKOVhXohUXaWPUByc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-triplequestionmark.png'
-            },
-            {
-                cardId: 'fveUpsidedowntriplequestionmark',
-                title: '¿¿¿',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Unknown Florie',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fve-upsidedowntriplequestionmark.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1eb68kB5ZKJOGFwANnZyXk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-upsidedowntriplequestionmark.png'
-            },
-            {
-                cardId: 'fveGhoargh',
-                title: 'Ghoargh',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Prehistoric plant',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-ghoargh.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5hj0JXlSNvViO6Kxqxj1hL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-ghoargh.png'
-            },
-            {
-                cardId: 'fveHYD124',
-                title: 'HYD-124',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Black hole flower',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-hyd-124.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4ad4sRmfxHGtT49SZdaYqx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-hyd-124.png'
-            },
-            {
-                cardId: 'fveThorn',
-                title: 'Thorn',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Wilted rose',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-thorn.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6jlzwHfY2mTdz5sSjxirlL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-thorn.png'
-            },
-            {
-                cardId: 'fveReva',
-                title: 'Reva',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cactus',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-reva.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48Soa2UoSNi07SMvUgeNNP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-reva.png'
-            },
-            {
-                cardId: 'fveAsh',
-                title: 'Ash',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Burning flower',
-                pronouns: 'They',
-                gender: 'Non-binary',
-                gallery: ['images/flories/fve-ash.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5LEJ2T6c55nc8IaAJAP2WQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-ash.png'
-            },
-            {
-                cardId: 'fveFlailer',
-                title: 'Flailer',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Femtanyl bootleg florie',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-flailer.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3oBsHcBbVNlAPSuw41P5xc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-flailer.png'
-            },
-            {
-                cardId: 'fveMang',
-                title: 'Mang',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Potted mango tree',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-mang.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5Gom9yi4U8hH4MaQTe3LsB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-mang.png'
-            },
-            {
-                cardId: 'fveZappie',
-                title: 'Zappie',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Bee tulip',
-                pronouns: 'He',
-                gender: 'Male',
-                gallery: ['images/flories/fve-zappie.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5ZB7QxBEav9OPcd1mAePtd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-zappie.png'
-            },
-            {
-                cardId: 'fveKai',
-                title: 'Kai',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Clouds',
-                pronouns: 'They',
-                gender: 'Non-binary',
-                gallery: ['images/flories/fve-kai.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3eQgHNwZRXOVsDHR9HPTub?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-kai.png'
-            },
-            {
-                cardId: 'fveConsole',
-                title: 'Console',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Robot bush',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fve-console.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Fh8PrGc0Vy6heXPciofqh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-console.png'
-            },
-            {
-                cardId: 'fveXi',
-                title: 'Xi',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Angel',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fve-xi.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4SiPzpaunU63s6bcZxs00O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-xi.png'
-            },
-            {
-                cardId: 'fveFloriecookies',
-                title: 'Floriecookies',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Cookies',
-                pronouns: 'They',
-                gender: 'Unknown',
-                gallery: ['images/flories/fve-floriecookies.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2VxAXrDKYocC8RLGnLNYEb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-floriecookies.png'
-            },
-            {
-                cardId: 'fveNini',
-                title: 'Nini',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Mystical lemon',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-nini.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5JHVefGyTwHCywi6c5svUS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-nini.png'
-            },
-            {
-                cardId: 'fveXyxiv',
-                title: 'Xyxiv',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Angel',
-                pronouns: 'It',
-                gender: 'Genderless',
-                gallery: ['images/flories/fve-xyxiv.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sdk7unVIWs5f8309C7jwa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-xyxiv.png'
-            },
-            {
-                cardId: 'fveNau',
-                title: 'Nau',
-                subtitle: '',
-                isCharacter: true,
-                species: 'Flower',
-                pronouns: 'She',
-                gender: 'Female',
-                gallery: ['images/flories/fve-nau.png'],
-                detail: '',
-                sections: [
-                    {
-                        title: 'Song',
-                        detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5xlRh2B4jXWwZsP2y1u64l?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        `
-                    }
-                ],
-                image: 'images/flories/fve-nau.png'
-            }
-        ]
-    },
 
 
 
@@ -5920,7 +4958,7 @@ let menuItems = [
                 gallery: [],
                 relatives: [
                     {
-                        cardId: 'floriverse-delta:fvdWina',
+                        cardId: 'floriverse:fvdWina',
                         relation: 'Multiversal Friend'
                     },
                 ],

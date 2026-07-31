@@ -73,6 +73,9 @@ async function startTicker(container, filePath, speed = 100) {
     const timestamp = Date.now();
     let message = '';
     let m = messages[index]
+      .replaceAll(/\b(redzer|rezer|redz)\b/ig, '[ EXPUNGED ]')
+      .replaceAll(/\b(r3dz3r|r3db0t|redbot|r3dbot)\b/ig, '[ REDACTED ]')
+      .replaceAll(/\b(rz|zer|faiz)\b/ig, '[ ___ ]')
       .replaceAll('$AUTHOR$', 'Visitor')
       .replaceAll('$TIME$', timeiso)
       .replaceAll('$TIMESTAMP$', timestamp)

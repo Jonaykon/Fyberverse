@@ -1854,7 +1854,7 @@ async function loadAndPopstateHandler() {
     // ignore history pushes while opening the requested menu/card and then restore the flag.
     ignoreHistoryPush = true;
 
-    openMenuById(targetMenu.menuId);
+    openMenuById(targetMenu.menuId, true);
     if (card && targetMenu) {
         const cardEl = await waitForCard(card, 2000, 40);
         if (cardEl) openCard(cardEl, getCardData(menu, card));

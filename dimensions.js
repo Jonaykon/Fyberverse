@@ -1580,238 +1580,6 @@ dimensionsData = {
     "width": 2048,
     "height": 2048
   },
-  "images/fvuncat-i.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Zep.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Mintscreen.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Kau.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Sweetbreaker.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Cuby.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Blizzi.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Plugika.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Tessa.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Gem.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Anvre.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Latrice.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/CactunAndPipin.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Sa.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Chloe.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Teknia.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/teknia-c.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Artiflow.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/artiflow-c.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/artiflow-c2.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Artidell.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/artidell-c.png": {
-    "width": 2500,
-    "height": 2500
-  },
-  "images/flories/uncat/Kappa.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Sunflette.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Strawrberry.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Lyte.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Fyra.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Therra.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/DJMuseberry.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Lineko.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/c/lineko-c.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Pompy.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Beep.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Sweetree.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Eco.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Cryoflow.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Delia.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Spinny.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Aero.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Enila.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Tikao.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/flories/uncat/Flaany.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/B-na.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/flories/uncat/Kraka.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Azerium.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Vo.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Smog.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Niane.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Neru.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Viona.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Phyana.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Nell.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Voni.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Mizudria.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Suneea.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Acidzer.png": {
-    "width": 1536,
-    "height": 2048
-  },
-  "images/flories/uncat/Mia.png": {
-    "width": 2048,
-    "height": 2048
-  },
-  "images/fv-i.png": {
-    "width": 3200,
-    "height": 3200
-  },
   "images/flories/fv-potto.png": {
     "width": 2048,
     "height": 2048
@@ -1870,10 +1638,6 @@ dimensionsData = {
   },
   "images/flories/fv-lan.png": {
     "width": 1536,
-    "height": 2048
-  },
-  "images/fvd-i.png": {
-    "width": 2048,
     "height": 2048
   },
   "images/flories/fvd-starple.png": {
@@ -2003,10 +1767,6 @@ dimensionsData = {
   "images/flories/fvd-kloroforo.png": {
     "width": 1536,
     "height": 2048
-  },
-  "images/fve-i.png": {
-    "width": 3500,
-    "height": 3500
   },
   "images/flories/fve-solaris.png": {
     "width": 2000,
@@ -2223,6 +1983,222 @@ dimensionsData = {
   "images/flories/fve-nau.png": {
     "width": 2000,
     "height": 2500
+  },
+  "images/flories/uncat/Zep.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Mintscreen.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Kau.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Sweetbreaker.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Cuby.png": {
+    "width": 2048,
+    "height": 2048
+  },
+  "images/flories/uncat/Blizzi.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Plugika.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Tessa.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Gem.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Anvre.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Latrice.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/CactunAndPipin.png": {
+    "width": 2048,
+    "height": 2048
+  },
+  "images/flories/uncat/Sa.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Chloe.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Artiflow.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/artiflow-c.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/artiflow-c2.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Artidell.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/artidell-c.png": {
+    "width": 2500,
+    "height": 2500
+  },
+  "images/flories/uncat/Kappa.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Sunflette.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Strawrberry.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Lyte.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Fyra.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Therra.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/DJMuseberry.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Lineko.png": {
+    "width": 2048,
+    "height": 2048
+  },
+  "images/c/lineko-c.png": {
+    "width": 2048,
+    "height": 2048
+  },
+  "images/flories/uncat/Pompy.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Beep.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Sweetree.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Eco.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Cryoflow.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Delia.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Spinny.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Aero.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Enila.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Tikao.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/flories/uncat/Flaany.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/B-na.png": {
+    "width": 2048,
+    "height": 2048
+  },
+  "images/flories/uncat/Kraka.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Azerium.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Vo.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Smog.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Niane.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Neru.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Viona.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Phyana.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Nell.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Voni.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Mizudria.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Suneea.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Acidzer.png": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/flories/uncat/Mia.png": {
+    "width": 2048,
+    "height": 2048
   },
   "icons/digirel.png": {
     "width": 2048,

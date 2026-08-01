@@ -14,9 +14,9 @@ function esc(s) {
 }
 
 function pickCardImage(c, menu) {
-    if (c.cReference) return c.cReference;
-    if (Array.isArray(c.cGallery) && c.cGallery.length > 0)
-        return c.cGallery[0];
+    if (c.refsheet) return c.refsheet;
+    if (Array.isArray(c.gallery) && c.gallery.length > 0)
+        return c.gallery[0];
     if (c.image) return c.image;
     if (menu.image) return menu.image;
     return "";
@@ -75,28 +75,28 @@ function buildHTML({ title, desc, image, url, cardId, cardTitle, cardExcerpt, ca
 
 // HTML builder for character cards
 function characterHTMLBuilder(c, html) {
-    const cSpecies = c.cSpecies ? `Species: ${c.cSpecies}<br>` : '';
-    const cPronouns = c.cPronouns ? `Pronouns: ${c.cPronouns}<br>` : '';
-    const cGender = c.cGender ? `Gender: ${c.cGender}<br>` : '';
-    const cSexuality = c.cSexuality ? `Sexuality: ${c.cSexuality}<br>` : '';
-    const cNicknames = c.cNicknames ? `Nickname: ${c.cNicknames}<br>` : '';
-    const cReference = c.cReference ? `<br><h2>Reference Art:</h2><br><img src="${c.cReference}"><br><br>` : '';
-    // const cGallery = c.cGallery ? c.cGallery.length != 0 ? `<hr><h2>Picked Image:</h2>` + `<img src="${c.cGallery[0]}">` + `<br>` : '' : '';
-    const cGallery = c.cGallery ? c.cGallery.length != 0 ? `<hr><h2>Top Images:</h2><div class="imgContainer">` + c.cGallery.slice(0, 3).map(imgSrc => `<img src="${imgSrc}">`).join('') + `</div><br>` : '' : '';
-    const cAddOns = c.cAddOns ? `<br>${c.cAddOns}<br>` : '';
-    const details = c.detail ? `<hr>${html}<br>` : '';
+    const species = c.species ? `Species: ${c.species}<br>` : '';
+    const pronouns = c.pronouns ? `Pronouns: ${c.pronouns}<br>` : '';
+    const gender = c.gender ? `Gender: ${c.gender}<br>` : '';
+    const sexuality = c.sexuality ? `Sexuality: ${c.sexuality}<br>` : '';
+    const aliases = c.aliases ? `Nickname: ${c.aliases}<br>` : '';
+    const refsheet = c.refsheet ? `<br><h2>Reference Art:</h2><br><img src="${c.refsheet}"><br><br>` : '';
+    // const gallery = c.gallery ? c.gallery.length != 0 ? `<hr><h2>Picked Image:</h2>` + `<img src="${c.gallery[0]}">` + `<br>` : '' : '';
+    const gallery = c.gallery ? c.gallery.length != 0 ? `<hr><h2>Top Images:</h2><div class="imgContainer">` + c.gallery.slice(0, 3).map(imgSrc => `<img src="${imgSrc}">`).join('') + `</div><br>` : '' : '';
+    const extra = c.extra ? `<br>${c.extra}<br>` : '';
+    const characterAttrs = c.detail ? `<hr>${html}<br>` : '';
     // const cRelations = c.cRelations ? c.cRelations.length != 0 ? `<hr><h2>Related Characters:</h2><div class="imgContainer">` + c.cRelations.map(rel => `<div class="card internal" data-href="${rel.cardId}" data-caption="${rel.relation}"></div>`).join('') + `</div><br>` : '' : '';
 
     html = `
-        ${cSpecies}
-        ${cPronouns}
-        ${cGender}
-        ${cSexuality}
-        ${cNicknames}
-        ${cAddOns}
-        ${cReference}
-        ${details}
-        ${cGallery}
+        ${species}
+        ${pronouns}
+        ${gender}
+        ${sexuality}
+        ${aliases}
+        ${extra}
+        ${refsheet}
+        ${characterAttrs}
+        ${gallery}
     `;
     return html;
 }
@@ -125,8 +125,8 @@ menuItems.forEach(menu => {
     console.log("Generated menu:", menuId);
 
     // CARDS
-    if (menu.labels) {
-        menu.labels.forEach(c => {
+    if (menu.cards) {
+        menu.cards.forEach(c => {
             if (!c.cardId || c.url || c.unclickable) return;
 
             const cardId = c.cardId;
@@ -139,13 +139,13 @@ menuItems.forEach(menu => {
             // CHARACTER DESCRIPTION
             let desc = c.subtitle || "View card";
             if (c.isCharacter) {
-                const cSpecies = c.cSpecies ? `Species: ${c.cSpecies}\n` : '';
-                const cPronouns = c.cPronouns ? `Pronouns: ${c.cPronouns}\n` : '';
-                const cGender = c.cGender ? `Gender: ${c.cGender}\n` : '';
-                const cSexuality = c.cSexuality ? `Sexuality: ${c.cSexuality}\n` : '';
-                const cNicknames = c.cNicknames ? `Nicknames: ${c.cNicknames}\n` : '';
+                const species = c.species ? `Species: ${c.species}\n` : '';
+                const pronouns = c.pronouns ? `Pronouns: ${c.pronouns}\n` : '';
+                const gender = c.gender ? `Gender: ${c.gender}\n` : '';
+                const sexuality = c.sexuality ? `Sexuality: ${c.sexuality}\n` : '';
+                const aliases = c.aliases ? `Nicknames: ${c.aliases}\n` : '';
 
-                desc = `${cSpecies}${cPronouns}${cGender}${cSexuality}${cNicknames}`.trim();
+                desc = `${species}${pronouns}${gender}${sexuality}${aliases}`.trim();
             }
 
             // CARD DETAIL
@@ -173,7 +173,7 @@ menuItems.forEach(menu => {
                     <hr>
                     ${html}`,
                 cardImage: `fyberverse/${c.image}`,
-                cardMenu: menuItems.find(m => m.labels.includes(c)).menuId,
+                cardMenu: menuId,
                 twitterType,
             });
 

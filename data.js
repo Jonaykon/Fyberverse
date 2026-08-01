@@ -1069,6 +1069,31 @@ let menuItems = [
 
                 image: 'images/i/rose-i.png',
             },
+            {
+                cardId: 'fvTeknia',
+                title: 'Teknia',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Roboflorie',
+                pronouns: 'She/It',
+                gender: 'Female',
+                sexuality: 'Asexual',
+                aliases: '',
+                extra: '',
+                characterAttrs: {
+                    'Last seen': 'Never',
+                    'Missing since': 'Day 943',
+                    'Realm Origin': '<a data-open-card="floriverse">Floriverse</a>',
+                },
+                refsheet: 'images/flories/uncat/Teknia.png',
+                gallery: [
+                    'images/c/teknia-c.png',
+                ],
+
+                image: 'images/flories/uncat/Teknia.png'
+            },
         ]
     },
 
@@ -3167,26 +3192,6 @@ let menuItems = [
                 gallery: ['images/flories/uncat/Chloe.png'],
                 detail: '',
                 image: 'images/flories/uncat/Chloe.png'
-            },
-            {
-                cardId: 'fvTeknia',
-                title: 'Teknia',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Roboflorie',
-                pronouns: 'She/It',
-                gender: 'Female',
-                sexuality: 'Asexual',
-                aliases: '',
-                extra: '',
-                refsheet: 'images/flories/uncat/Teknia.png',
-                gallery: [
-                    'images/c/teknia-c.png',
-                ],
-
-                image: 'images/flories/uncat/Teknia.png'
             },
             {
                 cardId: 'fvArtiflow',

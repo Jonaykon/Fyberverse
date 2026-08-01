@@ -55,8 +55,8 @@ facts = [
     `Artibun was born as a supposedly faulty clone of Articat. On prototype, she was meant to only be a near identical copy of Articat except with bunny ears and a puffy tail. However, an accident happened, and her flesh wasn't developed correctly. Thankfully, she was later recovered on a second attempt thanks to the love of her partner.`,
     
     // https://artifyber.xyz/e/deltadim-teksui/articat
-    `Articat is a white male cat, with parts of his body colored in light blurple such as his right ear and chest to abdomen area. The inside of his right ear is colored white while the other ear is colored in light blurple.`,
-    `Articat is a multi-genre music composer, typically creating EDM and a mix of jazz. His success as a musical artist made him just as popular as his partner Artibun on social medias.`,
+    `Articat is a white cat, with parts of her body colored in light blurple such as her right ear and chest to abdomen area. The inside of her right ear is colored white while the other ear is colored in light blurple.`,
+    `Articat is a multi-genre music composer, typically creating EDM and a mix of jazz. Her success as a musical artist made her just as popular as her partner Artibun on social medias.`,
     
     // https://artifyber.xyz/e/deltadim-teksui/artifox
     `Artifox is an arctic fox with blue accent colors on parts of his body, such as arms, pawfeet and the base of his tail. His inner ears and eyes are also colored in blue and he has top surgery scars.`,

@@ -1202,15 +1202,15 @@ let menuItems = [
                 title: 'Articat',
                 subtitle: '',
                 detail:
-                    `Articat is a white male cat, with parts of his body colored in light blurple such as his right ear and chest to abdomen area. The inside of his right ear is colored white while the other ear is colored in light blurple.<br>
+                    `Articat is a white cat, with parts of her body colored in light blurple such as her right ear and chest to abdomen area. The inside of her right ear is colored white while the other ear is colored in light blurple.<br>
                 <br>
-                Arti is a multi-genre music composer, typically creating EDM and a mix of jazz. His success as a musical artist made him just as popular as his partner Artibun on social medias.
+                Arti is a multi-genre music composer, typically creating EDM and a mix of jazz. Her success as a musical artist made her just as popular as her partner Artibun on social medias.
                 `,
 
                 isCharacter: true,
                 species: 'Cat',
-                pronouns: 'He/Any',
-                gender: 'Male',
+                pronouns: 'She/He',
+                gender: 'Trans-Female',
                 sexuality: 'Bisexual',
                 aliases: 'Arti, Kiki',
                 extra: '',

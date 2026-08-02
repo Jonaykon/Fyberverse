@@ -1,10 +1,7 @@
 facts = [
     `Teksui and Chromasia are two major cities in Terra, Deltadim. Most of the characters depicted in Daily Art+ live in these cities.`,
 
-    // 4th ARG thread (https://discord.com/channels/858300189358293037/1505492205609947187)
-
-    // https://discord.com/channels/858300189358293037/1505492205609947187/1510595211179593830
-    `Fyber is "up there alone".`,
+    // 4th ARG thread [https://discord.com/channels/858300189358293037/1505492205609947187]
 
     // https://discord.com/channels/858300189358293037/1505492205609947187/1510595448539316284
     `Fyber has gone insane, but is good at hiding it.`,
@@ -25,21 +22,75 @@ facts = [
     `Singularikitty does not feel hunger, he's just consuming matter for their love of the game.`,
 
     // https://discord.com/channels/858300189358293037/1505492205609947187/1517018459005915247
-    `The only thing preventing Singularikitty from consuming Terra is the fact that Terra's civilization has advanced enough to constantly transmit radio waves from their electronics which Singularikitty detected and say "oh, there must be people here. i should stay away!"`,
+    `The only reason Singularikitty doesn't consume Terra is because Terra's civilization has advanced enough to constantly transmit radio waves from their electronics which Singularikitty detects and thinks "oh, there must be people here. i should stay away!"`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1517018722638762064
+    `If a planet with people living on it isn't advanced enough to transmit radio waves Singularikitty might consume it not knowing it's inhabited.`,
 
     // https://discord.com/channels/858300189358293037/1505492205609947187/1517018817434484777
     `The lucani planet has technologia.`,
 
     // https://discord.com/channels/858300189358293037/1505492205609947187/1517019184159002756
-    `For Singularikitty most megastructures would be hard to see from the naked eye but if Singularikitty suspect it's inhabited then he would not eat it.`,
+    `For Singularikitty most megastructures would be hard to see from the naked eye but if Singularikitty suspects a planet is inhabited then he would not eat it.`,
 
     // https://discord.com/channels/858300189358293037/1505492205609947187/1517022745324552352
-    `Terra is technologically advanced to go to other planets but not really, they got slightly advanced rockets but not super ones.`,
+    `Terra is technologically advanced enough to go to other planets, but not really. They have slightly advanced rockets but not super ones.`,
     
     // https://discord.com/channels/858300189358293037/1505492205609947187/1517351248653717574
     `If something falls off of Hizen's islands it keeps falling until it hits something, like another piece of floating island.`,
 
-    // Twitter (https://twitter.com/artyfiber)
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1517355896848515164
+    `Nim has never opened her eyes, she's just like that.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518626916851257434
+    `Day 903 is the longest time Azka has spent making a daily art, with a total of 6 hours in app.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518627407563718868
+    `In Deltadim, stars can have many different colors.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518631961642664178
+    `Nim's head and chest are solid enough to stand on, but the rest of her body is pass-through.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518634502245712084
+    `USBun is just a USB extender.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518635826685415515
+    `Terra is at least 100 years more advanced than human society.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1518636306522050753
+    `Teksui is a quite advanced city.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1521024096886853813
+    `Artifish can survive longer than just a couple of hours on land but if they're dry for over one and a half days they'll get serious health issues.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1521025573881647114
+    `Artifish is not edible (why am I even putting this here 😭).`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1523521427431489566
+    `Destroyer is sentient.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1523522548812480654
+    `When Singularikitty's collar is turned off Destroyer gets absorbed into it.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1523522811463995623
+    `Singularikitty refers to Destroyer as he.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1523524679405539388
+    `Destroyer is relatively calm and timid and only acts when Singularikitty tells it to.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1527525843101028513
+    `Polygons can have multiple tails, but their skin is always white or a very light color.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1527526658242908230
+    `A Catdelion follows the growth of a real life dandelion.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1530569751120707624
+    `Rose is based on a furry version of Ziron.`,
+
+    // https://discord.com/channels/858300189358293037/1505492205609947187/1530776931681960106
+    `There is more than male and female in Terra.`,
+
+    // Twitter [https://twitter.com/artyfiber]
 
     // https://web.archive.org/web/20251018151637/https://twitter.com/artyfiber/status/1979567300312461603
     `Shirley and Rose are Indonesian.`,
@@ -47,7 +98,7 @@ facts = [
     // https://web.archive.org/web/20260122093359/https://twitter.com/artyfiber/status/2014270308056994287
     `A lot of the Chromasia citizens can speak a language identical to Indonesian.`,
 
-    // Website (https://artifyber.xyz)
+    // Website [https://artifyber.xyz]
 
     // https://artifyber.xyz/e/deltadim-teksui/artibun
     `Artibun is a white female rabbit, with parts of her body colored in lilac, such as her arms, legs, right ear, half of her tail, and chest to abdomen area. Her inner ears are colored in blurple and has dark blue eyes.`,
@@ -141,4 +192,30 @@ facts = [
     `As a space cat, Micro doesn't need to breathe to survive. They also don't need to consume food or drink, as they have no mouth. This also makes them mute. They communicate through body language and writing on a small board they always carry around.`,
     `Micro has a flying saucer that they use to travel long-distances in space. The saucer is also a storage for all sorts of thing they collect from their travels.`,
     `Micro possesses a power of vacuum manipulation, albeit they don't really use it often as it is very limited. They can push and pull objects by controlling the vacuum around them`,
+
+    // Double-Singularity (Skitty & Gamma) QnA [https://x.com/search?q=from%3Aartifyber%20since%3A2025-09-05%20until%3A2025-09-05&f=live]
+
+    // https://x.com/artifyber/status/1963821173260902582
+    `The matter Gamma expels doesn't seem to correspond with anything Singularikitty consumes.`,
+
+    // https://x.com/artifyber/status/1963821214608351504
+    `The black/white holes on Singularikitty and Gamma's collars are just their power channeled through their collars.`,
+
+    // https://x.com/artifyber/status/1963867589332894143
+    `Gamma doesn't know herself how her white hole works that well, but she's confident Singularikitty isn't involved here.`,
+    `Gamma has a theory that there could be another, black-hole version of her outside of this dimension, but she can't prove it.`,
+
+    // https://x.com/artifyber/status/1963867617544053104
+    `Singularikitty doesn't live in the void. He's not a guardian either. He just so happens to be connected to that place. But he once entered the void himself`,
+    `The void is a dark, cold, colorless, but also very weird place. Normally matter cease to exist, but they partially reassemble like magic. There are many half-destroyed structures and planets which Singularikitty could only recognize a few of when he was there, he didn't find any living beings though.`,
+
+    // https://x.com/artifyber/status/1963886282079424819
+    `Singularikitty is extremely deadly in small distance. He's covered in fur but his eyes and mouth act like mini black holes.`,
+
+    // https://x.com/artifyber/status/1963941392348041348
+    `Singularikitty likes any foods rich in hydrogen.`,
+    `Gamma thinks foods are lame.`,
+
+    // https://x.com/artifyber/status/1963941536808214866
+    `Singularikitty thinks Micro is just a chill fella.`,
 ]

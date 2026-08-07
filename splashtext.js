@@ -51,7 +51,6 @@ splashLines = [
     "TWITTER SUCKS!!! *stays*",
     "We bunnies are superior!",
     "fih 🥀",
-    `what kind of universe is "Information" anyway?`,
     "i miss that breakfast girl...",
     "zzz...",
     "How hungry...",

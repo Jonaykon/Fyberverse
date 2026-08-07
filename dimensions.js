@@ -1108,6 +1108,10 @@ dimensionsData = {
     "width": 2400,
     "height": 2400
   },
+  "images/c/nuki-c3.png": {
+    "width": 2000,
+    "height": 2500
+  },
   "images/c/nuki-c.png": {
     "width": 2000,
     "height": 2500
@@ -1117,8 +1121,8 @@ dimensionsData = {
     "height": 2500
   },
   "images/i/nuki-i.png": {
-    "width": 624,
-    "height": 624
+    "width": 902,
+    "height": 902
   },
   "images/r/ara-r.png": {
     "width": 2000,
@@ -2292,18 +2296,6 @@ dimensionsData = {
     "width": 1097,
     "height": 1097
   },
-  "images/c/blurplebun-c.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/c/blurplebun-c2.png": {
-    "width": 2000,
-    "height": 2500
-  },
-  "images/i/blurplebun-i.png": {
-    "width": 2000,
-    "height": 2500
-  },
   "images/r/ebta-r.png": {
     "width": 2000,
     "height": 2500
@@ -2395,6 +2387,214 @@ dimensionsData = {
   "images/i/quanta-i.png": {
     "width": 730,
     "height": 730
+  },
+  "images/c/istar-c.jpg": {
+    "width": 3000,
+    "height": 3000
+  },
+  "images/i/istar-i.jpg": {
+    "width": 739,
+    "height": 739
+  },
+  "images/digirel_album.png": {
+    "width": 3000,
+    "height": 3000
+  },
+  "images/c/digirel-banner.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "images/r/gigabbit-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/gigabbit-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/gigabbit-i.png": {
+    "width": 622,
+    "height": 622
+  },
+  "images/r/jamie-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/jamie-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/jamie-i.png": {
+    "width": 604,
+    "height": 604
+  },
+  "images/r/neocha-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/neocha-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/neocha-i.png": {
+    "width": 655,
+    "height": 655
+  },
+  "images/r/aster-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/aster-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/aster-i.png": {
+    "width": 575,
+    "height": 575
+  },
+  "images/r/blink-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/blink-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/blink-i.png": {
+    "width": 520,
+    "height": 520
+  },
+  "images/r/gumdrop-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/gumdrop-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/gumdrop-i.png": {
+    "width": 594,
+    "height": 594
+  },
+  "images/r/blurplebun-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/blurplebun-c3.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/c/blurplebun-c.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/blurplebun-c4.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/c/blurplebun-c2.png": {
+    "width": 2000,
+    "height": 2500
+  },
+  "images/i/blurplebun-i.png": {
+    "width": 551,
+    "height": 551
+  },
+  "images/r/pyrapup-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/pyrapup-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/pyrapup-i.png": {
+    "width": 634,
+    "height": 634
+  },
+  "images/r/xxi-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/xxi-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/xxi-i.png": {
+    "width": 494,
+    "height": 494
+  },
+  "images/r/lysa-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/lysa-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/lysa-i.png": {
+    "width": 722,
+    "height": 722
+  },
+  "images/r/sunstruck-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/sunstruck-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/sunstruck-i.png": {
+    "width": 597,
+    "height": 597
+  },
+  "images/r/irama-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/irama-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/irama-i.png": {
+    "width": 564,
+    "height": 564
+  },
+  "images/r/mikumori-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/mikumori-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/mikumori-i.png": {
+    "width": 701,
+    "height": 701
+  },
+  "images/r/hertz-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/hertz-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/hertz-i.png": {
+    "width": 628,
+    "height": 628
+  },
+  "images/r/luna-r.png": {
+    "width": 2000,
+    "height": 3000
+  },
+  "images/c/luna-c.png": {
+    "width": 2000,
+    "height": 2000
+  },
+  "images/i/luna-i.png": {
+    "width": 947,
+    "height": 947
   },
   "icons/nansenz.png": {
     "width": 2048,

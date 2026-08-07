@@ -74,6 +74,8 @@
     --menu-button-thumb-inset-shadow: rgba(0, 0, 0, 0.4);
     --menu-button-thumb-scale: 1;
     --menu-center-text-shadow: rgba(0, 0, 0, 0.5);
+    --menu-title-font-size-min: 12px;
+    --menu-title-font-size-max: 48px;
 
     /* Ring/orbit variables */
     --ring: var(--accent2);
@@ -585,6 +587,15 @@ hr {
     transition: scale calc(var(--layout-transition-speed) / 2) ease-out;
 }
 
+.content-view-grid.is-entering {
+    animation: elementFadeIn 500ms ease-out both;
+}
+
+@keyframes elementFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .content-view-grid.no-margin {
     margin: 0;
     max-width: 100%;
@@ -841,8 +852,12 @@ hr {
 }
 
 .card[data-is-banner="true"] {
+    --banner-divisions: 1;
     /* width: 100%; */
-    width: calc(max(calc(var(--card-scale) * 450px), 100%) - (var(--card-scale) * var(--card-padding) * 2));
+    width: max(
+        calc(450px * var(--card-scale)),
+        calc((100% - (var(--card-gap) * var(--card-scale) * (var(--banner-divisions) - 1))) / var(--banner-divisions))
+    );
     height: calc(300px * var(--card-scale) * var(--card-padding));
     flex-direction: row;
     align-items: center;
@@ -873,7 +888,7 @@ hr {
 }
 
 .card[data-is-semi-banner="true"] {
-    width: calc(max(calc(var(--card-scale) * 450px), 50%) - (var(--card-scale) * var(--card-padding) * 1.5));
+    --banner-divisions: 2;
     height: auto;
     flex-direction: row;
     align-items: start;
@@ -1771,7 +1786,8 @@ textarea#zenpenOutput {
 }
     */
 
-.back-btn svg {
+.back-btn svg,
+.return-orbit-btn svg {
     width: calc(13px * var(--ui-btn-scale));
 }
 

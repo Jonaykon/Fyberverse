@@ -63,6 +63,31 @@ function drawImageCentered(ctx, img, x, y, maxSize) {
     ctx.drawImage(img, x - w / 2, y - h / 2, w, h);
 }
 
+function drawCircularImage(ctx, img, x, y, diameter) {
+    if (!img) return;
+
+    const sourceSize = Math.min(img.width, img.height);
+    const sourceX = (img.width - sourceSize) / 2;
+    const sourceY = (img.height - sourceSize) / 2;
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(x, y, diameter / 2, 0, Math.PI * 2);
+    ctx.clip();
+    ctx.drawImage(
+        img,
+        sourceX,
+        sourceY,
+        sourceSize,
+        sourceSize,
+        x - diameter / 2,
+        y - diameter / 2,
+        diameter,
+        diameter
+    );
+    ctx.restore();
+}
+
 // draw ellipse
 /* function drawEllipse(ctx, x, y, w, h) {
     let kappa = .5522848,
@@ -355,6 +380,7 @@ function enableCameraControl() {
 
     // begin drag
     function beginDrag(clientX, clientY) {
+        isCameraFollowingOrbitFocus = false;
         isDragging = true;
         startX = clientX - currentX;
         startY = clientY - currentY;
@@ -416,6 +442,11 @@ function snapCameraToCenter() {
     cameraSnapSpeed = CAMERA_SNAP_SPEED_SLOWED;
 }
 centerBtn?.addEventListener('click', () => {
+    if (focusedOrbitMenuIds.length) {
+        isCameraFollowingOrbitFocus = true;
+        cameraSnapSpeed = CAMERA_SNAP_SPEED;
+        return;
+    }
     snapCameraToCenter();
 });
 
@@ -430,18 +461,16 @@ const particleDamping = getCSSVar('--particle-damping', 'float') || 0.999;
 const particleMaxLife = getCSSVar('--particle-max-life', 'int') || 120;
 const particleSpread = getCSSVar('--particle-spread', 'float');
 function buildCanvasMenuData() {
-    // preload images
-    const menuImagePaths = canvasMenuNodes
-        .filter(node => node.menu.image)
-        .map(node => `${node.menu.image}`);
-
-    if (mainMenuLogo) menuImagePaths.push(mainMenuLogo);
-    preloadImages(menuImagePaths);
-
-
     if (!Array.isArray(menuItems) || !Array.isArray(orbitData)) return;
 
     const menus = SIMPLE_MODE ? menuItems.filter(m => m.menuId === 'logoHitbox') : menuItems;
+
+    // Preload menu images and the logo only when its hitbox was added.
+    const menuImagePaths = menus
+        .filter(menu => menu.image)
+        .map(menu => `${menu.image}`);
+    if (menus.some(menu => menu.menuId === 'logoHitbox') && mainMenuLogo) menuImagePaths.push(mainMenuLogo);
+    preloadImages(menuImagePaths);
 
     const groups = new Map();
     menus.forEach(menu => {
@@ -516,6 +545,7 @@ function buildCanvasMenuData() {
                 prevY: 0,
                 glowRadius: size + 30,
                 glowOpacity: 0,
+                particleOpacity: 1,
                 particles: [],
             });
         });
@@ -532,6 +562,110 @@ let cursorX = 0;
 let cursorY = 0;
 let logoHover = 0;
 let buffer = null
+const focusedOrbitMenuIds = [];
+// Focused orbit state supports nested focusChildren menus and camera animation.
+const FOCUSED_ORBIT_DIM_OPACITY = 0.05;
+let focusedOrbitZoom = 1;
+let focusedOrbitZoomTarget = 1;
+let isCameraFollowingOrbitFocus = false;
+let isExitingFocusedOrbit = false;
+
+function hasFocusedAncestor(menu) {
+    // Descendants stay hidden until their nearest focused parent is selected.
+    let parentId = menu.parent;
+    while (parentId) {
+        const parent = getMenuData(parentId);
+        if (!parent) return false;
+        if (parent.focusChildren) return true;
+        parentId = parent.parent;
+    }
+    return false;
+}
+
+function getFocusedOrbitMenuId() {
+    return focusedOrbitMenuIds.at(-1) || null;
+}
+
+function getNodeOpacityTarget(node) {
+    // Show only the focused menu and its direct children; dim unrelated root menus.
+    const focusedMenuId = getFocusedOrbitMenuId();
+    if (!focusedMenuId) return hasFocusedAncestor(node.menu) ? 0 : 1;
+    if (node.menu.menuId === focusedMenuId || node.menu.parent === focusedMenuId) return 1;
+    if (hasFocusedAncestor(node.menu)) return 0;
+    return FOCUSED_ORBIT_DIM_OPACITY;
+}
+
+function focusOrbitMenu(menuId) {
+    // Enter an opt-in focusChildren menu instead of opening its content page.
+    const menu = getMenuData(menuId);
+    const hasChildren = menuItems.some(candidate => candidate.parent === menuId && !candidate.hidden);
+    if (!menu?.focusChildren || !hasChildren) return false;
+
+    isExitingFocusedOrbit = false;
+    focusedOrbitMenuIds.push(menuId);
+    isCameraFollowingOrbitFocus = true;
+    focusedOrbitZoomTarget = getCSSVar('--menu-stage-scale-zoom', 'float') || 1.5;
+    changeBackBtnText('Back');
+    applyUIState('FOCUSED_ORBIT');
+    menuIsOpen = false;
+    window.setOrbitFocusHistory?.(menuId);
+    return true;
+}
+
+function restoreOrbitFocusFromURL(menuId) {
+    // Rebuild every focused ancestor from f=<menuId> on load or browser navigation.
+    const menu = getMenuData(menuId);
+    if (!menu?.focusChildren) return false;
+
+    isExitingFocusedOrbit = false;
+    focusedOrbitMenuIds.length = 0;
+    const focusPath = [];
+    let current = menu;
+    while (current) {
+        if (current.focusChildren) focusPath.unshift(current.menuId);
+        current = current.parent ? getMenuData(current.parent) : null;
+    }
+
+    focusPath.forEach(id => focusedOrbitMenuIds.push(id));
+    isCameraFollowingOrbitFocus = true;
+    focusedOrbitZoomTarget = getCSSVar('--menu-stage-scale-zoom', 'float') || 1.5;
+    applyUIState('FOCUSED_ORBIT');
+    menuIsOpen = false;
+    return true;
+}
+
+function exitFocusedOrbitMenu(returnToMain = false) {
+    // The dedicated UI control normally pops one level; returnToMain clears all levels.
+    if (!focusedOrbitMenuIds.length) return false;
+
+    if (returnToMain) focusedOrbitMenuIds.length = 0;
+    else focusedOrbitMenuIds.pop();
+    if (focusedOrbitMenuIds.length) {
+        focusedOrbitZoomTarget = getCSSVar('--menu-stage-scale-zoom', 'float') || 1.5;
+        isCameraFollowingOrbitFocus = true;
+        changeBackBtnText('Back');
+    } else {
+        isExitingFocusedOrbit = true;
+        focusedOrbitZoomTarget = 1;
+        isCameraFollowingOrbitFocus = false;
+        applyUIState('MAIN_MENU');
+        cameraSnapSpeed = CAMERA_SNAP_SPEED;
+    }
+    return true;
+}
+
+window.focusOrbitMenu = focusOrbitMenu;
+// Expose focus helpers to the regular navigation and URL handlers in main.js.
+window.exitFocusedOrbitMenu = exitFocusedOrbitMenu;
+window.isOrbitFocusActive = () => focusedOrbitMenuIds.length > 0;
+window.getFocusedOrbitMenuId = getFocusedOrbitMenuId;
+// The menu that becomes focused after the next Return to Orbit action.
+window.getFocusedOrbitReturnMenuId = () => focusedOrbitMenuIds.at(-2) || null;
+window.restoreOrbitFocusFromURL = restoreOrbitFocusFromURL;
+window.resumeOrbitFocusCameraFollow = () => {
+    // Closing focused child content resumes follow unless the user drags again.
+    if (focusedOrbitMenuIds.length) isCameraFollowingOrbitFocus = true;
+};
 function drawCanvasMenu(t) {
     if (!isCanvasMenuReady || !ctx) return;
 
@@ -546,6 +680,14 @@ function drawCanvasMenu(t) {
 
     const width = window.innerWidth;
     const height = window.innerHeight;
+    const focusedNode = canvasMenuNodes.find(node => node.menu.menuId === getFocusedOrbitMenuId());
+    if (focusedNode && isCameraFollowingOrbitFocus) {
+        // Follow the focused menu until a drag explicitly releases the camera.
+        currentX += (width / 2 - focusedNode.x) * 0.1;
+        currentY += (height / 2 - focusedNode.y) * 0.1;
+        cameraSnapSpeed = CAMERA_SNAP_SPEED;
+    }
+    focusedOrbitZoom += (focusedOrbitZoomTarget - focusedOrbitZoom) * 0.1;
     const centerXT = width / 2 + currentX + getCSSVar("--menu-orbit-offset-x", "int");
     const centerYT = height / 2 + currentY + getCSSVar("--menu-orbit-offset-y", "int");
     centerX += (centerXT - centerX) * cameraSnapSpeed;
@@ -591,9 +733,50 @@ function drawCanvasMenu(t) {
     });
     ctx.globalAlpha = 1;
 
+    // Resolve parent positions before drawing trails so centered child orbits use this frame's parent location.
+    const positionedNodes = new Set();
+    function positionNode(node) {
+        if (positionedNodes.has(node)) return;
+
+        const group = node.group;
+        const layer = group.layer;
+        const duration = getRingDuration() * Math.max(1, layer);
+        const omega = layer === 0 ? 0 : ((2 * Math.PI) / duration) * group.direction;
+        const angle = node.baseAngle + (omega * sec) + group.phase;
+        const ringRadius = layer === 0 ? 0 : (getBaseRadius() * layer * 1.2 + 60);
+        const hasCenter = group.centerMenuId && layer !== 0;
+
+        let originX = centerX + (group.offsetX || 0);
+        let originY = centerY + (group.offsetY || 0);
+        if (hasCenter) {
+            const centerNode = canvasMenuNodes.find(n => n.menu.menuId === group.centerMenuId);
+            if (centerNode) {
+                positionNode(centerNode);
+                originX = centerNode.x + (group.offsetX || 0);
+                originY = centerNode.y + (group.offsetY || 0);
+            }
+        }
+
+        const pos = group.getOrbitPosition(angle, ringRadius);
+        node.x = originX + pos.x;
+        node.y = originY + pos.y;
+        positionedNodes.add(node);
+    }
+    canvasMenuNodes.forEach(positionNode);
+
+    ctx.save();
+    ctx.translate(width / 2, height / 2);
+    ctx.scale(focusedOrbitZoom, focusedOrbitZoom);
+    ctx.translate(-width / 2, -height / 2);
+
     // draw semi-transparent background ring geometry
     orbitGroups.forEach(group => {
         if (group.hideRing) return;
+
+        const groupNodes = canvasMenuNodes.filter(node => node.group === group);
+        const opacityTarget = Math.max(...groupNodes.map(getNodeOpacityTarget));
+        group.opacity = (group.opacity ?? opacityTarget) + (opacityTarget - (group.opacity ?? opacityTarget)) * 0.1;
+        if (group.opacity < 0.01) return;
 
         const layer = group.layer;
         if (layer === 0) return;
@@ -624,6 +807,7 @@ function drawCanvasMenu(t) {
         if (ringPulseSpeed) {
             ctx.lineWidth = Math.max(Math.cos(sec * ringPulseSpeed + layer) * 1.5 + 2, 0.5) * (ringThickness);
         }
+        ctx.globalAlpha = group.opacity;
 
         const segments = 360;
         for (let i = 0; i <= segments; i++) {
@@ -635,12 +819,22 @@ function drawCanvasMenu(t) {
             else ctx.lineTo(x, y);
         }
         ctx.stroke();
+        ctx.globalAlpha = 1;
     });
 
     let logoIsHover = false;
 
     // compute positions and draw nodes
     canvasMenuNodes.forEach(node => {
+        const opacityTarget = getNodeOpacityTarget(node);
+        node.opacity = (node.opacity ?? opacityTarget) + (opacityTarget - (node.opacity ?? opacityTarget)) * 0.1;
+        const particleOpacityTarget = isExitingFocusedOrbit || (getFocusedOrbitMenuId() && opacityTarget < 1) ? 0 : 1;
+        node.particleOpacity += (particleOpacityTarget - node.particleOpacity) * 0.1;
+        if (particleOpacityTarget === 0 && node.particleOpacity <= 0.01) {
+            node.particles.length = 0;
+        }
+        if (node.opacity < 0.01) return;
+
         const group = node.group;
         const layer = group.layer;
         const duration = getRingDuration() * Math.max(1, layer);
@@ -683,7 +877,7 @@ function drawCanvasMenu(t) {
         const dx = node.x - node.prevX - deltaX;
         const dy = node.y - node.prevY - deltaY;
         const speed = Math.sqrt(dx * dx + dy * dy);
-        if (speed > 0.1) {
+        if (speed > 0.1 && node.particleOpacity > 0.01) {
             const dirX = -dx / speed;
             const dirY = -dy / speed;
             const numEmit = Math.random() < (particleEmitRate / 60) ? 1 : 0;
@@ -728,6 +922,21 @@ function drawCanvasMenu(t) {
         logoIsHover = logoIsHover || !menuIsOpen && isHovered && node.menu.menuId === 'logoHitbox';
 
         const color = getCSSColor(node.menu.color) || '#00000000';
+        ctx.save();
+        ctx.globalAlpha = node.opacity;
+
+        // Draw trails before the menu's glow and circle so the node stays in front.
+        node.particles.forEach(p => {
+            const alpha = p.life / particleMaxLife;
+            ctx.globalAlpha = node.opacity * alpha * particleOpacity * node.particleOpacity;
+            ctx.globalCompositeOperation = 'lighten';
+            ctx.fillStyle = hex2rgba(color);
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fill();
+        });
+        ctx.globalAlpha = node.opacity;
+        ctx.globalCompositeOperation = 'source-over';
 
         // node shadow glow / border
         ctx.beginPath();
@@ -747,7 +956,9 @@ function drawCanvasMenu(t) {
         ctx.fillStyle = glow;
         ctx.fill();
 
+        const canHoverScale = getNodeOpacityTarget(node) === 1;
         function calculateNodeScale() {
+            if (!canHoverScale) return 1;
             const maxDist = 300;
 
             let zoom = 1;
@@ -776,7 +987,12 @@ function drawCanvasMenu(t) {
         // node label
         if (node.menu.showTitle) {
             const textSize = node.size / getNodeSize();
-            ctx.font = `${28 * textSize}px Main, Arial, sans-serif`;
+            const titleFontSize = clamp(
+                28 * textSize,
+                getCSSVar('--menu-title-font-size-min', 'float'),
+                getCSSVar('--menu-title-font-size-max', 'float')
+            );
+            ctx.font = `${titleFontSize}px Main, Arial, sans-serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = 'white';
@@ -790,50 +1006,45 @@ function drawCanvasMenu(t) {
         if (node.menu.image && getCachedImage(path)) {
             const img = getCachedImage(path);
             const maxSize = node.size * 2 * (node.menu.imageScale || 1);
-            drawImageCentered(ctx, img, x, y, maxSize);
+            drawCircularImage(ctx, img, x, y, maxSize);
         }
 
-        // draw particles
-        node.particles.forEach(p => {
-            const alpha = p.life / particleMaxLife;
-            ctx.globalAlpha = alpha * particleOpacity;
-            ctx.globalCompositeOperation = 'lighten';
-            ctx.fillStyle = hex2rgba(color);
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-            ctx.fill();
-        });
-        ctx.globalAlpha = 1;
-        ctx.globalCompositeOperation = 'source-over';
+        ctx.restore();
     });
 
-    // logo
-    const logoCenterX = centerX - getCSSVar("--menu-orbit-offset-x", "int")
-    const logoCenterY = centerY - getCSSVar("--menu-orbit-offset-y", "int")
-    const color = getCSSVar('--logo-glow') || '#00000000';
-    const logoHoverT = logoIsHover ? 1 : 0;
-    logoHover += (logoHoverT - logoHover) * 0.1;
-    ctx.arc(logoCenterX, logoCenterY, 150, 0, Math.PI * 2);
-    const glow = ctx.createRadialGradient(logoCenterX, logoCenterY, 0, logoCenterX, logoCenterY, 150);
-    glow.addColorStop(0, hex2rgba(color, { a: logoHover * 0.3 }));
-    glow.addColorStop(1, hex2rgba(color, { a: 0 }));
-    ctx.fillStyle = glow;
-    ctx.fill();
+    if (isExitingFocusedOrbit && canvasMenuNodes.every(node => node.particleOpacity <= 0.01)) {
+        isExitingFocusedOrbit = false;
+    }
 
-    drawImageCentered(ctx, imageAssets[mainMenuLogo], logoCenterX, logoCenterY, 200 * getCSSVar('--menu-stage-scale') + logoHover * 20);
+    const hasLogoHitbox = canvasMenuNodes.some(node => node.menu.menuId === 'logoHitbox');
+    if (hasLogoHitbox) {
+        const logoCenterX = centerX - getCSSVar("--menu-orbit-offset-x", "int");
+        const logoCenterY = centerY - getCSSVar("--menu-orbit-offset-y", "int");
+        const color = getCSSVar('--logo-glow') || '#00000000';
+        const logoHoverT = logoIsHover ? 1 : 0;
+        logoHover += (logoHoverT - logoHover) * 0.1;
+        ctx.arc(logoCenterX, logoCenterY, 150, 0, Math.PI * 2);
+        const glow = ctx.createRadialGradient(logoCenterX, logoCenterY, 0, logoCenterX, logoCenterY, 150);
+        glow.addColorStop(0, hex2rgba(color, { a: logoHover * 0.3 }));
+        glow.addColorStop(1, hex2rgba(color, { a: 0 }));
+        ctx.fillStyle = glow;
+        ctx.fill();
 
-    // text
-    const textOffset = mainMenuLogo ? MAIN_MENU_TEXT_OFFSET_Y + (logoHover * 10) : 0;
-    ctx.globalAlpha = Math.cos(sec * 3) * 0.25 + 0.75;
-    ctx.fillStyle = getCSSVar('--white');
-    ctx.font = `${16 * getCSSVar('--menu-stage-scale')}px Main, Arial, sans-serif`;
-    ctx.textAlign = 'center';
-    ctx.fillText(MAIN_MENU_TITLE, logoCenterX, logoCenterY + textOffset * getCSSVar('--menu-stage-scale'));
-    ctx.globalAlpha = Math.cos((sec + 0.4) * 3) * 0.25 + 0.75;
-    ctx.fillStyle = getCSSVar('--info-text-color');
-    ctx.font = `${12 * getCSSVar('--menu-stage-scale')}px Main, Arial, sans-serif`;
-    ctx.fillText(MAIN_MENU_SUBTITLE, logoCenterX, logoCenterY + (textOffset + 20) * getCSSVar('--menu-stage-scale'));
-    ctx.globalAlpha = 1;
+        drawImageCentered(ctx, imageAssets[mainMenuLogo], logoCenterX, logoCenterY, 200 * getCSSVar('--menu-stage-scale') + logoHover * 20);
+
+        const textOffset = MAIN_MENU_TEXT_OFFSET_Y + (logoHover * 10);
+        ctx.globalAlpha = Math.cos(sec * 3) * 0.25 + 0.75;
+        ctx.fillStyle = getCSSVar('--white');
+        ctx.font = `${16 * getCSSVar('--menu-stage-scale')}px Main, Arial, sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.fillText(MAIN_MENU_TITLE, logoCenterX, logoCenterY + textOffset * getCSSVar('--menu-stage-scale'));
+        ctx.globalAlpha = Math.cos((sec + 0.4) * 3) * 0.25 + 0.75;
+        ctx.fillStyle = getCSSVar('--info-text-color');
+        ctx.font = `${12 * getCSSVar('--menu-stage-scale')}px Main, Arial, sans-serif`;
+        ctx.fillText(MAIN_MENU_SUBTITLE, logoCenterX, logoCenterY + (textOffset + 20) * getCSSVar('--menu-stage-scale'));
+        ctx.globalAlpha = 1;
+    }
+    ctx.restore();
 
     // global glow
     const glowFXOpacity = getCSSVar("--glowfx-opacity", "float")
@@ -850,15 +1061,17 @@ function drawCanvasMenu(t) {
         const dpr = window.devicePixelRatio;
         const rect = canvas.getBoundingClientRect();
 
-        buffer.width = rect.width * dpr / downscaleX;
-        buffer.height = rect.height * dpr / downscaleY;
-
-        bufferCtx.scale(dpr / downscaleX, dpr / downscaleY);
+        const bufferWidth = Math.max(1, Math.round(rect.width * dpr / downscaleX));
+        const bufferHeight = Math.max(1, Math.round(rect.height * dpr / downscaleY));
+        if (buffer.width !== bufferWidth || buffer.height !== bufferHeight) {
+            buffer.width = bufferWidth;
+            buffer.height = bufferHeight;
+        }
 
         buffer.style.width = `${rect.width}px`;
         buffer.style.height = `${rect.height}px`;
         bufferCtx.globalAlpha = glowFXOpacity;
-        bufferCtx.drawImage(canvas, 0, 0);
+        bufferCtx.drawImage(canvas, 0, 0, canvas.width, canvas.height, 0, 0, bufferWidth, bufferHeight);
     }
     if (glowFXOpacity) glowFX();
 
@@ -873,7 +1086,12 @@ enableCameraControl();
 
 
 function getNodeAtPoint(x, y) {
+    if (focusedOrbitZoom !== 1) {
+        x = window.innerWidth / 2 + (x - window.innerWidth / 2) / focusedOrbitZoom;
+        y = window.innerHeight / 2 + (y - window.innerHeight / 2) / focusedOrbitZoom;
+    }
     return canvasMenuNodes.find(node => {
+        if ((node.opacity ?? 1) < 0.5) return false;
         const dx = node.x - x;
         const dy = node.y - y;
         return Math.sqrt(dx * dx + dy * dy) <= node.size + 4;
@@ -904,6 +1122,14 @@ function handlePointerDown(e) {
     if (!menuId) return;
     if (menuId === 'logoHitbox') {
         openLogo();
+        hoveredNode = undefined;
+        return;
+    }
+    if (menuId === getFocusedOrbitMenuId()) {
+        openMainMenu(menuId);
+        return;
+    }
+    if (focusOrbitMenu(menuId)) {
         hoveredNode = undefined;
         return;
     }

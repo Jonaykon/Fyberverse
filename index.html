@@ -124,12 +124,21 @@
             <!-- download image button -->
             <button id="downloadImgBtn" class="download-img-btn ui-btn ui-hide" title="Download image">
                 <span>
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778" />
+                            d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" />
                     </svg>
                 </span>
+            </button>
+
+            <!-- exits a focusChildren orbit view without affecting page navigation -->
+            <button id="returnOrbitBtn" class="return-orbit-btn ui-btn ui-hide"
+                title="Return to the main orbit interface">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        d="M16 5H8a4 4 0 0 0 0 8h1m-5-4 3-3m-3 3 3 3" />
+                </svg>
+                <span>Return to Orbit</span>
             </button>
 
             <!-- back button -->

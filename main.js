@@ -2,9 +2,7 @@
 // CONFIG
 // --------------------------
 
-// Lazy loader base path
-const LAZY_BASE = 'https://cdn.jsdelivr.net/gh/blurplebun/blurplebun.github.io/';
-const LOCAL_MODE = 1; // if you don't use a cdn service to load images, just set this to true
+const DONT_USE_THUMB = 0;
 
 // Sound control
 const INIT_MASTER_VOL = 1;
@@ -207,6 +205,14 @@ const UI_STATES = {
         downloadImgBtn: false
     },
 
+    FOCUSED_ORBIT: {
+        backBtn: false,
+        settingsBtn: false,
+        playBgmBtn: false,
+        centerBtn: true,
+        downloadImgBtn: false
+    },
+
     MENU_OPEN: {
         backBtn: true,
         settingsBtn: false,
@@ -241,6 +247,15 @@ function applyUIState(stateName) {
     setButtonViz(playBgmBtn, state.playBgmBtn);
     setButtonViz(centerBtn, state.centerBtn);
     setButtonViz(downloadImgBtn, state.downloadImgBtn);
+    // Control remains available while focused child content is open.
+    if (returnOrbitBtn) {
+        const returnMenuId = window.getFocusedOrbitReturnMenuId?.();
+        const returnMenu = returnMenuId ? getMenuData(returnMenuId) : null;
+        const returnLabel = returnMenu ? `Return to ${returnMenu.title}` : "Return to Main Orbit";
+        returnOrbitBtn.querySelector('span').textContent = returnLabel;
+        returnOrbitBtn.title = returnLabel;
+        setButtonViz(returnOrbitBtn, Boolean(window.isOrbitFocusActive?.()) && stateName !== "IMAGE_VIEW");
+    }
 
     if (stateName === "MAIN_MENU") {
         setButtonViz(rerollBtn, false);
@@ -412,6 +427,7 @@ function setSimpleMode(value) {
 }
 
 const settingsBtn = document.getElementById('settingsBtn');
+const returnOrbitBtn = document.getElementById('returnOrbitBtn');
 function toggleViewMode() {
     const newMode = !SIMPLE_MODE;
     if (confirm(`Switch to ${newMode ? 'Simple Mode' : 'Orbit Mode'}? Page will be reloaded.`)) {
@@ -448,7 +464,10 @@ let currentM;
 function openMenu(menu, m, showAll = false) {
     resetLayoutTransition();
 
-    blurMainMenu(true);
+    /* const focusedMenuId = window.getFocusedOrbitMenuId?.();
+    const isFocusedOrbitPage = focusedMenuId && (m.menuId === focusedMenuId || m.parent === focusedMenuId);
+    blurMainMenu(!isFocusedOrbitPage); */
+    blurMainMenu(true)
     setLayoutViz(contentView, true);
     setLayoutViz(detailView, false);
     changeBackBtnText(m.parent && !openSingle ? getMenuData(m.parent).title : 'Close')
@@ -673,6 +692,11 @@ function setCardAttributes(card, c) {
     if (c.reference) card.dataset.isReference = c.reference;
     if (c.url) card.dataset.url = c.url;
     if (c.banner) card.dataset.isBanner = c.banner;
+    if (Number.isInteger(c.bannerDivisions) && c.bannerDivisions > 0) {
+        card.dataset.isBanner = true;
+        card.dataset.bannerDivisions = c.bannerDivisions;
+        card.style.setProperty('--banner-divisions', c.bannerDivisions);
+    }
     if (c.semibanner) {
         card.dataset.isSemiBanner = c.semibanner;
         c.banner = true;
@@ -705,10 +729,17 @@ function separatorBehavior(card, c) {
     }
 }
 
+function animateFadeIn(element) {
+    element.classList.remove('is-entering');
+    void element.offsetWidth;
+    element.classList.add('is-entering');
+}
+
 // render the content grid from a menu data
 let lastRenderedMenu = null;
 function renderContentGrid(m, animate = true, showAll = false) {
     /* contentView.scrollTop = 0; */
+    animateFadeIn(contentViewGrid);
     contentViewGrid.innerHTML = '';
     if (m.html) contentViewGrid.innerHTML = `<div class="content-view-html">${m.html}</div>`;
     contentViewGrid.classList.remove('no-margin');
@@ -1244,9 +1275,12 @@ document.addEventListener('click', (e) => {
     applyUIState("IMAGE_VIEW");
     playSound('sfxPageOpen', SFX_PAGE_OPEN_VOL);
 
-    downloadImgBtn.addEventListener('click', () => {
-        window.open(img.src, 'Image')
-    });
+    downloadImgBtn.onclick = () => {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = fullSrc;
+        downloadLink.download = '';
+        downloadLink.click();
+    };
 
     const imgEl = imageView.querySelector('img');
     imgEl.classList.add('no-transition');
@@ -1677,16 +1711,20 @@ function processImagesInHTML(htmlString) {
         if (!src || src.startsWith('data:') || src === 'icons/loading.gif' || src.startsWith('emojis')) return;
 
         const fullSrc = src;
-        const THUMBNAIL_PREFIXES = ['images/c/', 'images/i/', 'images/flories'];
-
-        const isThumbnailCandidate = THUMBNAIL_PREFIXES.some(prefix => fullSrc.startsWith(prefix));
-        if (isThumbnailCandidate && fullSrc.match(/^(images|icons|drive)\//)) {
-            const thumbSrc = getThumbPath(fullSrc);
-            img.setAttribute('data-src', thumbSrc);
-            img.setAttribute('data-full-src', fullSrc);
-        } else {
+        if (DONT_USE_THUMB) {
             img.setAttribute('data-src', fullSrc);
+        } else {
+            const THUMBNAIL_PREFIXES = ['images/c/', 'images/i/', 'images/flories'];
+            const isThumbnailCandidate = THUMBNAIL_PREFIXES.some(prefix => fullSrc.startsWith(prefix));
+            if (isThumbnailCandidate && fullSrc.match(/^(images|icons|drive)\//)) {
+                const thumbSrc = getThumbPath(fullSrc);
+                img.setAttribute('data-src', thumbSrc);
+                img.setAttribute('data-full-src', fullSrc);
+            } else {
+                img.setAttribute('data-src', fullSrc);
+            }
         }
+
         img.setAttribute('src', 'icons/loading.gif');
     });
     return doc.body.innerHTML;
@@ -1703,6 +1741,12 @@ function processImagesInHTML(htmlString) {
 
 // add invisible menu as logo hitbox
 function menuLogoHitbox() {
+    const centerMenus = menuItems.filter(menu => !menu.hidden && menu.menuId !== "logoHitbox" && menu.orbit === 0);
+    if (centerMenus.length > 0) {
+        centerMenus.slice(1).forEach(menu => { menu.orbit = 1; });
+        return;
+    }
+
     if (!mainMenuLogo) return;
     const menu = {
         menuId: "logoHitbox",
@@ -1733,10 +1777,24 @@ settingsBtn.addEventListener('click', () => { openMenuById('settings') });
 
 // back button
 backBtn.addEventListener('click', () => { goBack(); });
+returnOrbitBtn?.addEventListener('click', () => {
+    // Step out one focused parent level; the outermost level returns to the main orbit.
+    if (!window.exitFocusedOrbitMenu?.()) return;
+    if (window.isOrbitFocusActive?.()) {
+        returnToFocusedOrbitInterface();
+        return;
+    }
+    returnToMainMenu();
+});
 function goBack() {
     if (openSingle) {
         openSingle = false;
         returnToMainMenu();
+        return;
+    }
+
+    if (window.isOrbitFocusActive?.() && (layoutViz(detailView) || layoutViz(contentView))) {
+        returnToFocusedOrbitInterface();
         return;
     }
 
@@ -1756,6 +1814,19 @@ function goBack() {
         if (parentMenu) { openMenuWithoutHistoryPush(parentMenu); history.replaceState({}, '', `?m=${parentMenu}`); return; }
         returnToMainMenu();
     }
+}
+
+function returnToFocusedOrbitInterface() {
+    // Restore the full-resolution canvas before revealing the focused orbit.
+    blurMainMenu(false);
+    resizeCanvas(1);
+    setCurrentMenu(null);
+    setLayoutViz(contentView, false);
+    setLayoutViz(detailView, false);
+    menuIsOpen = false;
+    window.resumeOrbitFocusCameraFollow?.();
+    applyUIState("FOCUSED_ORBIT");
+    window.setOrbitFocusHistory?.(window.getFocusedOrbitMenuId?.(), true);
 }
 
 // open menu but do not push the history
@@ -1811,18 +1882,39 @@ let ignoreHistoryPush = false; // when true, setHistoryState does nothing
 // set the history state by rewriting the URL parameters
 function setHistoryState(menuId, cardId = null, tab = null) {
     if (ignoreHistoryPush) return;
-    const url = !menuId ? window.location.pathname
-        : `?m=${menuId}${cardId ? `&i=${cardId}` : ''}${cardId && tab ? `&t=${tab}` : ''}`;
-    history.pushState({}, '', url);
+    history.pushState({}, '', buildHistoryURL(menuId, cardId, tab));
 }
 
 // replace the history state by rewriting the URL parameters
 function replaceHistoryState(menuId, cardId = null, tab = null) {
     if (ignoreHistoryPush) return;
-    const url = !menuId ? window.location.pathname
-        : `?m=${menuId}${cardId ? `&i=${cardId}` : ''}${cardId && tab ? `&t=${tab}` : ''}`;
-    history.replaceState({}, '', url);
+    history.replaceState({}, '', buildHistoryURL(menuId, cardId, tab));
 }
+
+function buildHistoryURL(menuId, cardId = null, tab = null) {
+    // Preserve f=<menuId> so focused pages survive reloads and browser navigation.
+    const params = new URLSearchParams(window.location.search);
+    params.delete('m');
+    params.delete('i');
+    params.delete('t');
+    if (menuId) params.set('m', menuId);
+    if (cardId) params.set('i', cardId);
+    if (cardId && tab) params.set('t', tab);
+    const query = params.toString();
+    return `${window.location.pathname}${query ? `?${query}` : ''}`;
+}
+
+window.setOrbitFocusHistory = (menuId, replace = false) => {
+    // Focus-only URLs omit page parameters and reopen the focused orbit directly.
+    if (!menuId) return;
+    const params = new URLSearchParams(window.location.search);
+    params.delete('m');
+    params.delete('i');
+    params.delete('t');
+    params.set('f', menuId);
+    const url = `${window.location.pathname}?${params.toString()}`;
+    history[replace ? 'replaceState' : 'pushState']({}, '', url);
+};
 
 // wait for a card element to appear in the content grid (used for URL param loading)
 async function waitForCard(cardId, timeout = 2000, interval = 50) {
@@ -1839,6 +1931,7 @@ async function waitForCard(cardId, timeout = 2000, interval = 50) {
 // handle parameter loading and also popstate
 async function loadAndPopstateHandler() {
     const params = new URLSearchParams(window.location.search);
+    const focusedMenuId = params.get('f');
     const menu = params.get('m');
     const card = params.get('i');
     const tab = params.get('t');
@@ -1846,8 +1939,19 @@ async function loadAndPopstateHandler() {
     if (layoutViz(imageView)) setLayoutViz(imageView, false);
     setButtonViz(rerollBtn, false);
 
+    // Restore focus before opening a page requested by m/i/t parameters.
+    if (focusedMenuId) window.restoreOrbitFocusFromURL?.(focusedMenuId);
+    else if (window.isOrbitFocusActive?.()) window.exitFocusedOrbitMenu?.(true);
+
     const targetMenu = menuItems.find(m => m.menuId === menu);
-    if (!targetMenu) { returnToMainMenu(); return; };
+    if (!targetMenu) {
+        if (focusedMenuId && window.isOrbitFocusActive?.()) {
+            returnToFocusedOrbitInterface();
+            return;
+        }
+        returnToMainMenu();
+        return;
+    };
 
     // when responding to a popstate event we do *not* want to push another history entry,
     // otherwise the browser back button never actually moves back.  Instead we temporarily

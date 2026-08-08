@@ -1,12 +1,1 @@
-emojiList = [
-    'aroace', 'aromantic', 'asexual', 'bigender', 'bisexual', 'gay', 'genderfluid', 'lesbian', 'nonbinary', 'heterosexual', 'intersex',
-    'pansexual', 'trans', 'rainbow', 'omnisexual', 'demisexual', 'demiromantic', 'agender', 'demiboy', 'demigirl', 'pangender',
-    'androsexual', 'genderflux', 'genderqueer', 'grayace', 'gynesexual', 'polygender', 'polysexual', 'xenogender',
-    'fishgender', 'floriesexual', 'floriewlw', 'floriemlm'
-];
-
-if (typeof module !== "undefined") {
-    module.exports = {
-        emojiList
-    };
-}
+emojiList=["aroace","aromantic","asexual","bigender","bisexual","gay","genderfluid","lesbian","nonbinary","heterosexual","intersex","pansexual","trans","rainbow","omnisexual","demisexual","demiromantic","agender","demiboy","demigirl","pangender","androsexual","genderflux","genderqueer","grayace","gynesexual","polygender","polysexual","xenogender","fishgender","floriesexual","floriewlw","floriemlm"],"undefined"!=typeof module&&(module.exports={emojiList:emojiList});

@@ -1511,6 +1511,140 @@ img {
     border-color: var(--search-text-focus-border);
 }
 
+/* e directory */
+.e-directory {
+    min-height: 100%;
+    background-color: var(--bg-2);
+}
+
+.e-directory-main {
+    width: min(100% - 32px, 920px);
+    margin: 0 auto;
+    padding: 48px 0 80px;
+}
+
+.e-directory .directory-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.e-directory .directory-header h1 {
+    margin: 0;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.e-directory .directory-header a {
+    flex-shrink: 0;
+    color: var(--accentl);
+}
+
+.e-directory #cardSearch {
+    width: 100%;
+    margin: 22px 0 10px;
+    padding: 14px 16px;
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accentl) 16%, transparent);
+}
+
+.e-directory #cardSearch:focus {
+    border-color: var(--accentl);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.e-directory #emptySearch {
+    margin: 32px 0;
+    color: var(--text-second-color);
+    text-align: center;
+}
+
+.e-directory .menu-group {
+    margin: 36px 0 0;
+}
+
+.e-directory .menu-group h2 {
+    margin: 0;
+    padding: 10px 14px;
+    color: var(--accentl);
+    font-size: 1.1rem;
+    background: color-mix(in srgb, var(--accent2) 72%, transparent);
+    border-left: 4px solid var(--accentl);
+}
+
+.e-directory .child-menu {
+    margin-top: 18px;
+}
+
+.e-directory .child-menu h3 {
+    margin: 0;
+    padding: 8px 14px;
+    color: var(--text-second-color);
+    font-size: 0.95rem;
+    background: color-mix(in srgb, var(--accent2) 45%, transparent);
+}
+
+.e-directory .menu-group ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3px;
+    margin: 1px 0 0;
+    padding: 0;
+    list-style: none;
+    background: var(--bg);
+}
+
+.e-directory .menu-group li {
+    min-width: 0;
+    padding: 13px 14px;
+    background: color-mix(in srgb, var(--bg) 80%, var(--accent2));
+    transition: background 160ms ease;
+}
+
+.e-directory .menu-group li:hover {
+    background: color-mix(in srgb, var(--accent2) 72%, var(--bg));
+}
+
+.e-directory .menu-group a {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow: hidden;
+    color: var(--white);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.e-directory .menu-group small {
+    display: block;
+    margin-top: 4px;
+    overflow: hidden;
+    color: var(--text-third-color);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 560px) {
+    .e-directory-main {
+        width: min(100% - 24px, 920px);
+        padding-top: 24px;
+    }
+
+    .e-directory .directory-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .e-directory .menu-group ul {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Buttons */
 .form-buttons {
     display: flex;

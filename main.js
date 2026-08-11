@@ -3,8 +3,8 @@
 // --------------------------
 
 // Lazy loader base path
-const LAZY_BASE = 'https://cdn.jsdelivr.net/gh/blurplebun/blurplebun.github.io/';
-const LOCAL_MODE = 1; // if you don't use a cdn service to load images, just set this to true
+const LAZY_BASE = 'https://artifyber.xyz/';
+const LOCAL_MODE = 0; // if you don't use a cdn service to load images, just set this to true
 
 // Sound control
 const INIT_MASTER_VOL = 1;
@@ -1522,15 +1522,14 @@ function initLazyLoader(root = document) {
         }
 
         // convert relative path to CDN path
-        /*
         const finalSrc = originalSrc.startsWith('http')
             ? originalSrc
             : LAZY_BASE + originalSrc;
-            */
-
-        const finalSrc = originalSrc;
 
         img.dataset.src = finalSrc;
+        img.addEventListener('error', () => {
+            img.src = originalSrc;
+        },{once: true});
         img.setAttribute('src', 'icons/loading.gif');
         img.dataset.lazyProcessed = "true";
         if (root == detailView && !img.classList.contains("thumb")) {

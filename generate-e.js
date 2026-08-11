@@ -4,6 +4,7 @@
 const DOMAIN = 'https://jonaykon.github.io/fyberverse';
 const fs = require("fs");
 const path = require("path");
+require("./facts.js");
 const { menuItems } = require("./data.js");
 
 const OUT = path.join(__dirname, "e");

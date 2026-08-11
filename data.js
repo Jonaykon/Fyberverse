@@ -3188,6 +3188,12 @@ let menuItems = [
                 pronouns: 'She',
                 gender: 'Female',
                 gallery: ['images/flories/uncat/Sunflette.png'],
+                relatives: [
+                    {
+                        cardId: 'digirel-vanilla:sunstruck',
+                        relation: 'Sister'
+                    },
+                ],
                 detail: '',
                 image: 'images/flories/uncat/Sunflette.png'
             },
@@ -5731,6 +5737,11 @@ let menuItems = [
                 image: 'icons/digirel.png'
             },
             {
+                linkId: 'digirel-vanilla',
+                /* banner: true, */
+            },
+            {},
+            {
                 cardId: 'ruby',
                 title: 'Ruby',
                 subtitle: '',
@@ -5855,28 +5866,6 @@ let menuItems = [
                 ],
 
                 image: 'images/i/cherry-i.png',
-            },
-            {
-                cardId: 'blurplebun',
-                title: 'Blurplebun',
-                subtitle: '',
-                detail: '',
-
-                isCharacter: true,
-                species: 'Rabbit',
-                pronouns: 'She/They',
-                gender: 'Female',
-                sexuality: 'Asexual',
-                aliases: '',
-                extra: '',
-                refsheet: '',
-                gallery: [
-                    'images/c/blurplebun-c.png',
-                    'images/c/blurplebun-c2.png',
-                    'images/i/blurplebun-i.png',
-                ],
-
-                image: 'images/i/blurplebun-i.png',
             },
             {
                 cardId: 'ebta',
@@ -6025,6 +6014,504 @@ let menuItems = [
                 ],
 
                 image: 'images/i/quanta-i.png',
+            },
+        ]
+    },
+
+    {
+        // Digirel (2026 album)
+        title: 'Digirel',
+        menuId: 'digirel-vanilla',
+        subtitle: '2026 Album',
+        image: 'images/digirel_album.png',
+        color: 'var(--color-3)',
+        hidden: true,
+        html: `
+            <div style="width: 100%; aspect-ratio: 4 / 1; overflow: hidden;">
+            <img src="images/c/digirel-banner.png" style="width: 100%; max-width: 100%; height: 100%; max-height: 100%;object-fit: cover; display: block;" alt="Digirel Album Banner">
+            </div>
+            <br>
+            <hr>
+            `,
+        cards: [
+            {
+                cardId: 'digirelInfo',
+                title: 'Album Information',
+                subtitle: 'Digirel',
+                banner: true,
+                detail: `
+                    Released: August 7th, 2026<br>
+                    Total tracks: 16<br>
+                    Total length: 1hr 9m<br>
+                    <br>
+                    <a href="https://open.spotify.com/album/4ybrRjH8JMCqzuW1SZl6vh" target="_blank">Spotify Album</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/digirel" target="_blank">Bandcamp Release</a><br>
+                    <h2>Album Cover:</h2><br>
+                    <img src="images/digirel_album.png" data-caption="Digirel" data-subcaption="Album cover for Digirel"><br>
+                    `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                        <div class="container">
+                            ${internalCard({ href: "digirel-vanilla:gigabbit", banner: true, title: "1 - Fyber Optic", subtitle: "04:12" })}
+                            ${internalCard({ href: "digirel-vanilla:jamie", banner: true, title: "2 - Trancegender", subtitle: "05:41" })}
+                            ${internalCard({ href: "digirel-vanilla:neocha", banner: true, title: "3 - YOU HAVE 3324 NEW MESSAGE REQUESTS!", subtitle: "04:07" })}
+                            ${internalCard({ href: "digirel-vanilla:aster", banner: true, title: "4 - Neitherbinary", subtitle: "06:02" })}
+                            ${internalCard({ href: "digirel-vanilla:blink", banner: true, title: "5 - particle accelerator type beat", subtitle: "ft. (un)familiar. - 03:56" })}
+                            ${internalCard({ href: "digirel-vanilla:gumdrop", banner: true, title: "6 - The Amazing Digirel Multiversalnet", subtitle: "ft. Glyde - 04:48" })}
+                            ${internalCard({ href: "digirel-vanilla:blurplebun", banner: true, title: "7 - Lazuli", subtitle: "03:46" })}
+                            ${internalCard({ href: "digirel-vanilla:pyrapup", banner: true, title: "8 - Zircon", subtitle: "04:37" })}
+                            ${internalCard({ href: "digirel-vanilla:xxi", banner: true, title: "9 - pinkorwhiteorgreen", subtitle: "03:11" })}
+                            ${internalCard({ href: "digirel-vanilla:lysa", banner: true, title: "10 - LCDLSD", subtitle: "03:42" })}
+                            ${internalCard({ href: "digirel-vanilla:sunstruck", banner: true, title: "11 - there's VR in floriVeRse !!", subtitle: "04:04" })}
+                            ${internalCard({ href: "digirel-vanilla:irama", banner: true, title: "12 - 333", subtitle: "03:33" })}
+                            ${internalCard({ href: "digirel-vanilla:mikumori", banner: true, title: "13 - 500", subtitle: "05:00" })}
+                            ${internalCard({ href: "digirel-vanilla:hertz", banner: true, title: "14 - rewind⏪remind", subtitle: "03:28" })}
+                            ${internalCard({ href: "digirel-vanilla:luna", banner: true, title: "15 - L.U.N.A (Long-range Unmanned Navigator for Astroscience)", subtitle: "05:41" })}
+                            ${internalCard({ href: "digirel-vanilla:quota", banner: true, title: "16 - take my core", subtitle: "03:16" })}
+                        </div>
+                        `
+                    }
+                ],
+                image: 'images/digirel_album.png'
+            },
+            {
+                cardId: 'gigabbit',
+                title: 'Gigabbit',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Router Rabbit',
+                pronouns: 'They',
+                gender: 'Non-Binary',
+                sexuality: 'Aroace',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/gigabbit-r.png',
+                gallery: [
+                    'images/c/gigabbit-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0qGgyn1QVAxVTWSIjbpL2v?utm_source=generator&si=73b3654c8e2d457f" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [],
+
+                image: 'images/i/gigabbit-i.png',
+            },
+            {
+                cardId: 'jamie',
+                title: 'Jamie',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Stick Figure',
+                pronouns: 'She/He/They',
+                gender: 'Trancegender',
+                sexuality: 'Pansexual',
+                flags: ['trans', 'nonbinary'],
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/jamie-r.png',
+                gallery: [
+                    'images/c/jamie-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6c1KTVbtaCLrSxsM2Zqdlw?utm_source=generator&si=a8a1a956965f45ae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [
+                    {
+                        cardId: 'digirel-vanilla:aster',
+                        relation: 'Significant Other'
+                    },
+                ],
+
+                image: 'images/i/jamie-i.png',
+            },
+            {
+                cardId: 'neocha',
+                title: 'Neocha',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Chat Balloon Cat',
+                pronouns: 'He/They',
+                gender: 'Male',
+                sexuality: 'Gay',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/neocha-r.png',
+                gallery: [
+                    'images/c/neocha-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0evLHJPXNMmTsGLpvxgpMX?utm_source=generator&si=231a6941f8dc4371" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [],
+
+                image: 'images/i/neocha-i.png',
+            },
+            {
+                cardId: 'aster',
+                title: 'Aster',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Lucani (Bunny)',
+                pronouns: 'They',
+                gender: 'Neitherbinary',
+                sexuality: 'Asexual',
+                flags: ['nonbinary'],
+                aliases: '',
+                extra: 'Lucani is an open-species created by <a href="https://x.com/ZestyLemonss" target="_blank">ZestyLemonss</a>!',
+                refsheet: 'images/r/aster-r.png',
+                gallery: [
+                    'images/c/aster-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4joBhtq3PWbbDBTMWfO8zK?utm_source=generator&si=80cb7ca53caf4e52" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [
+                    {
+                        cardId: 'digirel-vanilla:jamie',
+                        relation: 'Significant Other'
+                    },
+                ],
+
+                image: 'images/i/aster-i.png',
+            },
+            {
+                cardId: 'blink',
+                title: 'Blink',
+                subtitle: 'ft. (un)familiar.',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Undiscovered Species',
+                pronouns: 'It',
+                gender: 'No Gender',
+                sexuality: '',
+                flags: [],
+                aliases: 'The Director',
+                extra: '',
+                characterAttrs: {
+                    'Design Collab': '<a href="https://x.com/unfamiliartunes" target="_blank">(un)familiar.</a>'
+                },
+                refsheet: 'images/r/blink-r.png',
+                gallery: [
+                    'images/c/blink-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6Cw2MNySH0YSV5c8OhdzY3?utm_source=generator&si=fd7cd78f156546fb" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [],
+
+                image: 'images/i/blink-i.png',
+            },
+            {
+                cardId: 'gumdrop',
+                title: 'Gumdrop',
+                subtitle: 'ft. Glyde',
+                detail: '',
+
+                isCharacter: true,
+                species: 'CRT Rabbit',
+                pronouns: 'She',
+                gender: 'Female',
+                sexuality: '',
+                flags: [],
+                aliases: '',
+                extra: '',
+                characterAttrs: {
+                    'Design Collab': '<a href="https://x.com/glydedagamer" target="_blank">Glyde</a>'
+                },
+                refsheet: 'images/r/gumdrop-r.png',
+                gallery: [
+                    'images/c/gumdrop-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5cYhTBxj76Z86gOWuN3CPx?utm_source=generator&si=8ec69cc21652425e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [],
+
+                image: 'images/i/gumdrop-i.png',
+            },
+            {
+                cardId: 'blurplebun',
+                title: 'Blurplebun',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Rabbit',
+                pronouns: 'She/They',
+                gender: 'Female',
+                sexuality: 'Asexual',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/blurplebun-r.png',
+                gallery: [
+                    'images/c/blurplebun-c3.png',
+                    'images/c/blurplebun-c.png',
+                    'images/c/blurplebun-c4.png',
+                    'images/c/blurplebun-c2.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3vH5ZPqQqHQqDhhfdg3PG0?utm_source=generator&si=b71d1ca71b834985" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [
+                    {
+                        cardId: 'digirel-vanilla:pyrapup',
+                        relation: 'Nemesis'
+                    },
+                ],
+
+                image: 'images/i/blurplebun-i.png',
+            },
+            {
+                cardId: 'pyrapup',
+                title: 'Pyrapup',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Dog',
+                pronouns: 'She',
+                gender: 'Female',
+                sexuality: 'Lesbian',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/pyrapup-r.png',
+                gallery: [
+                    'images/c/pyrapup-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4n3aD7HHWxhsV4wTTTPubH?utm_source=generator&si=eb23038496d94e95" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [
+                    {
+                        cardId: 'digirel-vanilla:blurplebun',
+                        relation: 'Nemesis'
+                    },
+                ],
+
+                image: 'images/i/pyrapup-i.png',
+            },
+            {
+                cardId: 'xxi',
+                title: 'XXI',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Multimonitor Robot',
+                pronouns: 'They/Any',
+                gender: 'Pangender',
+                sexuality: 'Pansexual',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/xxi-r.png',
+                gallery: [
+                    'images/c/xxi-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0yj4sENQ8xgdHrlh3vffZs?utm_source=generator&si=7b3113772ec249f6" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/xxi-i.png',
+            },
+            {
+                cardId: 'lysa',
+                title: 'Lysa',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Slime Cat',
+                pronouns: 'She/They',
+                gender: 'Demigirl',
+                sexuality: 'Lesbian',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/lysa-r.png',
+                gallery: [
+                    'images/c/lysa-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7rzMP6iBtD4oQ3vB4d3FA0?utm_source=generator&si=14180a4269fc4387" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/lysa-i.png',
+            },
+            {
+                cardId: 'sunstruck',
+                title: 'Sunstruck',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Flower Robot',
+                pronouns: 'She/They',
+                gender: 'Female',
+                sexuality: 'Heterosexual',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/sunstruck-r.png',
+                gallery: [
+                    'images/c/sunstruck-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1jEV8H9QO7fSLptbXKD55C?utm_source=generator&si=7916c7b3a8644091" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+                relatives: [
+                    {
+                        cardId: 'floriverse:fvSunflette',
+                        relation: 'Sister'
+                    },
+                ],
+
+                image: 'images/i/sunstruck-i.png',
+            },
+            {
+                cardId: 'irama',
+                title: 'Irama',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Avian',
+                pronouns: 'Any Pronouns',
+                gender: 'Pangender',
+                sexuality: 'Omnisexual',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/irama-r.png',
+                gallery: [
+                    'images/c/irama-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1jEV8H9QO7fSLptbXKD55C?utm_source=generator&si=7916c7b3a8644091" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/irama-i.png',
+            },
+            {
+                cardId: 'mikumori',
+                title: 'Mikumori',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Cloud Folder',
+                pronouns: 'Any Pronouns',
+                gender: 'Any Gender',
+                sexuality: '',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/mikumori-r.png',
+                gallery: [
+                    'images/c/mikumori-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6FFKwyfBCPux9UzDR8TJbS?utm_source=generator&si=17f266e42be04414" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/mikumori-i.png',
+            },
+            {
+                cardId: 'hertz',
+                title: 'Hertz',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Clock Moth',
+                pronouns: 'He/They',
+                gender: 'Male',
+                sexuality: 'Aroace',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/hertz-r.png',
+                gallery: [
+                    'images/c/hertz-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3G5oEDBx2bD21RPxjxyLYz?utm_source=generator&si=4d6ea31a79644a05" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/hertz-i.png',
+            },
+            {
+                cardId: 'luna',
+                title: 'L.U.N.A',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Satellite',
+                pronouns: 'It',
+                gender: 'Agender',
+                sexuality: '',
+                aliases: 'Long-range Unmanned Navigator for Astroscience',
+                extra: '',
+                refsheet: 'images/r/luna-r.png',
+                gallery: [
+                    'images/c/luna-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0u6IkX1d6luhyvIbV6oJpL?utm_source=generator&si=e90b13fed5254eae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/luna-i.png',
             },
         ]
     },

@@ -6015,6 +6015,26 @@ let menuItems = [
 
                 image: 'images/i/quanta-i.png',
             },
+            {
+                cardId: 'istar',
+                title: 'I*',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: 'Folder',
+                pronouns: 'Any Pronouns',
+                gender: 'Agender',
+                sexuality: 'Aroace',
+                aliases: '',
+                extra: '',
+                refsheet: '',
+                gallery: [
+                    'images/c/istar-c.jpg',
+                ],
+
+                image: 'images/i/istar-i.jpg',
+            },
         ]
     },
 

@@ -40,7 +40,7 @@ jobs:
                   git config user.name "github-actions"
                   git config user.email "actions@github.com"
 
-                  VERSION=$(grep -Eo 'version[[:space:]]*[:=][[:space:]]*["'"'"'][^"'"'"']+["'"'"']' data.js | sed -E 's/.*["'"'"']([^"'"'"']+)["'"'"'].*/\1/' || echo "unknown")
+                  VERSION=$(node -p 'require("./data.js").version')
 
                   git add .
                   git diff --cached --quiet && exit 0

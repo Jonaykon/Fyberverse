@@ -6533,6 +6533,32 @@ let menuItems = [
 
                 image: 'images/i/luna-i.png',
             },
+            {
+                cardId: 'quota',
+                title: 'Quota',
+                subtitle: '',
+                detail: '',
+
+                isCharacter: true,
+                species: '',
+                pronouns: 'They',
+                gender: 'Non-binary',
+                sexuality: '',
+                aliases: '',
+                extra: '',
+                refsheet: 'images/r/quota-r.png',
+                gallery: [
+                    'images/c/quota-c.png',
+                ],
+                sections: [
+                    {
+                        title: 'Song',
+                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6yeF1K6sQoonOsXI5l4UcZ?utm_source=generator&si=e90b13fed5254eae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                    }
+                ],
+
+                image: 'images/i/quota-i.png',
+            },
         ]
     },
 

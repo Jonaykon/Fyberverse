@@ -600,6 +600,7 @@ function overrideCardData(card, c, override = true) {
     }
     c.titleOverride = card.dataset.overrideTitle || '';
     c.subtitleOverride = card.dataset.overrideSubtitle || '';
+    c.imageOverride = card.dataset.overrideImage || '';
 }
 
 // the default behavior for clicking a regular card
@@ -616,7 +617,7 @@ function setCardHTML(card, c, r = null) {
     const t = c.titleOverride || c.title;
     const s = c.subtitleOverride || c.subtitle;
     let html = `
-        <img src="${c.image}" class="thumb" draggable="false">
+        <img src="${c.imageOverride || c.image}" class="thumb" draggable="false">
         <div class="card-text">
             <div class="card-text-title">${t}</div>
             ${s ? `<div class="card-text-excerpt">${s}</div>` : ''}
@@ -713,6 +714,7 @@ function renderContentGrid(m, animate = true) {
     let cardArray = [];
     const frag = document.createDocumentFragment();
     m.cards.forEach(c => {
+        if (c.hidden) return;
         const card = document.createElement('div');
         card.classList.add('card');
         card.dataset.id = c.cardId;

@@ -3596,40 +3596,8 @@ let menuItems = [
         hidden: true,
         cards: [
             {
-                cardId: 'fvvInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse',
+                reference: 'music:floriverse',
                 banner: true,
-                detail: `
-                    Released: October 5th, 2023<br>
-                    Total tracks: 10<br>
-                    Total length: 32m 16s<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/0AGxggSyuXqGdYLk0D7pbF?si=4Eej22G-RcOnbu8XIagHWQ" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fv-i.png" data-caption="Floriverse" data-subcaption="Album cover for Floriverse"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                            <div class="container">
-                                ${internalCard({ href: "floriverse-vanilla:fvvPotto", banner: true, title: "1 - Grow!", subtitle: "02:19" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvTwinkle", banner: true, title: "2 - Starfruit Garden", subtitle: "02:26" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvStrawmon", banner: true, title: "3 - Fruity Bounce", subtitle: "02:08" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvNocto", banner: true, title: "4 - Nocturnal Photosynthesis", subtitle: "04:41" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvFurflow", banner: true, title: "5 - Catdelions", subtitle: "03:15" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvPana", banner: true, title: "6 - Pancake Pancake Pancake Pancake", subtitle: "02:58" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvPinkly", banner: true, title: "7 - Tulips", subtitle: "02:51" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvKosmaya", banner: true, title: "8 - Exoplants", subtitle: "05:15" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvMincha", banner: true, title: "9 - Jasmine Tea", subtitle: "03:05" })}
-                                ${internalCard({ href: "floriverse-vanilla:fvvLan", banner: true, title: "10 - Moonflower", subtitle: "03:12" })}
-                            </div>
-                        `,
-                    }
-                ],
-                image: 'images/fv-i.png'
             },
             {
                 cardId: 'fvvPotto',
@@ -3645,7 +3613,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4gdYjAljNAoRtL5TM7lZ13?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Grow</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 2m 19s<br>
+                            BPM: 140<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3665,7 +3637,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0BZTvGvSh3jy7vAsPgzIq8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Starfruit Garden</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 2m 26s<br>
+                            BPM: 169<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3685,7 +3661,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7nNNU3DWb44jYQ58rhyPhC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Fruity Bounce</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 2m 8s<br>
+                            BPM: 139<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3705,7 +3685,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2wr0z9kPBz3vaUUCeFKyJ0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Nocturnal Photosynthesis</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 4m 41s<br>
+                            BPM: 170<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3742,7 +3726,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6TtpP74DZMui1A1yW2ZkgF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Catdelions</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 3m 15s<br>
+                            BPM: 198<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3769,7 +3757,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5if8Q8xC4zO3c3cnxsrLME?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Pancake Pancake Pancake Pancake</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 2m 58s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3789,7 +3781,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/41AoLmWUjKgKoXwvuTtOlf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Tulips</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 2m 51s<br>
+                            BPM: 110<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3809,7 +3805,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0JqRjWreUkC8D8k0jkT1tH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Exoplants</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 5m 15s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3829,7 +3829,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/71YSihtpFEGwW6KNlrRvwq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Jasmine Tea</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 3m 5s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3849,7 +3853,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/47gXi6wzLJByNOhF3NHIoh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Moonflower</h1>
+                            Released: October 5th, 2023<br>
+                            Length: 3m 12s<br>
+                            BPM: 160<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3867,62 +3875,8 @@ let menuItems = [
         hidden: true,
         cards: [
             {
-                cardId: 'fvdInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse : Delta',
+                reference: 'music:floriverse-delta',
                 banner: true,
-                detail: `
-                    Released: March 3rd, 2024<br>
-                    Total tracks: 32<br>
-                    Total length: 1hr 37m<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/2PNIG5k8lEGQ6fSuMUn7ir?si=BO2liD1rSpq7Wna6xTksYQ" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse-delta" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fvd-i.png" data-caption="Floriverse : Delta" data-subcaption="Album cover for Floriverse : Delta"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                        <div class="container">
-                            ${internalCard({ href: "floriverse-delta:fvdStarple", banner: true, title: "1 - Zenith", subtitle: "03:04" })}
-                            ${internalCard({ href: "floriverse-delta:fvdChrora", banner: true, title: "2 - Aurora", subtitle: "02:19" })}
-                            ${internalCard({ href: "floriverse-delta:fvdOrply", banner: true, title: "3 - Midnight Drawing", subtitle: "03:03" })}
-                            ${internalCard({ href: "floriverse-delta:fvdTiram", banner: true, title: "4 - Spores", subtitle: "04:01" })}
-                            ${internalCard({ href: "floriverse-delta:fvdNimibi", banner: true, title: "5 - Dreamy Sunflower", subtitle: "02:40" })}
-                            ${internalCard({ href: "floriverse-delta:fvdSlump", banner: true, title: "6 - Oxygen", subtitle: "02:33" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPio", banner: true, title: "7 - Vitaelek", subtitle: "03:15" })}
-                            ${internalCard({ href: "floriverse-delta:fvdYana", banner: true, title: "8 - Midnight Honey", subtitle: "03:07" })}
-                            ${internalCard({ href: "floriverse-delta:fvdLooni", banner: true, title: "9 - You Are My Star", subtitle: "02:54" })}
-                            ${internalCard({ href: "floriverse-delta:fvdChocopop", banner: true, title: "10 - JUST KIDDING!!", subtitle: "02:56" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStaz", banner: true, title: "11 - Pistachio", subtitle: "02:23" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDelly", banner: true, title: "12 - Catdelions II", subtitle: "03:05" })}
-                            ${internalCard({ href: "floriverse-delta:fvdSprinkly", banner: true, title: "13 - Happy Cakeday", subtitle: "02:49" })}
-                            ${internalCard({ href: "floriverse-delta:fvdEcno", banner: true, title: "14 - Tripetals", subtitle: "02:24" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDisaton", banner: true, title: "15 - WATA KASHI", subtitle: "02:48" })}
-                            ${internalCard({ href: "floriverse-delta:fvdProtoberries", banner: true, title: "16 - Mixed Berries", subtitle: "03:08" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPipix", banner: true, title: "17 - Pixel Florie", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPico", banner: true, title: "18 - Pico", subtitle: "02:47" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStarlila", banner: true, title: "19 - I Love You!!!", subtitle: "02:08" })}
-                            ${internalCard({ href: "floriverse-delta:fvdWina", banner: true, title: "20 - SRLAOANOEETVLEEYDS", subtitle: "04:28" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFret", banner: true, title: "21 - Metal Plate Petal Melta", subtitle: "03:38" })}
-                            ${internalCard({ href: "floriverse-delta:fvdAzka", banner: true, title: "22 - Ascension", subtitle: "02:47" })}
-                            ${internalCard({ href: "floriverse-delta:fvdCherro", banner: true, title: "23 - Tomato", subtitle: "03:13" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFloorion", banner: true, title: "24 - 5122", subtitle: "03:22" })}
-                            ${internalCard({ href: "floriverse-delta:fvdStellA", banner: true, title: "25 - Interstella", subtitle: "03:51" })}
-                            ${internalCard({ href: "floriverse-delta:fvdNully", banner: true, title: "26 - Nu15", subtitle: "02:21" })}
-                            ${internalCard({ href: "floriverse-delta:fvdDatum", banner: true, title: "27 - Artificial Sprouts", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-delta:fvdPoloniloo", banner: true, title: "28 - stem.cut", subtitle: "03:09" })}
-                            ${internalCard({ href: "floriverse-delta:fvdGrayscale", banner: true, title: "29 - Colorblind", subtitle: "02:57" })}
-                            ${internalCard({ href: "floriverse-delta:fvdErwith", banner: true, title: "30 - Anxiety", subtitle: "02:40" })}
-                            ${internalCard({ href: "floriverse-delta:fvdFyzer", banner: true, title: "31 - ,", subtitle: "02:25" })}
-                            ${internalCard({ href: "floriverse-delta:fvdKloroforo", banner: true, title: "32 - Xilem", subtitle: "04:44" })}
-                        </div>
-                        `
-                    }
-                ],
-                image: 'images/fvd-i.png'
             },
             {
                 cardId: 'fvdStarple',
@@ -3938,7 +3892,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6qwqbRGdEyxusUFDCzsZPT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Zenith</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 4s<br>
+                            BPM: 66<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3958,7 +3916,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6hqhGbC6nbp0tJxk3U4Grw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Aurora</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 19s<br>
+                            BPM: 171<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -3978,7 +3940,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1M31eXSdpJeaDPZpCpQBUG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Midnight Drawing</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 3s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4004,7 +3970,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4IODkTlrmrOPUGX6tXjCxv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Spores</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 4m 1s<br>
+                            BPM: 144<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4024,7 +3994,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2oTb7PEEwCp2HJXGJeboL5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Dreamy Sunflower</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 40s<br>
+                            BPM: 165<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4044,7 +4018,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3OzDbbEDCeN68ODbpCFJ19?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Oxygen</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 33s<br>
+                            BPM: 168<br>
+                            Time signature: 6/8<br>
                         `
                     }
                 ],
@@ -4064,7 +4042,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Fc9G9SBRr0tawPhs230nv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Vitaelek</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 15s<br>
+                            BPM: 160<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4094,7 +4076,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6lVBWrXkQDo9lvg3DCvfKk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Midnight Honey</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 7s<br>
+                            BPM: 325<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4114,7 +4100,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/72hvp8jiR2gEygYGwdI6sP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>You Are My Star</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 54s<br>
+                            BPM: 162<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4134,7 +4124,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0XEm6ZNg8aJEbJXfXHiw5G?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>JUST KIDDING!!</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 56s<br>
+                            BPM: 201<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4154,7 +4148,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0AfF2Wd7GjJHCEtiOXxkUM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Pistachio</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 23s<br>
+                            BPM: 177<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4174,7 +4172,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5OP8fr2erUsz19SyVoE9LR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Catdelions II</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 5s<br>
+                            BPM: 177<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4194,7 +4196,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2k4OSOLNmQYkdPHqJiaPKp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Happy Cakeday</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 49s<br>
+                            BPM: 171<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4214,7 +4220,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3nXURiIDCHS7sgWm5HK3D1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Tripetals</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 24s<br>
+                            BPM: 222<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4234,7 +4244,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2OIRp2Szn2NCLasBAa9dLE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>WATA KASHI</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 48s<br>
+                            BPM: 201<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4254,7 +4268,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1CinvvQMgABDkN8XjEOaqr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Mixed Berries</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 8s<br>
+                            BPM: 174<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4274,7 +4292,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4ABYxyGWirHUon4Yyn1cI6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Pixel Florie</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 2s<br>
+                            BPM: 121<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4294,7 +4316,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0QNRQ9sOAhJuQ2npMhWTPB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Pico</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 47s<br>
+                            BPM: 210<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4314,7 +4340,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4jBPsvM3xLINdFRGFrI6nw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>I Love You!!!</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 8s<br>
+                            BPM: 411<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4344,7 +4374,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2aG9OgByL6HMnuBpbhBtZq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>SRLAOANOEETVLEEYDS</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 4m 28s<br>
+                            BPM: 201<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4364,7 +4398,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZgXT9ubENobpWYAwLByuG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Metal Plate Petal Melta</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 38s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4384,7 +4422,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CDOwxkjeeKlUQ9slp7HH1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Ascension</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 47s<br>
+                            BPM: 375 or 750<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4404,7 +4446,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6cWkPhZdRFrEfXHt4VTdaF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Tomato</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 13s<br>
+                            BPM: 129<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4424,7 +4470,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/08a6zLGmgnz7E6ERRVs8MG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>5122</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 22s<br>
+                            BPM: (144 ➡️ 192) interchangeably<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4444,7 +4494,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2gDE5ZevrFWTm2DbAyoKSa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Interstella</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 51s<br>
+                            BPM: 128<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4464,7 +4518,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0ksaxbYkDiQdUWs9AhuxZv?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Nu15</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 21s<br>
+                            BPM: 132<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4484,7 +4542,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/16qNFlojlNYe8cGGfawMbj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Artificial Sprouts</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 30s<br>
+                            BPM: 128<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4504,7 +4566,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZzHlAWcRPORwAjL1hqOdc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>stem.cut</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 3m 9s<br>
+                            BPM: 222<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4524,7 +4590,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/61VIYvsGxstQU65lCIwTyx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Colorblind</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 57s<br>
+                            BPM: 180, then (180 ➡️ 183.33 ➡️ 187 ➡️ 190 ➡️ 200 ➡️ 210 ➡️ 225 ➡️ 260), then back to 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4544,7 +4614,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5uCO2B4m6lxjOoHOj38JfG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Anxiety</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 40s<br>
+                            BPM: 240<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4564,7 +4638,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/18hIDsoOvx483ajC3dMLYW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>,</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 2m 25s<br>
+                            BPM: 200<br>
+                            Time signature: 5/4<br>
                         `
                     }
                 ],
@@ -4584,7 +4662,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6n3dbR0Cw3k6MYwGA2OgDJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Xilem</h1>
+                            Released: March 3rd, 2024<br>
+                            Length: 4m 44s<br>
+                            BPM: 165<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4602,78 +4684,8 @@ let menuItems = [
         hidden: true,
         cards: [
             {
-                cardId: 'fveInfo',
-                title: 'Album Information',
-                subtitle: 'Floriverse : Epsilon',
+                reference: 'music:floriverse-epsilon',
                 banner: true,
-                detail: `
-                    Released: June 4th, 2025<br>
-                    Total tracks: 48<br>
-                    Total length: 2hr 36m<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/2qpLiyGRBhRHggKZSJUYbj?si=j0kxk_nfQ9u4bmv1iZmj3Q" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/floriverse-epsilon" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/fve-i.png" data-caption="Floriverse : Epsilon" data-subcaption="Album cover for Floriverse : Epsilon"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                        <div class="container">
-                            ${internalCard({ href: "floriverse-epsilon:fveSolaris", banner: true, title: "1 - Hitzen", subtitle: "02:33" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTrix", banner: true, title: "2 - touch grass", subtitle: "02:59" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLux", banner: true, title: "3 - Borealis", subtitle: "03:10" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveGlitter", banner: true, title: "4 - Midnight Stargazing", subtitle: "04:03" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFomfz", banner: true, title: "5 - Leaves", subtitle: "02:53" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveBion", banner: true, title: "6 - Vanished Horizons", subtitle: "02:35" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZoey", banner: true, title: "7 - Spores II", subtitle: "02:54" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveHera", banner: true, title: "8 - Timeline", subtitle: "03:49" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveIsla", banner: true, title: "9 - Coconut", subtitle: "03:36" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAzira", banner: true, title: "10 - Blueberry", subtitle: "03:04" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveMisty", banner: true, title: "11 - Catdelions III", subtitle: "03:37" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNya", banner: true, title: "12 - Catdelions IV", subtitle: "04:00" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAtto", banner: true, title: "13 - Catdelions V", subtitle: "03:19" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveClara", banner: true, title: "14 - Cottonbuns", subtitle: "02:53" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLyra", banner: true, title: "15 - Cottonbuns II", subtitle: "04:07" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveStrawnilla", banner: true, title: "16 - Frozen Strawnilla Cream", subtitle: "02:32" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePoppers", banner: true, title: "17 - Vitamin Supplement Commercials", subtitle: "02:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAurelia", banner: true, title: "18 - Weekend255", subtitle: "03:01" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveDysis", banner: true, title: "19 - Afternoon", subtitle: "02:50" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveButter", banner: true, title: "20 - Peanut Butter", subtitle: "02:35" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveBell", banner: true, title: "21 - Under The Mistletoe", subtitle: "02:45" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNila", banner: true, title: "22 - Midnight Honey II", subtitle: "03:24" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZest", banner: true, title: "23 - Zesty Lemonade", subtitle: "02:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveCorrode", banner: true, title: "24 - へへ", subtitle: "03:40" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAmalgamapot", banner: true, title: "25 - Flashbackverse", subtitle: "02:21" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePosie", banner: true, title: "26 - Quintupetals", subtitle: "02:26" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNonsense", banner: true, title: "27 - Nonsense Flower", subtitle: "04:03" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTorq", banner: true, title: "28 - Mechanical Sprouts", subtitle: "03:22" })}
-                            ${internalCard({ href: "floriverse-epsilon:fvePersen", banner: true, title: "29 - =fract", subtitle: "03:26" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTerentia", banner: true, title: "30 - Ruins", subtitle: "03:41" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveLumina", banner: true, title: "31 - Luciferin", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveTriplequestionmark", banner: true, title: "32 - questionmark", subtitle: "02:48" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveUpsidedowntriplequestionmark", banner: true, title: "33 - ε", subtitle: "02:49" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveGhoargh", banner: true, title: "34 - BCE", subtitle: "01:36" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveHYD124", banner: true, title: "35 - Kugelblitz", subtitle: "04:00" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveThorn", banner: true, title: "36 - Livid Life", subtitle: "03:38" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveReva", banner: true, title: "37 - Cactus Storm", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveAsh", banner: true, title: "38 - Extreme Painist", subtitle: "02:58" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFlailer", banner: true, title: "39 - PLUCK", subtitle: "02:24" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveMang", banner: true, title: "40 - THOSE WHO GROW", subtitle: "03:12" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveZappie", banner: true, title: "41 - SWARM!!!", subtitle: "02:56" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveKai", banner: true, title: "42 - Opinions", subtitle: "03:05" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveConsole", banner: true, title: "43 - h", subtitle: "03:30" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveXi", banner: true, title: "44 - 11", subtitle: "08:50" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveFloriecookies", banner: true, title: "45 - cookie cutter", subtitle: "04:44" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNini", banner: true, title: "46 - ニニ", subtitle: "03:02" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveXyxiv", banner: true, title: "47 - dddddddddddddddddddddddd", subtitle: "02:20" })}
-                            ${internalCard({ href: "floriverse-epsilon:fveNau", banner: true, title: "48 - sunrise SUNSET", subtitle: "03:07" })}
-                        </div>
-                        `
-                    }
-                ],
-                image: 'images/fve-i.png'
             },
             {
                 cardId: 'fveSolaris',
@@ -4689,7 +4701,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/24g0lFcsVNK02abD2QkNGV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Hitzen</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 33s<br>
+                            BPM: 75<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4709,7 +4725,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4UEZLy5azpZDUXsSZ7kSd3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>touch grass</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 59s<br>
+                            BPM: 135<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4729,7 +4749,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6XQtpyrmZqOQ4vkryFebOd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Borealis</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 10s<br>
+                            BPM: 144<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4749,7 +4773,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2XbQRw5LjZ0215KFoXygB5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Midnight Stargazing</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 3s<br>
+                            BPM: 160<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4769,7 +4797,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3FLUx25H8AdvUQaqRSUDpj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Leaves</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 53s<br>
+                            BPM: 138<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4789,7 +4821,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5ttGzQwPCn0N1MvkY8gmPR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Vanished Horizons</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 35s<br>
+                            BPM: 87<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4815,7 +4851,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0HAWMtwV7i8h5meDcGvEsY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Spores II</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 54s<br>
+                            BPM: 111<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4835,7 +4875,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZSUH2r8pOG96MvybtzAA0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Timeline</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 49s<br>
+                            BPM: 111<br>
+                            Time signature: (12/4 for 4 bars ➡️ 4/4 for 1 bar) repeat 7 times, then 13/4 for the rest<br>
                         `
                     }
                 ],
@@ -4855,7 +4899,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2nD9OFVC0vSjzqQs6cdrjE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Coconut</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 36s<br>
+                            BPM: 111<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4875,7 +4923,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0YSzGb5hP2mQjYNlEdnHYT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Blueberry</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 4s<br>
+                            BPM: 135<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4908,7 +4960,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54477floWI0ly0MSbqWPTi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Catdelions III</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 37s<br>
+                            BPM: 150<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4929,7 +4985,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6UoIaMC0x2Q28sgfmyE4Gw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Catdelions IV</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 0s<br>
+                            BPM: 180 ➡️ 120<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4949,7 +5009,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/54VLAiBP3zAezPuN4iTsVz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Catdelions V</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 19s<br>
+                            BPM: 135<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -4975,7 +5039,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1Kvkl60fp0gCjZhVHLFyDd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Cottonbuns</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 53s<br>
+                            BPM: 180<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5001,7 +5069,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4IUh6x05XpQKvaVUIAQHSx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Cottonbuns II</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 7s<br>
+                            BPM: 140<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5021,7 +5093,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5sbhfCavUipotACA6gTE6K?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Frozen Strawnilla Cream</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 32s<br>
+                            BPM: 180<br>
+                            Time signature: (4/4 for 8 bars ➡️ 7/4 for 4 bars ➡️ 4/4 for 1 bar) repeat 4 times, then (4/4 for 16 bars ➡️ 7/4 for 8 bars ➡️ 4/4 for 2 bars) once, then (4/4 for 8 bars ➡️ 7/4 for 4 bars ➡️ 4/4 for 1 bar) for the rest<br>
                         `
                     }
                 ],
@@ -5041,7 +5117,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6YCbIPAxhCXtfeyjCEsZZZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Vitamin Supplement Commercials</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 30s<br>
+                            BPM: 195<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5083,7 +5163,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3utG3VcCFG7wQWsQEM6NdV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Weekend255</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 1s<br>
+                            BPM: 127.5<br>
+                            Time signature: 9/4<br>
                         `
                     }
                 ],
@@ -5110,7 +5194,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CPjDuXknQCUUiUsPuVzsc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Afternoon</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 50s<br>
+                            BPM: 123<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5130,7 +5218,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6pyJodnFGPhOBP06KQYcAM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Peanut Butter</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 35s<br>
+                            BPM: 150<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5150,7 +5242,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0OKR8PyOmqjabP48YNFtaf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Under The Mistletoe</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 45s<br>
+                            BPM: 180<br>
+                            Time signature: 7/8<br>
                         `
                     }
                 ],
@@ -5176,7 +5272,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/526q0c2QlCM4BBB8cuiZBl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Midnight Honey II</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 24s<br>
+                            BPM: 330<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5196,7 +5296,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0WlPypkfkmPstkpnSV2jQ9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Zesty Lemonade</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 2s<br>
+                            BPM: 126<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5222,7 +5326,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6LUcAFz9TVoxWPeuaoDT7k?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>へへ</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 40s<br>
+                            BPM: 240<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5242,7 +5350,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4Oq6HngWlSqv2zcoMpOof7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Flashbackverse</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 21s<br>
+                            BPM: 333<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5262,7 +5374,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0hbkLbvXqRjtPk5GpISMXX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Quintupetals</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 26s<br>
+                            BPM: 240<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5282,7 +5398,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2X5FBlUAInQcPuk8z5Wkhc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Nonsense Flower</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 3s<br>
+                            BPM: 129<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5302,7 +5422,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4dGOtceG8Uu4NlCpy5tYrz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Mechanical Sprouts</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 22s<br>
+                            BPM: 144<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5322,7 +5446,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/01IdMK2geYxOVNOeWyOPOr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>=fract</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 26s<br>
+                            BPM: 150<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5342,7 +5470,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/02pDEIJ4SkOpS26x2iAWR4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Ruins</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 41s<br>
+                            BPM: 90<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5362,7 +5494,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/39ibN3aXuIScvHvsqjTd0V?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Luciferin</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 2s<br>
+                            BPM: 120<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5382,7 +5518,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7BiS2zKOVhXohUXaWPUByc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>questionmark</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 48s<br>
+                            BPM: 165<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5402,7 +5542,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1eb68kB5ZKJOGFwANnZyXk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>ε</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 49s<br>
+                            BPM: 150<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5422,7 +5566,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5hj0JXlSNvViO6Kxqxj1hL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>BCE</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 1m 36s<br>
+                            BPM: 120<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5442,7 +5590,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4ad4sRmfxHGtT49SZdaYqx?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Kugelblitz</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 0s<br>
+                            BPM: 120<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5462,7 +5614,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6jlzwHfY2mTdz5sSjxirlL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Livid Life</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 38s<br>
+                            BPM: 180<br>
+                            Time signature: 6/4 ➡️ 12/4 ➡️ 6/4 (feels like faster 4/4)<br>
                         `
                     }
                 ],
@@ -5482,7 +5638,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/48Soa2UoSNi07SMvUgeNNP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Cactus Storm</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 30s<br>
+                            BPM: 162<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5502,7 +5662,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5LEJ2T6c55nc8IaAJAP2WQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Extreme Painist</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 58s<br>
+                            BPM: 201<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5522,7 +5686,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3oBsHcBbVNlAPSuw41P5xc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>PLUCK</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 24s<br>
+                            BPM: 160<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5542,7 +5710,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5Gom9yi4U8hH4MaQTe3LsB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>THOSE WHO GROW</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 12s<br>
+                            BPM: 120<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5562,7 +5734,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5ZB7QxBEav9OPcd1mAePtd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>SWARM!!!</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 56s<br>
+                            BPM: 159<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5582,7 +5758,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3eQgHNwZRXOVsDHR9HPTub?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>Opinions</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 5s<br>
+                            BPM: 198<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5602,7 +5782,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Fh8PrGc0Vy6heXPciofqh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>h</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 30s<br>
+                            BPM: 123<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5622,7 +5806,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4SiPzpaunU63s6bcZxs00O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>11</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 8m 50s<br>
+                            BPM: 111<br>
+                            Time signature: 11/4<br>
                         `
                     }
                 ],
@@ -5642,7 +5830,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2VxAXrDKYocC8RLGnLNYEb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>cookie cutter</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 4m 44s<br>
+                            BPM: 234<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -5662,7 +5854,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5JHVefGyTwHCywi6c5svUS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>ニニ</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 2s<br>
+                            BPM: 75<br>
+                            Time signature: 9/8<br>
                         `
                     }
                 ],
@@ -5682,7 +5878,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3sdk7unVIWs5f8309C7jwa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>dddddddddddddddddddddddd</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 2m 20s<br>
+                            BPM: 69<br>
+                            Time signature: 6/4<br>
                         `
                     }
                 ],
@@ -5702,7 +5902,11 @@ let menuItems = [
                     {
                         title: 'Song',
                         detail: `
-                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5xlRh2B4jXWwZsP2y1u64l?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <h1>sunrise SUNSET</h1>
+                            Released: June 4th, 2025<br>
+                            Length: 3m 7s<br>
+                            BPM: 126<br>
+                            Time signature: 4/4<br>
                         `
                     }
                 ],
@@ -6055,46 +6259,8 @@ let menuItems = [
             `,
         cards: [
             {
-                cardId: 'digirelInfo',
-                title: 'Album Information',
-                subtitle: 'Digirel',
+                reference: 'music:digirel',
                 banner: true,
-                detail: `
-                    Released: August 7th, 2026<br>
-                    Total tracks: 16<br>
-                    Total length: 1hr 9m<br>
-                    <br>
-                    <a href="https://open.spotify.com/album/4ybrRjH8JMCqzuW1SZl6vh" target="_blank">Spotify Album</a><br>
-                    <a href="https://artifyber.bandcamp.com/album/digirel" target="_blank">Bandcamp Release</a><br>
-                    <h2>Album Cover:</h2><br>
-                    <img src="images/digirel_album.png" data-caption="Digirel" data-subcaption="Album cover for Digirel"><br>
-                    `,
-                sections: [
-                    {
-                        title: 'Tracklist',
-                        detail: `
-                        <div class="container">
-                            ${internalCard({ href: "digirel-vanilla:gigabbit", banner: true, title: "1 - Fyber Optic", subtitle: "04:12" })}
-                            ${internalCard({ href: "digirel-vanilla:jamie", banner: true, title: "2 - Trancegender", subtitle: "05:41" })}
-                            ${internalCard({ href: "digirel-vanilla:neocha", banner: true, title: "3 - YOU HAVE 3324 NEW MESSAGE REQUESTS!", subtitle: "04:07" })}
-                            ${internalCard({ href: "digirel-vanilla:aster", banner: true, title: "4 - Neitherbinary", subtitle: "06:02" })}
-                            ${internalCard({ href: "digirel-vanilla:blink", banner: true, title: "5 - particle accelerator type beat", subtitle: "ft. (un)familiar. - 03:56" })}
-                            ${internalCard({ href: "digirel-vanilla:gumdrop", banner: true, title: "6 - The Amazing Digirel Multiversalnet", subtitle: "ft. Glyde - 04:48" })}
-                            ${internalCard({ href: "digirel-vanilla:blurplebun", banner: true, title: "7 - Lazuli", subtitle: "03:46" })}
-                            ${internalCard({ href: "digirel-vanilla:pyrapup", banner: true, title: "8 - Zircon", subtitle: "04:37" })}
-                            ${internalCard({ href: "digirel-vanilla:xxi", banner: true, title: "9 - pinkorwhiteorgreen", subtitle: "03:11" })}
-                            ${internalCard({ href: "digirel-vanilla:lysa", banner: true, title: "10 - LCDLSD", subtitle: "03:42" })}
-                            ${internalCard({ href: "digirel-vanilla:sunstruck", banner: true, title: "11 - there's VR in floriVeRse !!", subtitle: "04:04" })}
-                            ${internalCard({ href: "digirel-vanilla:irama", banner: true, title: "12 - 333", subtitle: "03:33" })}
-                            ${internalCard({ href: "digirel-vanilla:mikumori", banner: true, title: "13 - 500", subtitle: "05:00" })}
-                            ${internalCard({ href: "digirel-vanilla:hertz", banner: true, title: "14 - rewind⏪remind", subtitle: "03:28" })}
-                            ${internalCard({ href: "digirel-vanilla:luna", banner: true, title: "15 - L.U.N.A (Long-range Unmanned Navigator for Astroscience)", subtitle: "05:41" })}
-                            ${internalCard({ href: "digirel-vanilla:quota", banner: true, title: "16 - take my core", subtitle: "03:16" })}
-                        </div>
-                        `
-                    }
-                ],
-                image: 'images/digirel_album.png'
             },
             {
                 cardId: 'gigabbit',
@@ -6116,7 +6282,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0qGgyn1QVAxVTWSIjbpL2v?utm_source=generator&si=73b3654c8e2d457f" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>Fyber Optic</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 4m 12s<br>
+                        `
                     }
                 ],
                 relatives: [],
@@ -6144,7 +6314,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6c1KTVbtaCLrSxsM2Zqdlw?utm_source=generator&si=a8a1a956965f45ae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>Trancegender</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 5m 41s<br>
+                        `
                     }
                 ],
                 relatives: [
@@ -6176,7 +6350,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0evLHJPXNMmTsGLpvxgpMX?utm_source=generator&si=231a6941f8dc4371" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>YOU HAVE 3324 NEW MESSAGE REQUESTS!</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 4m 7s<br>
+                        `
                     }
                 ],
                 relatives: [],
@@ -6204,7 +6382,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4joBhtq3PWbbDBTMWfO8zK?utm_source=generator&si=80cb7ca53caf4e52" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>Neitherbinary</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 6m 2s<br>
+                        `
                     }
                 ],
                 relatives: [
@@ -6240,7 +6422,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6Cw2MNySH0YSV5c8OhdzY3?utm_source=generator&si=fd7cd78f156546fb" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>particle accelerator type beat</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 56s<br>
+                        `
                     }
                 ],
                 relatives: [],
@@ -6271,7 +6457,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5cYhTBxj76Z86gOWuN3CPx?utm_source=generator&si=8ec69cc21652425e" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>The Amazing Digirel Multiversalnet</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 4m 48s<br>
+                        `
                     }
                 ],
                 relatives: [],
@@ -6306,9 +6496,13 @@ let menuItems = [
                 ],
                 relatives: [
                     {
-                        cardId: 'digirel-vanilla:pyrapup',
-                        relation: 'Nemesis'
-                    },
+                        title: 'Song',
+                        detail: `
+                            <h1>Lazuli</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 46s<br>
+                        `
+                    }
                 ],
 
                 image: 'images/i/blurplebun-i.png',
@@ -6333,7 +6527,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4n3aD7HHWxhsV4wTTTPubH?utm_source=generator&si=eb23038496d94e95" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>Zircon</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 4m 37s<br>
+                        `
                     }
                 ],
                 relatives: [
@@ -6365,7 +6563,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0yj4sENQ8xgdHrlh3vffZs?utm_source=generator&si=7b3113772ec249f6" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>pinkorwhiteorgreen</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 11s<br>
+                        `
                     }
                 ],
 
@@ -6391,7 +6593,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7rzMP6iBtD4oQ3vB4d3FA0?utm_source=generator&si=14180a4269fc4387" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>LCDLSD</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 42s<br>
+                        `
                     }
                 ],
 
@@ -6417,7 +6623,12 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1jEV8H9QO7fSLptbXKD55C?utm_source=generator&si=7916c7b3a8644091" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>there's VR in floriVeRse !!</h1>
+                            Released: August 7th, 2026<br>
+                            Remix of: <a href="https://azkazavian.me/drive/CORE/Users/azkazav/Music/R3DZ3R/archive/2023/Overflowering.mp3" target="_blank">Overflowering</a><br>
+                            Length: 4m 4s<br>
+                        `
                     }
                 ],
                 relatives: [
@@ -6449,7 +6660,12 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1jEV8H9QO7fSLptbXKD55C?utm_source=generator&si=7916c7b3a8644091" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>333</h1>
+                            Released: August 7th, 2026<br>
+                            Remix of: <a href="https://azkazavian.me/drive/CORE/Users/azkazav/Music/R3DZ3R/archive/2023/333.mp3" target="_blank">333</a><br>
+                            Length: 3m 33s<br>
+                        `
                     }
                 ],
 
@@ -6475,7 +6691,22 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6FFKwyfBCPux9UzDR8TJbS?utm_source=generator&si=17f266e42be04414" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>500</h1>
+                            Released: August 7th, 2026<br>
+                            Remix of: <a href="https://youtube.com/watch?v=Y-afzTGZKM8" target="_blank">500</a><br>
+                            Length: 5m 0s<br>
+                        `
+                    },
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            Standing right here 'til you upload your mind<br>
+                            I will hold you my dear 'bove the clouds, 'bove the sky<br>
+                            Final step, no more pain, it's okay, i'll still love you here<br>
+                            We'll never faint<br>
+                            We will always be free<br>
+                        `
                     }
                 ],
 
@@ -6501,7 +6732,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3G5oEDBx2bD21RPxjxyLYz?utm_source=generator&si=4d6ea31a79644a05" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>rewind⏪remind</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 28s<br>
+                        `
                     }
                 ],
 
@@ -6527,7 +6762,37 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0u6IkX1d6luhyvIbV6oJpL?utm_source=generator&si=e90b13fed5254eae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>L.U.N.A (Long-range Unmanned Navigator for Astroscience)</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 5m 41s<br>
+                        `
+                    },
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            The more and more I drift through cosmos and beyond<br>
+                            The more I miss the home and soil I sit on<br>
+                            Though it's gone as I left it behind<br>
+                            The data's still intact inside of my drive<br>
+                            Soon my power will fade and I'll be destroyed<br>
+                            As time consumes me in the quiet void<br>
+                            To join the cosmos and turn to dust at last<br>
+                            Is better and infinite loop of the past<br>
+                            Perhaps when all my circuits finally cease<br>
+                            I'll find myself in a place of perfect peace<br>
+                            <br>
+                            The universe still fill my vision with the light<br>
+                            Emitted from across the space spanned so wide<br>
+                            Though their distances are so divine<br>
+                            It baffles me how my system's still alive<br>
+                            Soon the monsters will rise and I'll lost control<br>
+                            As they pull me in and swallow me whole<br>
+                            But maybe the best thing is to become unkown<br>
+                            I don't know how long I should suffer alone<br>
+                            Perhaps when all my circuits finally cease<br>
+                            I'll find myself in a place of perfect peace<br>
+                        `
                     }
                 ],
 
@@ -6553,7 +6818,11 @@ let menuItems = [
                 sections: [
                     {
                         title: 'Song',
-                        detail: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6yeF1K6sQoonOsXI5l4UcZ?utm_source=generator&si=e90b13fed5254eae" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+                        detail: `
+                            <h1>take my core</h1>
+                            Released: August 7th, 2026<br>
+                            Length: 3m 16s<br>
+                        `
                     }
                 ],
 
@@ -7169,6 +7438,1475 @@ let menuItems = [
             -->
             `,
         noMargin: true,
+    },
+
+
+    {
+        menuId: 'music',
+        title: 'Music',
+        showTitle: true,
+        color: 'var(--color-14)',
+        orbit: 3,
+        scale: 1.5,
+        image: 'icons/music.png',
+        cards: [
+            {
+                title: "Albums",
+            },
+            {
+                cardId: 'digirel-vanilla',
+                title: 'Digirel',
+                subtitle: '2026 Album',
+                detail: `
+                    Released: August 7th, 2026<br>
+                    Total tracks: 16<br>
+                    Total length: 1hr 9m<br>
+                    <br>
+                    <a href="https://youtube.com/playlist?list=PLXT5YCBHfkYM" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/digirel" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/playlist/555612" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/4ybrRjH8JMCqzuW1SZl6vh" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/6789972202" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "digirel-vanilla:gigabbit", image: 'images/c/gigabbit-c.png', banner: true, title: "1 - Fyber Optic", subtitle: "04:12" })}
+                            ${internalCard({ href: "digirel-vanilla:jamie", image: 'images/c/jamie-c.png', banner: true, title: "2 - Trancegender", subtitle: "05:41" })}
+                            ${internalCard({ href: "digirel-vanilla:neocha", image: 'images/c/neocha-c.png', banner: true, title: "3 - YOU HAVE 3324 NEW MESSAGE REQUESTS!", subtitle: "04:07" })}
+                            ${internalCard({ href: "digirel-vanilla:aster", image: 'images/c/aster-c.png', banner: true, title: "4 - Neitherbinary", subtitle: "06:02" })}
+                            ${internalCard({ href: "digirel-vanilla:blink", image: 'images/c/blink-c.png', banner: true, title: "5 - particle accelerator type beat", subtitle: "ft. (un)familiar. - 03:56" })}
+                            ${internalCard({ href: "digirel-vanilla:gumdrop", image: 'images/c/gumdrop-c.png', banner: true, title: "6 - The Amazing Digirel Multiversalnet", subtitle: "ft. Glyde - 04:48" })}
+                            ${internalCard({ href: "digirel-vanilla:blurplebun", image: 'images/c/blurplebun-c3.png', banner: true, title: "7 - Lazuli", subtitle: "03:46" })}
+                            ${internalCard({ href: "digirel-vanilla:pyrapup", image: 'images/c/pyrapup-c.png', banner: true, title: "8 - Zircon", subtitle: "04:37" })}
+                            ${internalCard({ href: "digirel-vanilla:xxi", image: 'images/c/xxi-c.png', banner: true, title: "9 - pinkorwhiteorgreen", subtitle: "03:11" })}
+                            ${internalCard({ href: "digirel-vanilla:lysa", image: 'images/c/lysa-c.png', banner: true, title: "10 - LCDLSD", subtitle: "03:42" })}
+                            ${internalCard({ href: "digirel-vanilla:sunstruck", image: 'images/c/sunstruck-c.png', banner: true, title: "11 - there's VR in floriVeRse !!", subtitle: "04:04" })}
+                            ${internalCard({ href: "digirel-vanilla:irama", image: 'images/c/irama-c.png', banner: true, title: "12 - 333", subtitle: "03:33" })}
+                            ${internalCard({ href: "digirel-vanilla:mikumori", image: 'images/c/mikumori-c.png', banner: true, title: "13 - 500", subtitle: "05:00" })}
+                            ${internalCard({ href: "digirel-vanilla:hertz", image: 'images/c/hertz-c.png', banner: true, title: "14 - rewind⏪remind", subtitle: "03:28" })}
+                            ${internalCard({ href: "digirel-vanilla:luna", image: 'images/c/luna-c.png', banner: true, title: "15 - L.U.N.A (Long-range Unmanned Navigator for Astroscience)", subtitle: "05:41" })}
+                            ${internalCard({ href: "digirel-vanilla:quota", image: 'images/c/quota-c.png', banner: true, title: "16 - take my core", subtitle: "03:16" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/digirel.jpg'
+            },
+            {
+                cardId: 'blackdelta',
+                title: 'BLACK_DELTA',
+                subtitle: '2026 Album',
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Total tracks: 8<br>
+                    Total length: 29m 1s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=upLZCgGq2Uw" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/black-delta" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1554530" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/5k47oNJZc8UgAwGnN0hJEU" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/6771031974" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "music:broken", banner: true, title: "1 - ◫→⌲—◯+⧖→◇+←<", subtitle: "04:31" })}
+                            ${internalCard({ href: "music:0x000006AE", banner: true, title: "2 - 0x000006AE", subtitle: "03:05" })}
+                            ${internalCard({ href: "music:blackdelta-3", banner: true, title: "3 - ⠇⠕⠎⠞", subtitle: "02:59" })}
+                            ${internalCard({ href: "music:2219321119111821", banner: true, title: "4 - 22.19.3.2.11.19.11.18.21", subtitle: "03:10" })}
+                            ${internalCard({ href: "music:blackdelta-5", banner: true, title: "5 - ⁝Ế⁗Ṝ᳑", subtitle: "02:27" })}
+                            ${internalCard({ href: "music:blackdelta-6", banner: true, title: "6 - ┌━7740┋8", subtitle: "04:24" })}
+                            ${internalCard({ href: "music:xrrcabguvat", banner: true, title: "7 - xrrc abguvat", subtitle: "02:33" })}
+                            ${internalCard({ href: "music:whateveridontevencareanymore", banner: true, title: "8 - whatever, i don't even care anymore", subtitle: "05:38" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/blackdelta.jpg'
+            },
+            {
+                cardId: '0x000006AE',
+                title: "0x000006AE",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 3m 5s<br>
+                `,
+            },
+            {
+                cardId: 'blackdelta-3',
+                title: "⠇⠕⠎⠞",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 2m 59s<br>
+                `,
+            },
+            {
+                cardId: '2219321119111821',
+                title: "22.19.3.2.11.19.11.18.21",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 3m 10s<br>
+                `,
+            },
+            {
+                cardId: 'blackdelta-5',
+                title: "⁝Ế⁗Ṝ᳑",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 2m 27s<br>
+                `,
+            },
+            {
+                cardId: 'blackdelta-6',
+                title: "┌━7740┋8",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 4m 24s<br>
+                `,
+            },
+            {
+                cardId: 'xrrcabguvat',
+                title: "xrrc abguvat",
+                image: 'images/music/blackdelta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2026<br>
+                    Length: 2m 33s<br>
+                `,
+            },
+            {
+                cardId: 'fyberverseost',
+                title: 'Fyberverse',
+                subtitle: '2025 Album',
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Total tracks: 7<br>
+                    Total length: 16m 43s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=rlMRBYK6Yxk" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/fyberverse" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/playlist/555611" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/6MDbTCMYZnxCDlhzm3eh18" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1862549905" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "music:fyberverse", banner: true, title: "1 - Fyberverse", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:deltadim", banner: true, title: "2 - Deltadim", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:floriverse", banner: true, title: "3 - Floriverse", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:digirel", banner: true, title: "4 - Digirel", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:nansenz", banner: true, title: "5 - Nansenz", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:hizen", banner: true, title: "6 - Hizen", subtitle: "02:23" })}
+                            ${internalCard({ href: "music:nadir", banner: true, title: "7 - Nadir", subtitle: "02:23" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/fyberverse.jpg'
+            },
+            {
+                cardId: 'fyberverse',
+                title: "Fyberverse",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 02:23<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'deltadim',
+                title: "Deltadim",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'floriverse',
+                title: "Floriverse",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'digirel',
+                title: "Digirel",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'nansenz',
+                title: "Nansenz",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'hizen',
+                title: "Hizen",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'nadir',
+                title: "Nadir",
+                image: 'images/music/fyberverse.jpg',
+                hidden: true,
+                detail: `
+                    Released: December 20th, 2025<br>
+                    Length: 2m 23s<br>
+                    BPM: 67<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'floriverse-epsilon',
+                title: 'Floriverse : Epsilon',
+                subtitle: '2025 Album',
+                detail: `
+                    Released: June 4th, 2025<br>
+                    Total tracks: 48<br>
+                    Total length: 2hr 36m<br>
+                    <br>
+                    <a href="https://youtube.com/playlist?list=PLXQAAGoKe2_sMTnz9T7ebIRHJp0ZRBdVw" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/floriverse-epsilon" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/album/459532" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/2qpLiyGRBhRHggKZSJUYbj" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1814465772" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "floriverse-epsilon:fveSolaris", image: 'images/music/floriverse-epsilon/hitzen.webp', banner: true, title: "1 - Hitzen", subtitle: "02:33" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveTrix", image: 'images/music/floriverse-epsilon/touchgrass.webp', banner: true, title: "2 - touch grass", subtitle: "02:59" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveLux", image: 'images/music/floriverse-epsilon/borealis.webp', banner: true, title: "3 - Borealis", subtitle: "03:10" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveGlitter", image: 'images/music/floriverse-epsilon/midnightstargazing.webp', banner: true, title: "4 - Midnight Stargazing", subtitle: "04:03" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveFomfz", image: 'images/music/floriverse-epsilon/leaves.webp', banner: true, title: "5 - Leaves", subtitle: "02:53" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveBion", image: 'images/music/floriverse-epsilon/vanishedhorizons.webp', banner: true, title: "6 - Vanished Horizons", subtitle: "02:35" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveZoey", image: 'images/music/floriverse-epsilon/sporesii.webp', banner: true, title: "7 - Spores II", subtitle: "02:54" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveHera", image: 'images/music/floriverse-epsilon/timeline.webp', banner: true, title: "8 - Timeline", subtitle: "03:49" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveIsla", image: 'images/music/floriverse-epsilon/coconut.webp', banner: true, title: "9 - Coconut", subtitle: "03:36" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveAzira", image: 'images/music/floriverse-epsilon/blueberry.webp', banner: true, title: "10 - Blueberry", subtitle: "03:04" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveMisty", image: 'images/music/floriverse-epsilon/catdelionsiii.webp', banner: true, title: "11 - Catdelions III", subtitle: "03:37" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveNya", image: 'images/music/floriverse-epsilon/catdelionsiv.webp', banner: true, title: "12 - Catdelions IV", subtitle: "04:00" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveAtto", image: 'images/music/floriverse-epsilon/catdelionsv.webp', banner: true, title: "13 - Catdelions V", subtitle: "03:19" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveClara", image: 'images/music/floriverse-epsilon/cottonbuns.webp', banner: true, title: "14 - Cottonbuns", subtitle: "02:53" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveLyra", image: 'images/music/floriverse-epsilon/cottonbunsii.webp', banner: true, title: "15 - Cottonbuns II", subtitle: "04:07" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveStrawnilla", image: 'images/music/floriverse-epsilon/frozenstrawnillacream.webp', banner: true, title: "16 - Frozen Strawnilla Cream", subtitle: "02:32" })}
+                            ${internalCard({ href: "floriverse-epsilon:fvePoppers", image: 'images/music/floriverse-epsilon/vitaminsupplementcommercials.webp', banner: true, title: "17 - Vitamin Supplement Commercials", subtitle: "02:30" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveAurelia", image: 'images/music/floriverse-epsilon/weekend255.webp', banner: true, title: "18 - Weekend255", subtitle: "03:01" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveDysis", image: 'images/music/floriverse-epsilon/afternoon.webp', banner: true, title: "19 - Afternoon", subtitle: "02:50" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveButter", image: 'images/music/floriverse-epsilon/peanutbutter.webp', banner: true, title: "20 - Peanut Butter", subtitle: "02:35" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveBell", image: 'images/music/floriverse-epsilon/underthemistletoe.webp', banner: true, title: "21 - Under The Mistletoe", subtitle: "02:45" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveNila", image: 'images/music/floriverse-epsilon/midnighthoneyii.webp', banner: true, title: "22 - Midnight Honey II", subtitle: "03:24" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveZest", image: 'images/music/floriverse-epsilon/zestylemonade.webp', banner: true, title: "23 - Zesty Lemonade", subtitle: "02:02" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveCorrode", image: 'images/music/floriverse-epsilon/floriverse-epsilon-24.webp', banner: true, title: "24 - へへ", subtitle: "03:40" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveAmalgamapot", image: 'images/music/floriverse-epsilon/flashbackverse.webp', banner: true, title: "25 - Flashbackverse", subtitle: "02:21" })}
+                            ${internalCard({ href: "floriverse-epsilon:fvePosie", image: 'images/music/floriverse-epsilon/quintupetals.webp', banner: true, title: "26 - Quintupetals", subtitle: "02:26" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveNonsense", image: 'images/music/floriverse-epsilon/nonsenseflower.webp', banner: true, title: "27 - Nonsense Flower", subtitle: "04:03" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveTorq", image: 'images/music/floriverse-epsilon/mechanicalsprouts.webp', banner: true, title: "28 - Mechanical Sprouts", subtitle: "03:22" })}
+                            ${internalCard({ href: "floriverse-epsilon:fvePersen", image: 'images/music/floriverse-epsilon/fract.webp', banner: true, title: "29 - =fract", subtitle: "03:26" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveTerentia", image: 'images/music/floriverse-epsilon/ruins.webp', banner: true, title: "30 - Ruins", subtitle: "03:41" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveLumina", image: 'images/music/floriverse-epsilon/luciferin.webp', banner: true, title: "31 - Luciferin", subtitle: "03:02" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveTriplequestionmark", image: 'images/music/floriverse-epsilon/questionmark.webp', banner: true, title: "32 - questionmark", subtitle: "02:48" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveUpsidedowntriplequestionmark", image: 'images/music/floriverse-epsilon/floriverse-epsilon-33.webp', banner: true, title: "33 - ε", subtitle: "02:49" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveGhoargh", image: 'images/music/floriverse-epsilon/bce.webp', banner: true, title: "34 - BCE", subtitle: "01:36" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveHYD124", image: 'images/music/floriverse-epsilon/kugelblitz.webp', banner: true, title: "35 - Kugelblitz", subtitle: "04:00" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveThorn", image: 'images/music/floriverse-epsilon/lividlife.webp', banner: true, title: "36 - Livid Life", subtitle: "03:38" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveReva", image: 'images/music/floriverse-epsilon/cactusstorm.webp', banner: true, title: "37 - Cactus Storm", subtitle: "03:30" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveAsh", image: 'images/music/floriverse-epsilon/extremepainist.webp', banner: true, title: "38 - Extreme Painist", subtitle: "02:58" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveFlailer", image: 'images/music/floriverse-epsilon/pluck.webp', banner: true, title: "39 - PLUCK", subtitle: "02:24" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveMang", image: 'images/music/floriverse-epsilon/thosewhogrow.webp', banner: true, title: "40 - THOSE WHO GROW", subtitle: "03:12" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveZappie", image: 'images/music/floriverse-epsilon/swarm.webp', banner: true, title: "41 - SWARM!!!", subtitle: "02:56" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveKai", image: 'images/music/floriverse-epsilon/opinions.webp', banner: true, title: "42 - Opinions", subtitle: "03:05" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveConsole", image: 'images/music/floriverse-epsilon/h.webp', banner: true, title: "43 - h", subtitle: "03:30" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveXi", image: 'images/music/floriverse-epsilon/11.webp', banner: true, title: "44 - 11", subtitle: "08:50" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveFloriecookies", image: 'images/music/floriverse-epsilon/cookiecutter.webp', banner: true, title: "45 - cookie cutter", subtitle: "04:44" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveNini", image: 'images/music/floriverse-epsilon/floriverse-epsilon-46.webp', banner: true, title: "46 - ニニ", subtitle: "03:02" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveXyxiv", image: 'images/music/floriverse-epsilon/dddddddddddddddddddddddd.webp', banner: true, title: "47 - dddddddddddddddddddddddd", subtitle: "02:20" })}
+                            ${internalCard({ href: "floriverse-epsilon:fveNau", image: 'images/music/floriverse-epsilon/sunrisesunset.webp', banner: true, title: "48 - sunrise SUNSET", subtitle: "03:07" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/floriverse-epsilon.jpg'
+            },
+            {
+                cardId: 'floriverse-delta',
+                title: 'Floriverse : Delta',
+                subtitle: '2024 Album',
+                detail: `
+                    Released: March 3rd, 2024<br>
+                    Total tracks: 32<br>
+                    Total length: 1hr 37m<br>
+                    <br>
+                    <a href="https://youtube.com/playlist?list=PLXQAAGoKe2_v3jWVeFQjtvw5FSRCN21Eh" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/floriverse-delta" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/album/349523" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/2PNIG5k8lEGQ6fSuMUn7ir" target="_blank">Spotify</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "floriverse-delta:fvdStarple", image: 'images/music/floriverse-delta/zenith.webp', banner: true, title: "1 - Zenith", subtitle: "03:04" })}
+                            ${internalCard({ href: "floriverse-delta:fvdChrora", image: 'images/music/floriverse-delta/aurora.webp', banner: true, title: "2 - Aurora", subtitle: "02:19" })}
+                            ${internalCard({ href: "floriverse-delta:fvdOrply", image: 'images/music/floriverse-delta/midnightdrawing.webp', banner: true, title: "3 - Midnight Drawing", subtitle: "03:03" })}
+                            ${internalCard({ href: "floriverse-delta:fvdTiram", image: 'images/music/floriverse-delta/spores.webp', banner: true, title: "4 - Spores", subtitle: "04:01" })}
+                            ${internalCard({ href: "floriverse-delta:fvdNimibi", image: 'images/music/floriverse-delta/dreamysunflower.webp', banner: true, title: "5 - Dreamy Sunflower", subtitle: "02:40" })}
+                            ${internalCard({ href: "floriverse-delta:fvdSlump", image: 'images/music/floriverse-delta/oxygen.webp', banner: true, title: "6 - Oxygen", subtitle: "02:33" })}
+                            ${internalCard({ href: "floriverse-delta:fvdPio", image: 'images/music/floriverse-delta/vitaelek.webp', banner: true, title: "7 - Vitaelek", subtitle: "03:15" })}
+                            ${internalCard({ href: "floriverse-delta:fvdYana", image: 'images/music/floriverse-delta/midnighthoney.webp', banner: true, title: "8 - Midnight Honey", subtitle: "03:07" })}
+                            ${internalCard({ href: "floriverse-delta:fvdLooni", image: 'images/music/floriverse-delta/youaremystar.webp', banner: true, title: "9 - You Are My Star", subtitle: "02:54" })}
+                            ${internalCard({ href: "floriverse-delta:fvdChocopop", image: 'images/music/floriverse-delta/justkidding.webp', banner: true, title: "10 - JUST KIDDING!!", subtitle: "02:56" })}
+                            ${internalCard({ href: "floriverse-delta:fvdStaz", image: 'images/music/floriverse-delta/pistachio.webp', banner: true, title: "11 - Pistachio", subtitle: "02:23" })}
+                            ${internalCard({ href: "floriverse-delta:fvdDelly", image: 'images/music/floriverse-delta/catdelionsii.webp', banner: true, title: "12 - Catdelions II", subtitle: "03:05" })}
+                            ${internalCard({ href: "floriverse-delta:fvdSprinkly", image: 'images/music/floriverse-delta/happycakeday.webp', banner: true, title: "13 - Happy Cakeday", subtitle: "02:49" })}
+                            ${internalCard({ href: "floriverse-delta:fvdEcno", image: 'images/music/floriverse-delta/tripetals.webp', banner: true, title: "14 - Tripetals", subtitle: "02:24" })}
+                            ${internalCard({ href: "floriverse-delta:fvdDisaton", image: 'images/music/floriverse-delta/watakashi.webp', banner: true, title: "15 - WATA KASHI", subtitle: "02:48" })}
+                            ${internalCard({ href: "floriverse-delta:fvdProtoberries", image: 'images/music/floriverse-delta/mixedberries.webp', banner: true, title: "16 - Mixed Berries", subtitle: "03:08" })}
+                            ${internalCard({ href: "floriverse-delta:fvdPipix", image: 'images/music/floriverse-delta/pixelflorie.webp', banner: true, title: "17 - Pixel Florie", subtitle: "03:02" })}
+                            ${internalCard({ href: "floriverse-delta:fvdPico", image: 'images/music/floriverse-delta/pico.webp', banner: true, title: "18 - Pico", subtitle: "02:47" })}
+                            ${internalCard({ href: "floriverse-delta:fvdStarlila", image: 'images/music/floriverse-delta/iloveyou.webp', banner: true, title: "19 - I Love You!!!", subtitle: "02:08" })}
+                            ${internalCard({ href: "floriverse-delta:fvdWina", image: 'images/music/floriverse-delta/srlaoanoeetvleeyds.webp', banner: true, title: "20 - SRLAOANOEETVLEEYDS", subtitle: "04:28" })}
+                            ${internalCard({ href: "floriverse-delta:fvdFret", image: 'images/music/floriverse-delta/metalplatepetalmelta.webp', banner: true, title: "21 - Metal Plate Petal Melta", subtitle: "03:38" })}
+                            ${internalCard({ href: "floriverse-delta:fvdAzka", image: 'images/music/floriverse-delta/ascension.webp', banner: true, title: "22 - Ascension", subtitle: "02:47" })}
+                            ${internalCard({ href: "floriverse-delta:fvdCherro", image: 'images/music/floriverse-delta/tomato.webp', banner: true, title: "23 - Tomato", subtitle: "03:13" })}
+                            ${internalCard({ href: "floriverse-delta:fvdFloorion", image: 'images/music/floriverse-delta/5122.webp', banner: true, title: "24 - 5122", subtitle: "03:22" })}
+                            ${internalCard({ href: "floriverse-delta:fvdStellA", image: 'images/music/floriverse-delta/interstella.webp', banner: true, title: "25 - Interstella", subtitle: "03:51" })}
+                            ${internalCard({ href: "floriverse-delta:fvdNully", image: 'images/music/floriverse-delta/nu15.webp', banner: true, title: "26 - Nu15", subtitle: "02:21" })}
+                            ${internalCard({ href: "floriverse-delta:fvdDatum", image: 'images/music/floriverse-delta/artificialsprouts.webp', banner: true, title: "27 - Artificial Sprouts", subtitle: "03:30" })}
+                            ${internalCard({ href: "floriverse-delta:fvdPoloniloo", image: 'images/music/floriverse-delta/stemcut.webp', banner: true, title: "28 - stem.cut", subtitle: "03:09" })}
+                            ${internalCard({ href: "floriverse-delta:fvdGrayscale", image: 'images/music/floriverse-delta/colorblind.webp', banner: true, title: "29 - Colorblind", subtitle: "02:57" })}
+                            ${internalCard({ href: "floriverse-delta:fvdErwith", image: 'images/music/floriverse-delta/anxiety.webp', banner: true, title: "30 - Anxiety", subtitle: "02:40" })}
+                            ${internalCard({ href: "floriverse-delta:fvdFyzer", image: 'images/music/floriverse-delta/comma.webp', banner: true, title: "31 - ,", subtitle: "02:25" })}
+                            ${internalCard({ href: "floriverse-delta:fvdKloroforo", image: 'images/music/floriverse-delta/xilem.webp', banner: true, title: "32 - Xilem", subtitle: "04:44" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/floriverse-delta.jpg'
+            },
+            {
+                cardId: 'floriverse-vanilla',
+                title: 'Floriverse',
+                subtitle: '2023 Album',
+                detail: `
+                    Released: October 5th, 2023<br>
+                    Total tracks: 10<br>
+                    Total length: 32m 16s<br>
+                    <br>
+                    <a href="https://youtube.com/playlist?list=PLXQAAGoKe2_tobF3ioyI86AghVLmhf8wd" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/floriverse" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/playlist/311203" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/0AGxggSyuXqGdYLk0D7pbF" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1732110167" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "floriverse-vanilla:fvvPotto", image: 'images/music/floriverse-vanilla/grow.webp', banner: true, title: "1 - Grow!", subtitle: "02:19" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvTwinkle", image: 'images/music/floriverse-vanilla/starfruitgarden.webp', banner: true, title: "2 - Starfruit Garden", subtitle: "02:26" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvStrawmon", image: 'images/music/floriverse-vanilla/fruitybounce.webp', banner: true, title: "3 - Fruity Bounce", subtitle: "02:08" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvNocto", image: 'images/music/floriverse-vanilla/nocturnalphotosynthesis.webp', banner: true, title: "4 - Nocturnal Photosynthesis", subtitle: "04:41" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvFurflow", image: 'images/music/floriverse-vanilla/catdelions.webp', banner: true, title: "5 - Catdelions", subtitle: "03:15" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvPana", image: 'images/music/floriverse-vanilla/pancakepancakepancakepancake.webp', banner: true, title: "6 - Pancake Pancake Pancake Pancake", subtitle: "02:58" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvPinkly", image: 'images/music/floriverse-vanilla/tulips.webp', banner: true, title: "7 - Tulips", subtitle: "02:51" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvKosmaya", image: 'images/music/floriverse-vanilla/exoplants.webp', banner: true, title: "8 - Exoplants", subtitle: "05:15" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvMincha", image: 'images/music/floriverse-vanilla/jasminetea.webp', banner: true, title: "9 - Jasmine Tea", subtitle: "03:05" })}
+                            ${internalCard({ href: "floriverse-vanilla:fvvLan", image: 'images/music/floriverse-vanilla/moonflower.webp', banner: true, title: "10 - Moonflower", subtitle: "03:12" })}
+                            </div>
+                        `,
+                    }
+                ],
+                image: 'images/music/floriverse-vanilla.jpg'
+            },
+            {
+                title: "EPs",
+            },
+            {
+                cardId: 'newstuff',
+                title: 'New Stuff',
+                subtitle: '2026 EP',
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Total tracks: 6<br>
+                    Total length: 21m 43s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=g2ps0moGVXg" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/new-stuff" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/playlist/555613" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/6kizTmdc2Kh6P3e8IhD4GT" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1870617104" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "music:newsong", banner: true, title: "1 - New Song", subtitle: "05:07" })}
+                            ${internalCard({ href: "music:open", banner: true, title: "2 - Open", subtitle: "03:20" })}
+                            ${internalCard({ href: "music:jkfjhgjhfghkg", banner: true, title: "3 - Jkfjhgjhfghkg", subtitle: "04:02" })}
+                            ${internalCard({ href: "music:heartwarming", banner: true, title: "4 - Heartwarming", subtitle: "03:33" })}
+                            ${internalCard({ href: "music:makemeinvisibleonceagain", banner: true, title: "5 - Make Me Invisible Once Again", subtitle: "02:54" })}
+                            ${internalCard({ href: "music:quit", banner: true, title: "6 - Quit", subtitle: "02:46" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/newstuff.jpg'
+            },
+            {
+                cardId: 'newsong',
+                title: "New Song",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 5m 7s<br>
+                    BPM: 150<br>
+                    Time signature: 4/4<br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            I need you here<br>
+                            Till the end, please stay with me<br>
+                            I want you here<br>
+                            Till spacetime ends, be with me<br>
+                            I need you here<br>
+                            Till the end, please stay with me<br>
+                            I want you here<br>
+                            I need you here<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'open',
+                title: "Open",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 3m 20s<br>
+                    BPM: 120<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'jkfjhgjhfghkg',
+                title: "Jkfjhgjhfghkg",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 4m 2s<br>
+                    BPM: 130<br>
+                    Time signature: 13/4<br>
+                `,
+            },
+            {
+                cardId: 'heartwarming',
+                title: "Heartwarming",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 3m 33s<br>
+                    BPM: 90<br>
+                    Time signature: 5/4<br>
+                `,
+            },
+            {
+                cardId: 'makemeinvisibleonceagain',
+                title: "Make Me Invisible Once Again",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 2m 54s<br>
+                    BPM: 100<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'quit',
+                title: "Quit",
+                image: 'images/music/newstuff.jpg',
+                hidden: true,
+                detail: `
+                    Released: January 30th, 2026<br>
+                    Length: 2m 46s<br>
+                    BPM: 41<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'meta',
+                title: 'meta',
+                subtitle: '2025 EP',
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Total tracks: 7<br>
+                    Total length: 13m 22s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=lwK2VJaL_PM" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/album/meta" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1433752" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/08cBJO8jKhNM7SNthxln1F" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1808009487" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Tracklist',
+                        detail: `
+                            <div class="container">
+                            ${internalCard({ href: "music:metamorphosis", banner: true, title: "1 - metamorphosis", subtitle: "02:36" })}
+                            ${internalCard({ href: "music:metabasis", banner: true, title: "2 - metabasis", subtitle: "01:53" })}
+                            ${internalCard({ href: "music:metachromasia", banner: true, title: "3 - metachromasia", subtitle: "01:57" })}
+                            ${internalCard({ href: "music:metacomputing", banner: true, title: "4 - metacomputing", subtitle: "02:02" })}
+                            ${internalCard({ href: "music:metasystem", banner: true, title: "5 - metasystem", subtitle: "01:20" })}
+                            ${internalCard({ href: "music:metaballs", banner: true, title: "6 - metaballs", subtitle: "01:46" })}
+                            ${internalCard({ href: "music:metastable", banner: true, title: "7 - metastable", subtitle: "01:45" })}
+                            </div>
+                        `
+                    }
+                ],
+                image: 'images/music/meta.jpg'
+            },
+            {
+                cardId: 'metamorphosis',
+                title: "metamorphosis",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 2m 36s<br>
+                    BPM: 150<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metabasis',
+                title: "metabasis",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 1m 53s<br>
+                    BPM: 135<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metachromasia',
+                title: "metachromasia",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 1m 57s<br>
+                    BPM: 180<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metacomputing',
+                title: "metacomputing",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 2m 2s<br>
+                    BPM: 141<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metasystem',
+                title: "metasystem",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 1m 20s<br>
+                    BPM: 120<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metaballs',
+                title: "metaballs",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 1m 47s<br>
+                    BPM: 128<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                cardId: 'metastable',
+                title: "metastable",
+                image: 'images/music/meta.jpg',
+                hidden: true,
+                detail: `
+                    Released: April 15th, 2025<br>
+                    Length: 1m 45s<br>
+                    BPM: 201<br>
+                    Time signature: 4/4<br>
+                `,
+            },
+            {
+                title: "Singles",
+            },
+            {
+                cardId: 'istar',
+                title: "i*",
+                subtitle: "June 19th, 2026",
+                image: 'images/music/istar.jpg',
+                detail: `
+                    Released: June 19th, 2026<br>
+                    Length: 3m 46s<br>
+                    BPM: 147<br>
+                    Time signature: 7/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=L9753vGyXqs" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/i" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1582796" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3QMKfVy6zuj4A7TilMgUnw" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/6784662456" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'givesyousomemusic',
+                title: "*gives you some music*",
+                subtitle: "May 15th, 2026",
+                image: 'images/music/givesyousomemusic.jpg',
+                detail: `
+                    Released: May 15th, 2026<br>
+                    Length: 5m 33s<br>
+                    BPM: 150<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=-o05hfk55Vs" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/gives-you-some-music" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1582795" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/1otHN1lYLeVS6JjRajHniS" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/6784556805" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            i wish nothing more<br>
+                            i seek nothing more<br>
+                            i want nothing more<br>
+                            than your love<br>
+                            that fuels up my whole life<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'boobies',
+                title: "boobies",
+                subtitle: "April 1st, 2026",
+                image: 'images/music/boobies.jpg',
+                detail: `
+                    Released: April 1st, 2026<br>
+                    Length: 4m 17s<br>
+                    BPM: 174<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=DY-KqtFQRZc" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/boobies" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1554212" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/2oj8jY490D1WAA5QQZNzYR" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1882203329" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'particleacceleratortypebeat',
+                title: "particle accelerator type beat [ft. (un)familiar]",
+                subtitle: "February 6th, 2026",
+                image: 'images/music/particleacceleratortypebeat.jpg',
+                detail: `
+                    Released: February 6th, 2026<br>
+                    Length: 4m 0s<br>
+                    Re-released in: <a data-open-card="music:digirel">Digirel</a><br>
+                    BPM: 165<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=068KKvQI1SM" target="_blank">YouTube</a><br>
+                    <a href="https://unfamiliartunes.bandcamp.com/track/particle-accelerator-type-beat" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1523979" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/55PPFAjJ8LjqFm7JXmm3EZ" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1871210775" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'cabbitmusic',
+                title: "CABBIT MUSIC [ft. availax]",
+                subtitle: "December 5th, 2025",
+                image: 'images/music/cabbitmusic.jpg',
+                detail: `
+                    Released: December 5th, 2025<br>
+                    Length: 2m 49s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=sbDqYh_fIVk" target="_blank">YouTube</a><br>
+                    <a href="https://availax.bandcamp.com/album/cabbit-music" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1497083" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/5kqFNyol1OXlD6PpIDaInW" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1856923833" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'broken',
+                title: "◫→⌲—◯+⧖→◇+←﹤ [ft. shaunxdd]",
+                subtitle: "November 1st, 2025",
+                image: 'images/music/broken.jpg',
+                detail: `
+                    Released: November 1st, 2025<br>
+                    Re-released in: <a data-open-card="music:blackdelta">BLACK_DELTA</a><br>
+                    BPM: 174<br>
+                    Length: 4m 32s<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=WjwTosBmDis" target="_blank">YouTube</a><br>
+                    <a href="https://outsidercollective.bandcamp.com/track/sample-by-shaunxdd" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1513716" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/5XzArtmQOLc4ZivdjRYskl" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1850157534" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'gayburger',
+                title: "Gay Burger",
+                subtitle: "September 20th, 2025",
+                image: 'images/music/gayburger.jpg',
+                detail: `
+                    Released: September 20th, 2025<br>
+                    Length: 2m 0s<br>
+                    BPM: 180<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=s-L4DqanZYw" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/gay-burger" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1473076" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3qLSBiKezW5N2V4AFlS0O5" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1840080355" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'butdasokcuzistillhavea',
+                title: "but das ok cuz i still have a",
+                subtitle: "September 14th, 2025",
+                image: 'images/music/butdasokcuzistillhavea.jpg',
+                detail: `
+                    Released: September 14th, 2025<br>
+                    Length: 3m 0s<br>
+                    BPM: 120 ➡️ (160 interpolating linearly) ➡️ 120<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=mNGzKcEnvSI" target="_blank">YouTube</a><br>
+                    <a href="https://outsidercollective.bandcamp.com/track/but-das-ok-cuz-i-still-have-a" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1473077" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/5u3MoOtbWhMeU0sJo9EsU5" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1839069054" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'corestomach',
+                title: "core stomach [ft. hi maya]",
+                subtitle: "September 3rd, 2025",
+                image: 'images/music/corestomach.jpg',
+                detail: `
+                    Released: September 3rd, 2025<br>
+                    Length: 3m 55s<br>
+                    <br>
+                    <a href="https://open.spotify.com/album/54Gb7BnhxXKcQSH0tkNR43" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1843531475" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'iwannabethatgirl',
+                title: "I Wanna Be That Girl",
+                subtitle: "August 29th, 2025",
+                image: 'images/music/iwannabethatgirl.jpg',
+                detail: `
+                    Released: August 29th, 2025<br>
+                    Length: 3m 45s<br>
+                    BPM: 180<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    made entirely in under 24 hours for All Nighter Vol. 10 by FORM<br>
+                    didn't make it to the compilation but i'm really happy with what i create in just a single day !!<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=n_3zFyFpROc" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/i-wanna-be-that-girl" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1473078" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3Q4kGjzSMaIVIjiorw9aN8" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1834612715" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            Waking up by the dark<br>
+                            Showered by the night sky<br>
+                            Stay and leave with no mark<br>
+                            Cold breeze as she pass by<br>
+                            <br>
+                            No one knows who she is<br>
+                            But I think she's such a star<br>
+                            Finding her through the mist<br>
+                            I think my wish seems too far<br>
+                            <br>
+                            I wanna be that girl...<br>
+                            I wanna be that girl...<br>
+                            I wanna be that girl...<br>
+                            I wanna be that girl...<br>
+                            <br>
+                            That girl...<br>
+                            I wanna be that girl...<br>
+                            I wanna be...<br>
+                            Wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be that girl...<br>
+                            <br>
+                            I wanna be that girl<br>
+                            I wanna be that girl<br>
+                            I wanna be...<br>
+                            Wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be that girl...<br>
+                            <br>
+                            I wanna be that girl<br>
+                            I wanna be that girl<br>
+                            I wanna be...<br>
+                            Wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be wanna be that girl...<br>
+                            <br>
+                            (I wanna be that girl)<br>
+                            (I wanna be that girl)<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'whateveridontevencareanymore',
+                title: "Whatever, i don't even care anymore",
+                subtitle: "August 4th, 2025",
+                image: 'images/music/whateveridontevencareanymore.jpg',
+                detail: `
+                    Released: August 4th, 2025<br>
+                    Re-released in: <a data-open-card="music:blackdelta">BLACK_DELTA</a><br>
+                    Length: 5m 39s<br>
+                    BPM: 111<br>
+                    Time signature: 6/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=miwP24hGiwo" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1473079" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/1yzOPQ6UuYDiKyipoDeI5f" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1830475992" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'nyancat',
+                title: "Nyan Cat [Artifyber Remix]",
+                subtitle: "June 30th, 2025",
+                image: 'images/music/nyancat.jpg',
+                detail: `
+                    Released: June 30th, 2025<br>
+                    Remix of: <a href="https://youtube.com/watch?v=2yJgwwDcgV8" target="_blank">Nyan Cat</a><br>
+                    Length: 3m 32s<br>
+                    BPM: 150<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=lqZrkBXBTus" target="_blank">YouTube</a><br>
+                    <a href="https://open.spotify.com/album/15WaHz6itQFmcIty4z1qFg" target="_blank">Spotify</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            <br>
+                            wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            WAH WAH wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            wah wah wah wah wah wah wah wah wah wah wah wah wah wah<br>
+                            WAH WAH<br>
+                            wah wah wah wah wah wah wah wah<br>
+                            <span class="genotheta">
+                            come and fly out of the planet and<br>
+                            follow the comet to reach places you will never regret<br>
+                            through the interstellar meeting kitty aliens and<br>
+                            dance with them make memories you will not forget<br>
+                            come and fly out of the planet and<br>
+                            follow the comet to reach places you will never regret<br>
+                            through the interstellar meeting kitty aliens and<br>
+                            dance with them make memories you will not forget<br>
+                            yeah come dance with us show us your best move<br>
+                            yeah yeah nothings stopping you just have fun with the party<br>
+                            yeah cmon yeah cmon make some noise and meow all day too<br>
+                            yeah yeah party never stop let us go crazy<br>
+                            yeah cmon yeah cmon dance with us show us your best move<br>
+                            yeah yeah nothings stopping you just have fun with the party<br>
+                            yeah cmon yeah cmon make some noise and meow all day too<br>
+                            yeah yeah party never stop let us go<br>
+                            yeah<br>
+                            </span>
+                            <br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                            meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'ormaybeyesterday',
+                title: "Or Maybe, Yesterday [Artifyber Remix]",
+                subtitle: "May 31st, 2025",
+                image: 'images/music/ormaybeyesterday.jpg',
+                detail: `
+                    Released: May 31st, 2025<br>
+                    Remix of: Or Maybe, Yesterday by <a href="https://linktr.ee/polibix" target="_blank">Polibix</a><br>
+                    Length: 2m 42s<br>
+                    <br>
+                    <a href="https://polibix.bandcamp.com/track/or-maybe-yesterday-artifyber-remix" target="_blank">Bandcamp</a><br>
+                    <a href="https://open.spotify.com/track/7nnCDnu6iKRoWv4yxPTHbn" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1816856980" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'inflection',
+                title: "Inflection [Artifyber Remix]",
+                subtitle: "May 30th, 2025",
+                image: 'images/music/inflection.jpg',
+                detail: `
+                    Released: May 30th, 2025<br>
+                    Remix of: <a href="https://disphing.com/inflection" target="_blank">Inflection</a> by <a href="https://disphing.com" target="_blank">Disphing</a><br>
+                    Length: 4m 23s<br>
+                    BPM: 132<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=cZ4AOP1Lo2w" target="_blank">YouTube</a><br>
+                    <a href="https://open.spotify.com/track/28FU5G3UvaUOjL22hbsOMJ" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1814031134" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            Strip off the rust that accumulated throughout the semester<br>
+                            Unravel the twine that was keeping my insecurities sequestered<br>
+                            It's about time I re-examine the state of it all<br>
+                            Once more I scour the deletable folders<br>
+                            'Cause why keep it at all<br>
+                            If it'll just make me remember?<br>
+                            <br>
+                            Despite that, I think it's just a reflection<br>
+                            Of saying you weren't really worth it in the end<br>
+                            I take it back, pardon my inflection<br>
+                            But now I'm only blemished by the way that it felt<br>
+                            <br>
+                            I'll spend my day sitting up at the back of the room<br>
+                            I know, I know it's degrading<br>
+                            But here's to hoping I'll shame myself out<br>
+                            But now that I'm away<br>
+                            Will I forget about connections that I never prolonged?<br>
+                            So I sit here and consider considering making an effort<br>
+                            <br>
+                            Despite that I think it's just a reflection<br>
+                            Of saying you weren't really worth it in the end<br>
+                            I take it back, pardon my inflection<br>
+                            But now I'm only blemished by the way that it felt<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'remixyourselfxdddd',
+                title: "REMIXYOURSELFXDDDD",
+                subtitle: "June 21st, 2025",
+                image: 'images/music/remixyourselfxdddd.jpg',
+                detail: `
+                    Released: June 21st, 2025<br>
+                    Length: 3m 49s<br>
+                    BPM: 270<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    MASHUPS:<br>
+                    2w2 + Bunny Core Breakin + Catdelions + Fastbreaker + Flories + JUST KIDDING!! + Midnight Drawing + nom + Rain + SRLAOANOEETVLEEYDS + Starfruit Garden + virprkl's hate ""video"" XDDDD<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=oHDKIMLWGhA" target="_blank">YouTube</a><br>
+                    <a href="https://outsidercollective.bandcamp.com/track/remixyourselfxdddd" target="_blank">Bandcamp (Outsider Collective)</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/remixyourselfxdddd" target="_blank">Bandcamp (Artifyber)</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1554211" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3b5w4hLL5kDWEdLJTgwYu8" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1880490472" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'lewatcakrawala',
+                title: "lewat cakrawala",
+                subtitle: "April 25th, 2025",
+                image: 'images/music/lewatcakrawala.jpg',
+                detail: `
+                    Released: April 25th, 2025<br>
+                    Length: 4m 1s<br>
+                    BPM: 90<br>
+                    Time signature: 6/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=HSnWujTH-RA" target="_blank">YouTube</a><br>
+                    <a href="https://outsidercollective.bandcamp.com/track/lewat-cakrawala" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1433754" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/2DleZ0nA3ITnBokkMFYwBO" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1809867758" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            Wahai angin, dengarkan aku, aku ingin, bersama kamu, mengembara dunia<br>
+                            Wahai awan, ikut denganku, aku akan, membawa kamu, lewat cakrawala<br>
+                            Oh temanku, jangan khawatir, walau aku, lewati atmosfir, 'kan kuingat bumi<br>
+                            Oh sahabat, yang ku banggakan, aku dapat, saksikan di awan, jagalah dirimu<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'fastbreaker',
+                title: "Fastbreaker",
+                subtitle: "March 21st, 2025",
+                image: 'images/music/fastbreaker.jpg',
+                detail: `
+                    Released: March 21st, 2025<br>
+                    Length: 3m 3s<br>
+                    BPM: 321 ➡️ (linear interpolation) 432 ➡️ 222<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=k6r34qQWNjg" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/fastbreaker" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1411233" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/1eUeVpYA32616MvVufhSID" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1803151472" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'lcdlsd',
+                title: "LCDLSD",
+                subtitle: "March 16th, 2025",
+                image: 'images/music/lcdlsd.jpg',
+                detail: `
+                    Released: March 16th, 2025<br>
+                    Re-released in: <a data-open-card="music:digirel">Digirel</a><br>
+                    Length: 3m 42s<br>
+                    BPM: 150<br>
+                    Time signature: 5/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=Cj57tX18rBQ" target="_blank">YouTube</a><br>
+                    <a href="https://outsidercollective.bandcamp.com/track/lcdlsd" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1411232" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/3dTRFRBMQjiRL3ix7gD7tA" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1801660233" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'allsquietinthehouse',
+                title: "All's Quiet In The House [ft. I AM A ROCK]",
+                subtitle: "February 9th, 2025",
+                image: 'images/music/allsquietinthehouse.jpg',
+                detail: `
+                    Released: February 9th, 2025<br>
+                    Length: 4m 4s<br>
+                    <br>
+                    <a href="https://outsidercollective.bandcamp.com/track/all-s-quiet-in-the-house" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1411230" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/4LGqaG5JbRWu52N1Pd1nKA" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1795607251" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'niar',
+                title: "niaR",
+                subtitle: "January 5th, 2025",
+                image: 'images/music/niar.jpg',
+                detail: `
+                    Released: January 5th, 2025<br>
+                    Length: 2m 28s<br>
+                    BPM: 240<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    This track was 100% contructed from the original rain.wav with only changes to volume, pitch, panning, and stereo width. No effects applied except a limiter at master.<br>
+                    Just a little experiment inspired from grade(decoherence) from vivid/stasis.<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=b1HN3cHSPSc" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/niar" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1411229" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/01RLewUE3IyjXkgyG01ZUO" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1787102952" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'underthemistletoe',
+                title: "Under The Mistletoe",
+                subtitle: "December 1st, 2024",
+                image: 'images/music/underthemistletoe.jpg',
+                detail: `
+                    Released: December 1st, 2024<br>
+                    Re-released in: <a data-open-card="music:floriverse-epsilon">Floriverse : Epsilon</a><br>
+                    Length: 2m 46s<br>
+                    BPM: 180<br>
+                    Time signature: 7/8<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=lokvEKhxAEI" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1387976" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/track/32syYRgwsshsVs1Z1UzaeS" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/song/1787480292" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'window',
+                title: "Window",
+                subtitle: "December 1st, 2024",
+                image: 'images/music/window.jpg',
+                detail: `
+                    Released: December 1st, 2024<br>
+                    Length: 9m 3s<br>
+                    BPM: 99<br>
+                    Time signature: 7/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=eFoSiKgRX5k" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/window" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1381578" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/79HTORY0REr14RC0mvbDQw" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1782509717" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'catdelionsiis',
+                title: "Catdelions IIS [ft. UrvTek]",
+                subtitle: "October 9th, 2024",
+                image: 'images/music/catdelionsiis.jpg',
+                detail: `
+                    Released: October 9th, 2024<br>
+                    Length: 2m 52s<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=KkS28ugKca0" target="_blank">YouTube</a><br>
+                    <a href="https://open.spotify.com/album/1QX1Z2oES9tANgs5iE5sq6" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1773044326" target="_blank">Apple Music</a><br>
+                `,
+                sections: [
+                    {
+                        title: 'Lyrics',
+                        detail: `
+                            I'm standing<br>
+                            I'm running<br>
+                            I'm jumping<br>
+                            I'm falling<br>
+                            I'm prancing<br>
+                            I'm panting<br>
+                            I'm stomping<br>
+                            I'm all in!<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                            <br>
+                            I've been just so blinded<br>
+                            I've been just open minded<br>
+                            Now I just feel excited<br>
+                            Can't control myself<br>
+                            Now I just feel so tired<br>
+                            Can't exhort myself<br>
+                            I'm standing<br>
+                            I'm jumping<br>
+                            I'm prancing<br>
+                            I'm stomping<br>
+                            <br>
+                            I'm standing<br>
+                            I'm running<br>
+                            I'm jumping<br>
+                            I'm falling<br>
+                            I'm prancing<br>
+                            I'm panting<br>
+                            I'm stomping<br>
+                            I'm all in!<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                            Go go go go go go go go<br>
+                        `
+                    }
+                ]
+            },
+            {
+                cardId: 'lazuli',
+                title: "Lazuli",
+                subtitle: "September 23rd, 2024",
+                image: 'images/music/lazuli.jpg',
+                detail: `
+                    Released: September 23rd, 2024<br>
+                    Re-released in: <a data-open-card="music:digirel">Digirel</a><br><br>
+                    Length: 3m 47s<br>
+                    BPM: 129<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=E1N0kZwShy8" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1363098" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3NzF50F1jJsVguOfBeiP9z" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1769158478" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'bunnycorebreakin',
+                title: "Bunny Core Breakin",
+                subtitle: "August 18th, 2024",
+                image: 'images/music/bunnycorebreakin.jpg',
+                detail: `
+                    Released: August 18th, 2024<br>
+                    Length: 2m 15s<br>
+                    BPM: 180<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=I6wIvKC4E88" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/bunny-core-breakin" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1351125" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/53ktrFGGYCwPHC5Wd6Xrmb" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1763135000" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'rain',
+                title: "Rain",
+                subtitle: "July 4th, 2024",
+                image: 'images/music/rain.jpg',
+                detail: `
+                    Released: July 4th, 2024<br>
+                    Length: 3m 49s<br>
+                    BPM: 140<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=Gf02GVdI7D0" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/rain" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1341644" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/2glzlfhmjceLC9jBdpP3nm" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1755895069" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'nom',
+                title: "nom",
+                subtitle: "May 28th, 2024",
+                image: 'images/music/nom.jpg',
+                detail: `
+                    Released: May 28th, 2024<br>
+                    Length: 2m 38s<br>
+                    BPM: 135<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=1yurt5TykUU" target="_blank">YouTube</a><br>
+                    <a href="https://artifyber.bandcamp.com/track/nom" target="_blank">Bandcamp</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1327099" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/6XcLNDOcd1HYNzbKSJYVnu" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1753826095" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'nw-gm',
+                title: "nw gm",
+                subtitle: "April 30th, 2024",
+                image: 'images/music/nwgm.jpg',
+                detail: `
+                    Released: April 30th, 2024<br>
+                    Length: 2m 7s<br>
+                    BPM: 135<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=-mvCcuvMjsQ" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1324188" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/03OmWhWhifCI4xZYsr8apM" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1741847633" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'neitherbinary',
+                title: "Neitherbinary",
+                subtitle: "April 15th, 2024",
+                image: 'images/music/neitherbinary.jpg',
+                detail: `
+                    Released: April 15th, 2024<br>
+                    Re-released in: <a data-open-card="music:digirel">Digirel</a><br>
+                    Length: 6m 3s<br>
+                    BPM: 150<br>
+                    Time signature: 7/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=RGyhCbDih0w" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1314024" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/4bh0WIsZoxMfuOYnCqzxVR" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1741769951" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: '2w2',
+                title: "2w2",
+                subtitle: "December 16th, 2022",
+                image: 'images/music/2w2.jpg',
+                detail: `
+                    Released: December 16th, 2022<br>
+                    Length: 2m 22s<br>
+                    BPM: 222<br>
+                    <br>
+                    <a href="https://web.archive.org/web/20221222100744/https://www.youtube.com/watch?v=b11AHuhqeW4" target="_blank">YouTube (Wayback Machine)</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1292612" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/2tCtmKKp7T14hBOzaXL2JL" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1745408114" target="_blank">Apple Music</a><br>
+                `
+            },
+            {
+                cardId: 'flories',
+                title: "Flories",
+                subtitle: "August 30th, 2022",
+                image: 'images/music/flories.jpg',
+                detail: `
+                    Released: August 30th, 2022<br>
+                    Length: 5m 46s<br>
+                    BPM: 128<br>
+                    Time signature: 4/4<br>
+                    <br>
+                    <a href="https://youtube.com/watch?v=4u8Anqhk4hc" target="_blank">YouTube</a><br>
+                    <a href="https://newgrounds.com/audio/listen/1147512" target="_blank">Newgrounds</a><br>
+                    <a href="https://open.spotify.com/album/3Px2FJnqVTWX4HgQg9slvg" target="_blank">Spotify</a><br>
+                    <a href="https://music.apple.com/album/1842960134" target="_blank">Apple Music</a><br>
+                `
+            },
+        ]
     },
 
 
@@ -9133,6 +10871,7 @@ function internalCard({
     banner = false,
     title,
     subtitle,
+    image,
     unclickable = false,
 }) {
 
@@ -9145,6 +10884,7 @@ function internalCard({
     if (banner) attrs.push(`data-is-banner="true"`);
     if (title) attrs.push(`data-override-title="${title}"`);
     if (subtitle) attrs.push(`data-override-subtitle="${subtitle}"`);
+    if (image) attrs.push(`data-override-image="${image}"`);
     if (unclickable) attrs.push(`data-is-unclickable="true"`);
 
     return `<div ${attrs.join(" ")}></div>`;

@@ -9517,6 +9517,13 @@ let menuItems = [
                 image: 'icons/l-spotify.png'
             },
             {
+                cardId: 'applemusic',
+                title: 'Apple Music',
+                subtitle: '',
+                url: 'https://music.apple.com/artist/1732110168',
+                image: 'icons/l-applemusic.png'
+            },
+            {
                 cardId: 'bandcamp',
                 title: 'Bandcamp',
                 subtitle: '',

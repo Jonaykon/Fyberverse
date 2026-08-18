@@ -9568,6 +9568,7 @@ let menuItems = [
                 <br>
                 Artyfiber:<br>
                 <a href="https://x.com/artyfiber" target="_blank">Twitter</a><br>
+                <a href="https://bsky.app/profile/azkazavian.me" target="_blank">Bluesky</a><br>
                 <a href="https://www.youtube.com/@artyfiber" target="_blank">YouTube</a><br>
                 <br>
                 `,

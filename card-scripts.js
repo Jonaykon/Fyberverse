@@ -5,18 +5,27 @@
 // toggle sounds
 let sfxIsMute = true;
 let bgmStop = false;
-function toggleSFXVol() {
+let sfxLoaded = false;
+async function toggleSFXVol() {
     if (!sfxIsMute) {
-        SFX_MASTER_VOL = 0;
-        sfxIsMute = true;
         toggleSFX.textContent = "SFX: Off";
         updateSettingsButtonText('toggleSFX', 'SFX: Off');
+        SFX_MASTER_VOL = 0;
+        sfxIsMute = true;
         return;
     } else {
-        SFX_MASTER_VOL = INIT_SFX_MASTER_VOL;
-        sfxIsMute = false;
         toggleSFX.textContent = "SFX: On";
         updateSettingsButtonText('toggleSFX', 'SFX: On');
+
+        if (!sfxLoaded) {
+            setLayoutViz(loadingSfx, true);
+            await preloadAudios([sfxClick,sfxLink,sfxPageClose,sfxPageOpen,sfxSwap,sfxWarp]);
+            setLayoutViz(loadingSfx, false);
+            sfxLoaded = true;
+        }
+
+        SFX_MASTER_VOL = INIT_SFX_MASTER_VOL;
+        sfxIsMute = false;
         return;
     }
 }

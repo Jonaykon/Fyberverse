@@ -179,6 +179,17 @@ function checkWideScreen() {
     return getCSSVar('--offset-main-menu-on-open') != '0'; */
 }
 
+async function preloadAudios(audios) {
+    await Promise.all([
+        ...audios.map(async audio => {
+            const response = await fetch(audio.src);
+            const blob = await response.blob();
+            audio.src = URL.createObjectURL(blob);
+            audio.load();
+        })
+    ]);
+}
+
 
 
 
@@ -1280,15 +1291,19 @@ function fadeVolume(audio, t, speed = 0.02) {
 }
 
 // start all BGMs with only one audible
-function startAllBgm() {
+async function startAllBgm() {
+    setButtonViz(playBgmBtn, false);
+
+    setLayoutViz(loadingMusic, true);
+    await preloadAudios([bgmFyberverse,bgmDeltadim,bgmFloriverse,bgmDigirel,bgmNansenz,bgmHizen,bgmNadir]);
+    setLayoutViz(loadingMusic, false);
+
     Object.entries(bgm).forEach(([key, audio]) => {
         audio.volume = (key === "fyberverse" ? 1 : 0) * BGM_MASTER_VOL;
         audio.play().catch(() => { });
     });
     currentBgm = "fyberverse";
     bgmEnabled = true;
-    setButtonViz(playBgmBtn, false);
-    updateSettingsButtonText('toggleMusic', 'Mute Music');
 }
 
 

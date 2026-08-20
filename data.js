@@ -9799,7 +9799,8 @@ let menuItems = [
                 title: `Layout`,
                 subtitle: `
                         <br>
-                        <button type="button" id="modeSwitch">Switch Layout</button>
+                        <button type="button" id="modeSwitch">Switch Layout</button><br>
+                        <button type="button" id="transitionsSwitch">Toggle Transitions</button>
                 `,
                 unclickable: true,
                 semibanner: true,

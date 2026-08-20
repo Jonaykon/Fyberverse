@@ -26,6 +26,7 @@ let sfxLoaded = false;
 
 // If you prefer to always use an orbit-less interface, set this to true
 let SIMPLE_MODE = getSimpleMode();
+let NO_TRANSITIONS_MODE = getNoTransitionsMode();
 // Simple mode index data
 const MAIN_MENU_TITLE = pickSplash();
 const MAIN_MENU_SUBTITLE = '';
@@ -389,6 +390,8 @@ function initSimpleMode() {
 /* --------------------------
    Mode switcher
    -------------------------- */
+const settingsBtn = document.getElementById('settingsBtn');
+
 
 // read SIMPLE_MODE from localStorage
 function getSimpleMode() {
@@ -421,11 +424,52 @@ function setSimpleMode(value) {
     return boolValue;
 }
 
-const settingsBtn = document.getElementById('settingsBtn');
 function toggleViewMode() {
     const newMode = !SIMPLE_MODE;
     if (confirm(`Switch to ${newMode ? 'Simple Mode' : 'Orbit Mode'}? Page will be reloaded.`)) {
         setSimpleMode(newMode);
+        setTimeout(() => {
+            window.location.reload();
+        }, 500);
+    }
+}
+
+
+// read NO_TRANSITIONS_MODE from localStorage
+function getNoTransitionsMode() {
+    // try localStorage first
+    const saved = localStorage.getItem('noTransitionsMode');
+    if (saved !== null) {
+        return saved === 'true' || saved === '1' ? 1 : 0;
+    }
+
+    // fallback to cookie for older browsers
+    const cookies = document.cookie.split(';').reduce((acc, cookie) => {
+        const [key, value] = cookie.trim().split('=');
+        acc[key] = value;
+        return acc;
+    }, {});
+
+    if (cookies.noTransitionsMode !== undefined) {
+        return cookies.noTransitionsMode === 'true' || cookies.noTransitionsMode === '1' ? 1 : 0;
+    }
+
+    return 0;
+}
+
+// save NO_TRANSITIONS_MODE preference
+function setNoTransitionsMode(value) {
+    const boolValue = value ? 1 : 0;
+    NO_TRANSITIONS_MODE = boolValue;
+    localStorage.setItem('noTransitionsMode', boolValue.toString());
+    document.cookie = `noTransitionsMode=${boolValue}; path=/; max-age=${365 * 24 * 60 * 60}`; // 1 year expiry
+    return boolValue;
+}
+
+function toggleTransitionsMode() {
+    const newMode = !NO_TRANSITIONS_MODE;
+    if (confirm(`${newMode ? 'Disable Transitions' : 'Enable Transitions'}? Page will be reloaded.`)) {
+        setNoTransitionsMode(newMode);
         setTimeout(() => {
             window.location.reload();
         }, 500);
@@ -1887,7 +1931,7 @@ function preloadAssets(priority, assetsArray, onProgress) {
 }
 
 // disable most transitions if simple mode is activated
-if (SIMPLE_MODE) {
+if (NO_TRANSITIONS_MODE) {
     contentView.classList.add("no-transition-at-all");
     detailView.classList.add("no-transition-at-all");
 };

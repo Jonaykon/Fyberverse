@@ -46,6 +46,12 @@ document.addEventListener('click', (e) => {
         console.log('Mode Switch clicked');
         toggleViewMode();
     }
+
+    if (e.target.id === 'transitionsSwitch') {
+        e.preventDefault();
+        console.log('Transitions Switch clicked');
+        toggleTransitionsMode();
+    }
 });
 
 

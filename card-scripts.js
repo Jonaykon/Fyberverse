@@ -54,6 +54,21 @@ document.addEventListener('click', (e) => {
     }
 });
 
+document.addEventListener('click', (e) => {
+    if (e.target.id === 'nextRandomFact') {
+        e.preventDefault();
+        const cardData = getCardData('info', 'didyouknow');
+        const cardElement = contentViewGrid.querySelector('[data-id="didyouknow"]');
+        cardData.title = `
+            <h2 style='margin-bottom: -12px'>Did you know:</h2><br>
+            <p style='color: color-mix(in srgb, var(--accentl) 75%, transparent)'>
+                ${facts[Math.floor(Math.random() * facts.length)]}
+            </p>
+            `
+        setCardHTML(cardElement, cardData);
+    }
+});
+
 
 // Helper function to update button text in menuItems
 function updateSettingsButtonText(buttonId, newText) {

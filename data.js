@@ -9348,6 +9348,9 @@ let menuItems = [
                         ${facts[Math.floor(Math.random() * facts.length)]}
                     </p>
                     `,
+                subtitle: `
+                    <button type="button" id="nextRandomFact">Next Random Fact</button>
+                `,
                 banner: true,
                 unclickable: true,
             },

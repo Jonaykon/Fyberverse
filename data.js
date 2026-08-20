@@ -9987,872 +9987,872 @@ const snapshots = [
     {
         num: 274,
         title: "Quick Articat drawing",
-        embed: "images/snapshots/274.png"
+        embed: "https://artifyber.xyz/images/snapshots/274.png"
     },
     {
         num: 273,
         title: "Articuber",
-        embed: "images/snapshots/273.png"
+        embed: "https://artifyber.xyz/images/snapshots/273.png"
     },
     {
         num: 272,
         title: "Earmuffs",
-        embed: "images/snapshots/272.png"
+        embed: "https://artifyber.xyz/images/snapshots/272.png"
     },
     {
         num: 271,
         title: "Warmers",
-        embed: "images/snapshots/271.png"
+        embed: "https://artifyber.xyz/images/snapshots/271.png"
     },
     {
         num: 270,
         title: "Kitty cookie",
-        embed: "images/snapshots/270.png"
+        embed: "https://artifyber.xyz/images/snapshots/270.png"
     },
     {
         num: 269,
         title: "Cardboard bun",
-        embed: "images/snapshots/269.png"
+        embed: "https://artifyber.xyz/images/snapshots/269.png"
     },
     {
         num: 268,
         title: "PATPATPATPATPATPATPAT",
-        embed: "images/snapshots/268.png"
+        embed: "https://artifyber.xyz/images/snapshots/268.png"
     },
     {
         num: 267,
         title: "Apple fritters",
-        embed: "images/snapshots/267.png"
+        embed: "https://artifyber.xyz/images/snapshots/267.png"
     },
     {
         num: 266,
         title: "Solitude",
-        embed: "images/snapshots/266.png"
+        embed: "https://artifyber.xyz/images/snapshots/266.png"
     },
     {
         num: 265,
         title: "Paw gloves",
-        embed: "images/snapshots/265.png"
+        embed: "https://artifyber.xyz/images/snapshots/265.png"
     },
     {
         num: 264,
         title: "📱",
-        embed: "images/snapshots/264.png"
+        embed: "https://artifyber.xyz/images/snapshots/264.png"
     },
     {
         num: 263,
         title: "emoticons",
-        embed: "images/snapshots/263.mp4"
+        embed: "https://artifyber.xyz/images/snapshots/263.mp4"
     },
     {
         num: 262,
         title: "This is fine...",
-        embed: "images/snapshots/262.png"
+        embed: "https://artifyber.xyz/images/snapshots/262.png"
     },
     {
         num: 261,
         title: "Fractures 💠",
-        embed: "images/snapshots/261.png"
+        embed: "https://artifyber.xyz/images/snapshots/261.png"
     },
     {
         num: 260,
         title: "Fluffier! ⬆️",
-        embed: "images/snapshots/260.png"
+        embed: "https://artifyber.xyz/images/snapshots/260.png"
     },
     {
         num: 259,
         title: "🥕🥕🥕",
-        embed: "images/snapshots/259.png"
+        embed: "https://artifyber.xyz/images/snapshots/259.png"
     },
     {
         num: 258,
         title: "Lemons",
-        embed: "images/snapshots/258.png"
+        embed: "https://artifyber.xyz/images/snapshots/258.png"
     },
     {
         num: 257,
         title: "Zesty",
-        embed: "images/snapshots/257.png"
+        embed: "https://artifyber.xyz/images/snapshots/257.png"
     },
     {
         num: 256,
         title: "Headshot",
-        embed: "images/snapshots/256.png"
+        embed: "https://artifyber.xyz/images/snapshots/256.png"
     },
     {
         num: 255,
         title: "Grassfield",
-        embed: "images/snapshots/255.png"
+        embed: "https://artifyber.xyz/images/snapshots/255.png"
     },
     {
         num: 254,
         title: "Petals",
-        embed: "images/snapshots/254.png"
+        embed: "https://artifyber.xyz/images/snapshots/254.png"
     },
     {
         num: 253,
         title: "Pawesome!",
-        embed: "images/snapshots/253.png"
+        embed: "https://artifyber.xyz/images/snapshots/253.png"
     },
     {
         num: 252,
         title: "Eyestrain chaos",
-        embed: "images/snapshots/252.png"
+        embed: "https://artifyber.xyz/images/snapshots/252.png"
     },
     {
         num: 251,
         title: "KATAMAR(T)I",
-        embed: "images/snapshots/251.png"
+        embed: "https://artifyber.xyz/images/snapshots/251.png"
     },
     {
         num: 250,
         title: "Cotton Candy Clouds",
-        embed: "images/snapshots/250.png"
+        embed: "https://artifyber.xyz/images/snapshots/250.png"
     },
     {
         num: 249,
         title: "Blocky buildings",
-        embed: "images/snapshots/249.png"
+        embed: "https://artifyber.xyz/images/snapshots/249.png"
     },
     {
         num: 248,
         title: "A(rti)rray",
-        embed: "images/snapshots/248.png"
+        embed: "https://artifyber.xyz/images/snapshots/248.png"
     },
     {
         num: 247,
         title: "Dreamer",
-        embed: "images/snapshots/247.png"
+        embed: "https://artifyber.xyz/images/snapshots/247.png"
     },
     {
         num: 246,
         title: "Interplanetary",
-        embed: "images/snapshots/246.png"
+        embed: "https://artifyber.xyz/images/snapshots/246.png"
     },
     {
         num: 245,
         title: "One really big hug",
-        embed: "images/snapshots/245.png"
+        embed: "https://artifyber.xyz/images/snapshots/245.png"
     },
     {
         num: 244,
         title: "Massive",
-        embed: "images/snapshots/244.png"
+        embed: "https://artifyber.xyz/images/snapshots/244.png"
     },
     {
         num: 243,
         title: "Tiny",
-        embed: "images/snapshots/243.png"
+        embed: "https://artifyber.xyz/images/snapshots/243.png"
     },
     {
         num: 242,
         title: "So queer, bunny",
-        embed: "images/snapshots/242.png"
+        embed: "https://artifyber.xyz/images/snapshots/242.png"
     },
     {
         num: 241,
         title: "Upside down",
-        embed: "images/snapshots/241.png"
+        embed: "https://artifyber.xyz/images/snapshots/241.png"
     },
     {
         num: 240,
         title: "Window",
-        embed: "images/snapshots/240.png"
+        embed: "https://artifyber.xyz/images/snapshots/240.png"
     },
     {
         num: 239,
         title: "doodles",
-        embed: "images/snapshots/239.png"
+        embed: "https://artifyber.xyz/images/snapshots/239.png"
     },
     {
         num: 238,
         title: "Magazine cover",
-        embed: "images/snapshots/238.png"
+        embed: "https://artifyber.xyz/images/snapshots/238.png"
     },
     {
         num: 237,
         title: "Grilled cheese",
-        embed: "images/snapshots/237.png"
+        embed: "https://artifyber.xyz/images/snapshots/237.png"
     },
     {
         num: 236,
         title: "Long scarf",
-        embed: "images/snapshots/236.png"
+        embed: "https://artifyber.xyz/images/snapshots/236.png"
     },
     {
         num: 235,
         title: "Looking at yourselves",
-        embed: "images/snapshots/235.png"
+        embed: "https://artifyber.xyz/images/snapshots/235.png"
     },
     {
         num: 234,
         title: "Ear shapes",
-        embed: "images/snapshots/234.png"
+        embed: "https://artifyber.xyz/images/snapshots/234.png"
     },
     {
         num: 233,
         title: "Wires and thingamajigs",
-        embed: "images/snapshots/233.png"
+        embed: "https://artifyber.xyz/images/snapshots/233.png"
     },
     {
         num: 232,
         title: "hey",
-        embed: "images/snapshots/232.png"
+        embed: "https://artifyber.xyz/images/snapshots/232.png"
     },
     {
         num: 231,
         title: "Sharp-textured stuff",
-        embed: "images/snapshots/231.png"
+        embed: "https://artifyber.xyz/images/snapshots/231.png"
     },
     {
         num: 230,
         title: "Ribbons",
-        embed: "images/snapshots/230.png"
+        embed: "https://artifyber.xyz/images/snapshots/230.png"
     },
     {
         num: 229,
         title: "Frames",
-        embed: "images/snapshots/229.png"
+        embed: "https://artifyber.xyz/images/snapshots/229.png"
     },
     {
         num: 228,
         title: "🌌🌳🟪",
-        embed: "images/snapshots/228.png"
+        embed: "https://artifyber.xyz/images/snapshots/228.png"
     },
     {
         num: 227,
         title: "background test",
-        embed: "images/snapshots/227.png"
+        embed: "https://artifyber.xyz/images/snapshots/227.png"
     },
     {
         num: 226,
         title: "Duet",
-        embed: "images/snapshots/226.png"
+        embed: "https://artifyber.xyz/images/snapshots/226.png"
     },
     {
         num: 225,
         title: "so snuggly",
-        embed: "images/snapshots/225.png"
+        embed: "https://artifyber.xyz/images/snapshots/225.png"
     },
     {
         num: 224,
         title: "Nyan-Arti!",
-        embed: "images/snapshots/224.png"
+        embed: "https://artifyber.xyz/images/snapshots/224.png"
     },
     {
         num: 223,
         title: "so soft",
-        embed: "images/snapshots/223.png"
+        embed: "https://artifyber.xyz/images/snapshots/223.png"
     },
     {
         num: 222,
         title: "0000FF",
-        embed: "images/snapshots/222.png"
+        embed: "https://artifyber.xyz/images/snapshots/222.png"
     },
     {
         num: 221,
         title: "00FF00",
-        embed: "images/snapshots/221.png"
+        embed: "https://artifyber.xyz/images/snapshots/221.png"
     },
     {
         num: 220,
         title: "FF0000",
-        embed: "images/snapshots/220.png"
+        embed: "https://artifyber.xyz/images/snapshots/220.png"
     },
     {
         num: 219,
         title: "doodle",
-        embed: "images/snapshots/219.png"
+        embed: "https://artifyber.xyz/images/snapshots/219.png"
     },
     {
         num: 218,
         title: "Learning each other's language",
-        embed: "images/snapshots/218.png"
+        embed: "https://artifyber.xyz/images/snapshots/218.png"
     },
     {
         num: 217,
         title: "Hue",
-        embed: "images/snapshots/217.png"
+        embed: "https://artifyber.xyz/images/snapshots/217.png"
     },
     {
         num: 216,
         title: "Trans drip",
-        embed: "images/snapshots/216.png"
+        embed: "https://artifyber.xyz/images/snapshots/216.png"
     },
     {
         num: 215,
         title: "Bigender drip",
-        embed: "images/snapshots/215.png"
+        embed: "https://artifyber.xyz/images/snapshots/215.png"
     },
     {
         num: 214,
         title: "Grab",
-        embed: "images/snapshots/214.png"
+        embed: "https://artifyber.xyz/images/snapshots/214.png"
     },
     {
         num: 213,
         title: "Feeling pink ^_^",
-        embed: "images/snapshots/213.png"
+        embed: "https://artifyber.xyz/images/snapshots/213.png"
     },
     {
         num: 212,
         title: "Frame 3",
-        embed: "images/snapshots/212.png"
+        embed: "https://artifyber.xyz/images/snapshots/212.png"
     },
     {
         num: 211,
         title: "Frame 2",
-        embed: "images/snapshots/211.png"
+        embed: "https://artifyber.xyz/images/snapshots/211.png"
     },
     {
         num: 210,
         title: "Frame",
-        embed: "images/snapshots/210.png"
+        embed: "https://artifyber.xyz/images/snapshots/210.png"
     },
     {
         num: 209,
         title: "Lost",
-        embed: "images/snapshots/209.png"
+        embed: "https://artifyber.xyz/images/snapshots/209.png"
     },
     {
         num: 208,
         title: "Phone call",
-        embed: "images/snapshots/208.png"
+        embed: "https://artifyber.xyz/images/snapshots/208.png"
     },
     {
         num: 207,
         title: "BRAIN FREEZE",
-        embed: "images/snapshots/207.png"
+        embed: "https://artifyber.xyz/images/snapshots/207.png"
     },
     {
         num: 206,
         title: "Ice cream",
-        embed: "images/snapshots/206.png"
+        embed: "https://artifyber.xyz/images/snapshots/206.png"
     },
     {
         num: 205,
         title: "Vertical sketchpage!",
-        embed: "images/snapshots/205.png"
+        embed: "https://artifyber.xyz/images/snapshots/205.png"
     },
     {
         num: 204,
         title: "doodle",
-        embed: "images/snapshots/204.png"
+        embed: "https://artifyber.xyz/images/snapshots/204.png"
     },
     {
         num: 203,
         title: "🌿",
-        embed: "images/snapshots/203.png"
+        embed: "https://artifyber.xyz/images/snapshots/203.png"
     },
     {
         num: 202,
         title: "🟪🟥🟧🟨🟩🟦",
-        embed: "images/snapshots/202.png"
+        embed: "https://artifyber.xyz/images/snapshots/202.png"
     },
     {
         num: 201,
         title: "Random",
-        embed: "images/snapshots/201.png"
+        embed: "https://artifyber.xyz/images/snapshots/201.png"
     },
     {
         num: 200,
         title: "/̊͆̋/͑͡͞/ͣͫ̀/ͬ̅ͯ҉̺̙͢/̈́̓̉/̏̈//",
-        embed: "images/snapshots/200.png"
+        embed: "https://artifyber.xyz/images/snapshots/200.png"
     },
     {
         num: 199,
         title: "this",
-        embed: "images/snapshots/199.png"
+        embed: "https://artifyber.xyz/images/snapshots/199.png"
     },
     {
         num: 198,
         title: "dots dots dots",
-        embed: "images/snapshots/198.png"
+        embed: "https://artifyber.xyz/images/snapshots/198.png"
     },
     {
         num: 197,
         title: "MELONS",
-        embed: "images/snapshots/197.png"
+        embed: "https://artifyber.xyz/images/snapshots/197.png"
     },
     {
         num: 196,
         title: "Rain",
-        embed: "images/snapshots/196.mp4"
+        embed: "https://artifyber.xyz/images/snapshots/196.mp4"
     },
     {
         num: 195,
         title: "Squish",
-        embed: "images/snapshots/195.png"
+        embed: "https://artifyber.xyz/images/snapshots/195.png"
     },
     {
         num: 194,
         title: "Funky colors",
-        embed: "images/snapshots/194.png"
+        embed: "https://artifyber.xyz/images/snapshots/194.png"
     },
     {
         num: 193,
         title: "stop thinking",
-        embed: "images/snapshots/193.png"
+        embed: "https://artifyber.xyz/images/snapshots/193.png"
     },
     {
         num: 192,
         title: "👁️👁️👁️",
-        embed: "images/snapshots/192.png"
+        embed: "https://artifyber.xyz/images/snapshots/192.png"
     },
     {
         num: 191,
         title: "RAWR!",
-        embed: "images/snapshots/191.png"
+        embed: "https://artifyber.xyz/images/snapshots/191.png"
     },
     {
         num: 190,
         title: "Keyboard",
-        embed: "images/snapshots/190.png"
+        embed: "https://artifyber.xyz/images/snapshots/190.png"
     },
     {
         num: 189,
         title: "Daydreamer",
-        embed: "images/snapshots/189.png"
+        embed: "https://artifyber.xyz/images/snapshots/189.png"
     },
     {
         num: 188,
         title: "Something simple",
-        embed: "images/snapshots/188.png"
+        embed: "https://artifyber.xyz/images/snapshots/188.png"
     },
     {
         num: 187,
         title: "I DON'T KNOW! I'M STUPID AND GAY!",
-        embed: "images/snapshots/187.png"
+        embed: "https://artifyber.xyz/images/snapshots/187.png"
     },
     {
         num: 186,
         title: "Icosahedron",
-        embed: "images/snapshots/186.png"
+        embed: "https://artifyber.xyz/images/snapshots/186.png"
     },
     {
         num: 185,
         title: "Calm down",
-        embed: "images/snapshots/185.png"
+        embed: "https://artifyber.xyz/images/snapshots/185.png"
     },
     {
         num: 184,
         title: "Tiny partner",
-        embed: "images/snapshots/184.png"
+        embed: "https://artifyber.xyz/images/snapshots/184.png"
     },
     {
         num: 183,
         title: "Ears",
-        embed: "images/snapshots/183.png"
+        embed: "https://artifyber.xyz/images/snapshots/183.png"
     },
     {
         num: 182,
         title: "💥",
-        embed: "images/snapshots/182.png"
+        embed: "https://artifyber.xyz/images/snapshots/182.png"
     },
     {
         num: 181,
         title: "🌹",
-        embed: "images/snapshots/181.png"
+        embed: "https://artifyber.xyz/images/snapshots/181.png"
     },
     {
         num: 180,
         title: "🤖",
-        embed: "images/snapshots/180.png"
+        embed: "https://artifyber.xyz/images/snapshots/180.png"
     },
     {
         num: 179,
         title: "☂️",
-        embed: "images/snapshots/179.png"
+        embed: "https://artifyber.xyz/images/snapshots/179.png"
     },
     {
         num: 178,
         title: "🩷",
-        embed: "images/snapshots/178.png"
+        embed: "https://artifyber.xyz/images/snapshots/178.png"
     },
     {
         num: 177,
         title: "🍃",
-        embed: "images/snapshots/177.png"
+        embed: "https://artifyber.xyz/images/snapshots/177.png"
     },
     {
         num: 176,
         title: "🌸",
-        embed: "images/snapshots/176.png"
+        embed: "https://artifyber.xyz/images/snapshots/176.png"
     },
     {
         num: 175,
         title: "🪐",
-        embed: "images/snapshots/175.png"
+        embed: "https://artifyber.xyz/images/snapshots/175.png"
     },
     {
         num: 174,
         title: "🔳",
-        embed: "images/snapshots/174.png"
+        embed: "https://artifyber.xyz/images/snapshots/174.png"
     },
     {
         num: 173,
         title: "🧡",
-        embed: "images/snapshots/173.png"
+        embed: "https://artifyber.xyz/images/snapshots/173.png"
     },
     {
         num: 172,
         title: "▶️",
-        embed: "images/snapshots/172.png"
+        embed: "https://artifyber.xyz/images/snapshots/172.png"
     },
     {
         num: 171,
         title: "🌟",
-        embed: "images/snapshots/171.png"
+        embed: "https://artifyber.xyz/images/snapshots/171.png"
     },
     {
         num: 170,
         title: "🌷",
-        embed: "images/snapshots/170.png"
+        embed: "https://artifyber.xyz/images/snapshots/170.png"
     },
     {
         num: 169,
         title: "🖥️",
-        embed: "images/snapshots/169.png"
+        embed: "https://artifyber.xyz/images/snapshots/169.png"
     },
     {
         num: 168,
         title: "📁",
-        embed: "images/snapshots/168.png"
+        embed: "https://artifyber.xyz/images/snapshots/168.png"
     },
     {
         num: 167,
         title: "🚶",
-        embed: "images/snapshots/167.png"
+        embed: "https://artifyber.xyz/images/snapshots/167.png"
     },
     {
         num: 166,
         title: "🌕",
-        embed: "images/snapshots/166.png"
+        embed: "https://artifyber.xyz/images/snapshots/166.png"
     },
     {
         num: 165,
         title: "💐",
-        embed: "images/snapshots/165.png"
+        embed: "https://artifyber.xyz/images/snapshots/165.png"
     },
     {
         num: 164,
         title: "🧋",
-        embed: "images/snapshots/164.png"
+        embed: "https://artifyber.xyz/images/snapshots/164.png"
     },
     {
         num: 163,
         title: "🌅",
-        embed: "images/snapshots/163.png"
+        embed: "https://artifyber.xyz/images/snapshots/163.png"
     },
     {
         num: 162,
         title: "🌐",
-        embed: "images/snapshots/162.png"
+        embed: "https://artifyber.xyz/images/snapshots/162.png"
     },
     {
         num: 161,
         title: "🔌",
-        embed: "images/snapshots/161.png"
+        embed: "https://artifyber.xyz/images/snapshots/161.png"
     },
     {
         num: 160,
         title: "☁️",
-        embed: "images/snapshots/160.png"
+        embed: "https://artifyber.xyz/images/snapshots/160.png"
     },
     {
         num: 159,
         title: "〰️",
-        embed: "images/snapshots/159.png"
+        embed: "https://artifyber.xyz/images/snapshots/159.png"
     },
     {
         num: 158,
         title: "📺",
-        embed: "images/snapshots/158.png"
+        embed: "https://artifyber.xyz/images/snapshots/158.png"
     },
     {
         num: 157,
         title: "🥤",
-        embed: "images/snapshots/157.png"
+        embed: "https://artifyber.xyz/images/snapshots/157.png"
     },
     {
         num: 156,
         title: "🏙️",
-        embed: "images/snapshots/156.png"
+        embed: "https://artifyber.xyz/images/snapshots/156.png"
     },
     {
         num: 155,
         title: "🌄",
-        embed: "images/snapshots/155.png"
+        embed: "https://artifyber.xyz/images/snapshots/155.png"
     },
     {
         num: 154,
         title: "⛸️",
-        embed: "images/snapshots/154.png"
+        embed: "https://artifyber.xyz/images/snapshots/154.png"
     },
     {
         num: 153,
         title: "🌈",
-        embed: "images/snapshots/153.png"
+        embed: "https://artifyber.xyz/images/snapshots/153.png"
     },
     {
         num: 152,
         title: "Circular",
-        embed: "images/snapshots/152.png"
+        embed: "https://artifyber.xyz/images/snapshots/152.png"
     },
     {
         num: 151,
         title: "Windy day",
-        embed: "images/snapshots/151.png"
+        embed: "https://artifyber.xyz/images/snapshots/151.png"
     },
     {
         num: 150,
         title: "Brown",
-        embed: "images/snapshots/150.png"
+        embed: "https://artifyber.xyz/images/snapshots/150.png"
     },
     {
         num: 149,
         title: "BLEED",
-        embed: "images/snapshots/149.png"
+        embed: "https://artifyber.xyz/images/snapshots/149.png"
     },
     {
         num: 148,
         title: "WHATEVER",
-        embed: "images/snapshots/148.png"
+        embed: "https://artifyber.xyz/images/snapshots/148.png"
     },
     {
         num: 147,
         title: "Unfused",
-        embed: "images/snapshots/147.png"
+        embed: "https://artifyber.xyz/images/snapshots/147.png"
     },
     {
         num: 146,
         title: "Sona stack",
-        embed: "images/snapshots/146.png"
+        embed: "https://artifyber.xyz/images/snapshots/146.png"
     },
     {
         num: 145,
         title: "i have no time to think of an interesting title for this one",
-        embed: "images/snapshots/145.png"
+        embed: "https://artifyber.xyz/images/snapshots/145.png"
     },
     {
         num: 144,
         title: "Egg curry",
-        embed: "images/snapshots/144.png"
+        embed: "https://artifyber.xyz/images/snapshots/144.png"
     },
     {
         num: 143,
         title: "What? Is there anything wrong?",
-        embed: "images/snapshots/143.png"
+        embed: "https://artifyber.xyz/images/snapshots/143.png"
     },
     {
         num: 142,
         title: "Just chilling",
-        embed: "images/snapshots/142.png"
+        embed: "https://artifyber.xyz/images/snapshots/142.png"
     },
     {
         num: 141,
         title: "Dark mode",
-        embed: "images/snapshots/141.png"
+        embed: "https://artifyber.xyz/images/snapshots/141.png"
     },
     {
         num: 140,
         title: "Glow",
-        embed: "images/snapshots/140.png"
+        embed: "https://artifyber.xyz/images/snapshots/140.png"
     },
     {
         num: 139,
         title: "✨🏳️‍⚧️🌤️",
-        embed: "images/snapshots/139.png"
+        embed: "https://artifyber.xyz/images/snapshots/139.png"
     },
     {
         num: 138,
         title: "Purple-flavored",
-        embed: "images/snapshots/138.png"
+        embed: "https://artifyber.xyz/images/snapshots/138.png"
     },
     {
         num: 137,
         title: "Neon",
-        embed: "images/snapshots/137.png"
+        embed: "https://artifyber.xyz/images/snapshots/137.png"
     },
     {
         num: 136,
         title: "plushies",
-        embed: "images/snapshots/136.png"
+        embed: "https://artifyber.xyz/images/snapshots/136.png"
     },
     {
         num: 135,
         title: "crazy in pink",
-        embed: "images/snapshots/135.png"
+        embed: "https://artifyber.xyz/images/snapshots/135.png"
     },
     {
         num: 134,
         title: "🟥🟩🟦",
-        embed: "images/snapshots/134.png"
+        embed: "https://artifyber.xyz/images/snapshots/134.png"
     },
     {
         num: 133,
         title: "meh",
-        embed: "images/snapshots/133.png"
+        embed: "https://artifyber.xyz/images/snapshots/133.png"
     },
     {
         num: 132,
         title: "ARTIBUN",
-        embed: "images/snapshots/132.mp4"
+        embed: "https://artifyber.xyz/images/snapshots/132.mp4"
     },
     {
         num: 131,
         title: "Precipice",
-        embed: "images/snapshots/131.png"
+        embed: "https://artifyber.xyz/images/snapshots/131.png"
     },
     {
         num: 130,
         title: ">ω<",
-        embed: "images/snapshots/130.png"
+        embed: "https://artifyber.xyz/images/snapshots/130.png"
     },
     {
         num: 129,
         title: "a little too small",
-        embed: "images/snapshots/129.png"
+        embed: "https://artifyber.xyz/images/snapshots/129.png"
     },
     {
         num: 128,
         title: "a little too big",
-        embed: "images/snapshots/128.png"
+        embed: "https://artifyber.xyz/images/snapshots/128.png"
     },
     {
         num: 127,
         title: "big tail",
-        embed: "images/snapshots/127.png"
+        embed: "https://artifyber.xyz/images/snapshots/127.png"
     },
     {
         num: 126,
         title: "Micro",
-        embed: "images/snapshots/126.png"
+        embed: "https://artifyber.xyz/images/snapshots/126.png"
     },
     {
         num: 125,
         title: "NICE CROPPING",
-        embed: "images/snapshots/125.png"
+        embed: "https://artifyber.xyz/images/snapshots/125.png"
     },
     {
         num: 124,
         title: "Pixel Sparkles ✨",
-        embed: "images/snapshots/124.png"
+        embed: "https://artifyber.xyz/images/snapshots/124.png"
     },
     {
         num: 123,
         title: "Laser Pointer",
-        embed: "images/snapshots/123.png"
+        embed: "https://artifyber.xyz/images/snapshots/123.png"
     },
     {
         num: 122,
         title: "Blurple",
-        embed: "images/snapshots/122.png"
+        embed: "https://artifyber.xyz/images/snapshots/122.png"
     },
     {
         num: 121,
         title: "no thoughts. head in the clouds.",
-        embed: "images/snapshots/121.png"
+        embed: "https://artifyber.xyz/images/snapshots/121.png"
     },
     {
         num: 120,
         title: "uughhhhshjdsiodzmxzkzl...,.,.,",
-        embed: "images/snapshots/120.png"
+        embed: "https://artifyber.xyz/images/snapshots/120.png"
     },
     {
         num: 119,
         title: "all & null",
-        embed: "images/snapshots/119.png"
+        embed: "https://artifyber.xyz/images/snapshots/119.png"
     },
     {
         num: 118,
         title: "Doodling around",
-        embed: "images/snapshots/118.png"
+        embed: "https://artifyber.xyz/images/snapshots/118.png"
     },
     {
         num: 117,
         title: "wheeeeeeee!!!",
-        embed: "images/snapshots/117.png"
+        embed: "https://artifyber.xyz/images/snapshots/117.png"
     },
     {
         num: 116,
         title: "ラグトレイン",
-        embed: "images/snapshots/116.png"
+        embed: "https://artifyber.xyz/images/snapshots/116.png"
     },
     {
         num: 115,
         title: "BOOT LOADER",
-        embed: "images/snapshots/115.png"
+        embed: "https://artifyber.xyz/images/snapshots/115.png"
     },
     {
         num: 114,
         title: "Funny Colors",
-        embed: "images/snapshots/114.png"
+        embed: "https://artifyber.xyz/images/snapshots/114.png"
     },
     {
         num: 113,
         title: "Artiproto",
-        embed: "images/snapshots/113.png"
+        embed: "https://artifyber.xyz/images/snapshots/113.png"
     },
     {
         num: 112,
         title: "Spaced Out",
-        embed: "images/snapshots/112.png"
+        embed: "https://artifyber.xyz/images/snapshots/112.png"
     },
     {
         num: 111,
         title: "Cornered",
-        embed: "images/snapshots/111.png"
+        embed: "https://artifyber.xyz/images/snapshots/111.png"
     },
     {
         num: 110,
         title: "Feral",
-        embed: "images/snapshots/110.png"
+        embed: "https://artifyber.xyz/images/snapshots/110.png"
     },
     {
         num: 109,
         title: "Bunny²",
-        embed: "images/snapshots/109.png"
+        embed: "https://artifyber.xyz/images/snapshots/109.png"
     },
     {
         num: 108,
         title: "Otherside",
-        embed: "images/snapshots/108.png"
+        embed: "https://artifyber.xyz/images/snapshots/108.png"
     },
     {
         num: 107,
         title: "Lollipop",
-        embed: "images/snapshots/107.png"
+        embed: "https://artifyber.xyz/images/snapshots/107.png"
     },
     {
         num: 106,
         title: "🎈",
-        embed: "images/snapshots/106.png"
+        embed: "https://artifyber.xyz/images/snapshots/106.png"
     },
     {
         num: 105,
         title: "Gray",
-        embed: "images/snapshots/105.png"
+        embed: "https://artifyber.xyz/images/snapshots/105.png"
     },
     {
         num: 104,
         title: "Pink",
-        embed: "images/snapshots/104.png"
+        embed: "https://artifyber.xyz/images/snapshots/104.png"
     },
     {
         num: 103,
         title: "Purple",
-        embed: "images/snapshots/103.png"
+        embed: "https://artifyber.xyz/images/snapshots/103.png"
     },
     {
         num: 102,
         title: "Blue",
-        embed: "images/snapshots/102.png"
+        embed: "https://artifyber.xyz/images/snapshots/102.png"
     },
     {
         num: 101,
         title: "Green",
-        embed: "images/snapshots/101.png"
+        embed: "https://artifyber.xyz/images/snapshots/101.png"
     },
 ]
 

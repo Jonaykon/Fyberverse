@@ -3,52 +3,28 @@
     -------------------------- */
 
 // toggle sounds
-let sfxIsMute = true;
-let bgmStop = false;
-let sfxLoaded = false;
 async function toggleSFXVol() {
     if (!sfxIsMute) {
         toggleSFX.textContent = "SFX: Off";
-        updateSettingsButtonText('toggleSFX', 'SFX: Off');
-        SFX_MASTER_VOL = 0;
-        sfxIsMute = true;
-        return;
+        disableSfx();
     } else {
         toggleSFX.textContent = "SFX: On";
-        updateSettingsButtonText('toggleSFX', 'SFX: On');
-
-        if (!sfxLoaded) {
-            setLayoutViz(loadingSfx, true);
-            await preloadAudios([sfxClick,sfxLink,sfxPageClose,sfxPageOpen,sfxSwap,sfxWarp]);
-            setLayoutViz(loadingSfx, false);
-            sfxLoaded = true;
-        }
-
-        SFX_MASTER_VOL = INIT_SFX_MASTER_VOL;
-        sfxIsMute = false;
-        return;
+        enableSfx();
     }
 }
 
 function toggleBGM() {
     if (bgmEnabled) {
         if (!bgmStop) {
-            fadeVolume(bgm[currentBgm], 0, 1);
-            bgmStop = true;
             toggleMusic.textContent = "Music: Off";
-            updateSettingsButtonText('toggleMusic', 'Music: Off');
-            return;
+            muteBgm();
         } else {
-            fadeVolume(bgm[currentBgm], 1, 1);
-            bgmStop = false;
             toggleMusic.textContent = "Music: On";
-            updateSettingsButtonText('toggleMusic', 'Music: On');
-            return;
+            unmuteBgm();
         }
     } else {
-        startAllBgm();
         toggleMusic.textContent = "Music: On";
-        updateSettingsButtonText('toggleMusic', 'Music: On');
+        startAllBgm();
     }
 }
 

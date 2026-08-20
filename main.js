@@ -20,6 +20,9 @@ let SFX_WARP_VOL = 0.4;
 let MASTER_VOL = INIT_MASTER_VOL;
 let BGM_MASTER_VOL = INIT_BGM_MASTER_VOL;
 let SFX_MASTER_VOL = 0;
+let sfxIsMute = true;
+let bgmStop = false;
+let sfxLoaded = false;
 
 // If you prefer to always use an orbit-less interface, set this to true
 let SIMPLE_MODE = getSimpleMode();
@@ -189,6 +192,12 @@ async function preloadAudios(audios) {
         })
     ]);
 }
+
+const firstInteraction = new Promise(resolve => {
+    ['pointerdown', 'keydown', 'touchstart'].forEach(event => {
+        document.addEventListener(event, resolve, {once: true});
+    });
+});
 
 
 
@@ -1290,20 +1299,60 @@ function fadeVolume(audio, t, speed = 0.02) {
     }, 50);
 }
 
+async function enableSfx() {
+    updateSettingsButtonText('toggleSFX', 'SFX: On');
+    localStorage.setItem("sfxEnabled", true);
+
+    if (!sfxLoaded) {
+        setLayoutViz(loadingSfx, true);
+        await preloadAudios([sfxClick,sfxLink,sfxPageClose,sfxPageOpen,sfxSwap,sfxWarp]);
+        setLayoutViz(loadingSfx, false);
+        sfxLoaded = true;
+    }
+
+    SFX_MASTER_VOL = INIT_SFX_MASTER_VOL;
+    sfxIsMute = false;
+}
+
+function disableSfx() {
+    updateSettingsButtonText('toggleSFX', 'SFX: Off');
+    localStorage.setItem("sfxEnabled", false);
+    SFX_MASTER_VOL = 0;
+    sfxIsMute = true;
+}
+
 // start all BGMs with only one audible
 async function startAllBgm() {
+    updateSettingsButtonText('toggleMusic', 'Music: On');
+    localStorage.setItem("bgmEnabled", true);
     setButtonViz(playBgmBtn, false);
 
     setLayoutViz(loadingMusic, true);
     await preloadAudios([bgmFyberverse,bgmDeltadim,bgmFloriverse,bgmDigirel,bgmNansenz,bgmHizen,bgmNadir]);
     setLayoutViz(loadingMusic, false);
 
+    await firstInteraction;
+    setButtonViz(playBgmBtn, false);
     Object.entries(bgm).forEach(([key, audio]) => {
         audio.volume = (key === "fyberverse" ? 1 : 0) * BGM_MASTER_VOL;
         audio.play().catch(() => { });
     });
     currentBgm = "fyberverse";
     bgmEnabled = true;
+}
+
+function muteBgm() {
+    updateSettingsButtonText('toggleMusic', 'Music: Off');
+    localStorage.setItem("bgmEnabled", false);
+    fadeVolume(bgm[currentBgm], 0, 1);
+    bgmStop = true;
+}
+
+function unmuteBgm() {
+    updateSettingsButtonText('toggleMusic', 'Music: On');
+    localStorage.setItem("bgmEnabled", true);
+    fadeVolume(bgm[currentBgm], 1, 1);
+    bgmStop = false;
 }
 
 
@@ -1868,6 +1917,9 @@ preloadMenuIcons();
 setLayoutViz(UIPanelTop, false);
 setLayoutViz(UIPanelBottom, false);
 window.addEventListener('load', async () => {
+    if (localStorage.getItem("sfxEnabled") == "true") {enableSfx()}
+    if (localStorage.getItem("bgmEnabled") == "true") {startAllBgm()}
+
     setLayoutViz(loading, false);
     setLayoutViz(UIPanelTop, true);
     setLayoutViz(UIPanelBottom, true);

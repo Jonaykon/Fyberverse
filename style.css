@@ -53,7 +53,7 @@
     --menu-stage-rotation: 0deg;
     --menu-stage-scale-zoom: 1.5;
     --button-size: 100px;
-    
+
     --card-scale: 0.825;
     --card-scale-mini: 0.6;
     --card-scale-banner: 0.5;
@@ -177,8 +177,10 @@
     /* Starfield variables */
     --star-bg: var(--accent2);
     --star-bg-2: var(--accent3);
-    --star-bg-particle-size: none; /* none for default (3.5)*/
-    --star-bg-particle-amount: none; /* none for default (screen-dependent)*/
+    --star-bg-particle-size: none;
+    /* none for default (3.5)*/
+    --star-bg-particle-amount: none;
+    /* none for default (screen-dependent)*/
 
     /* Splash text variables */
     --splash-text-shadow: var(--bg);
@@ -307,8 +309,51 @@ hr {
     margin: 12px 0;
     mix-blend-mode: screen;
 }
+.codebox {
+    position: relative;
+    padding: 16px 80px 16px 16px;
+    background: color-mix(in srgb, var(--bg) 80%, var(--accent) 20%);
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 1rem;
+    color: var(--text);
+    margin: 12px 0;
+}
 
+/* Copy button */
+.codebox-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-family: inherit;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+    user-select: none;
+    z-index: 1;
+}
 
+.codebox-copy-btn:hover {
+    opacity: 1;
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.codebox-copy-btn.copied {
+    background: var(--color-3);
+    color: var(--white);
+    opacity: 1;
+}
 
 
 
@@ -433,6 +478,7 @@ hr {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -592,8 +638,13 @@ hr {
 }
 
 @keyframes elementFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .content-view-grid.no-margin {
@@ -630,8 +681,7 @@ hr {
 .content-view-html h5,
 .content-view-html h6,
 .content-view-html code,
-.content-view-html summary
-{
+.content-view-html summary {
     color: var(--text-color);
 }
 
@@ -854,10 +904,8 @@ hr {
 .card[data-is-banner="true"] {
     --banner-divisions: 1;
     /* width: 100%; */
-    width: max(
-        calc(450px * var(--card-scale)),
-        calc((100% - (var(--card-gap) * var(--card-scale) * (var(--banner-divisions) - 1))) / var(--banner-divisions))
-    );
+    width: max(calc(450px * var(--card-scale)),
+            calc((100% - (var(--card-gap) * var(--card-scale) * (var(--banner-divisions) - 1))) / var(--banner-divisions)));
     height: calc(300px * var(--card-scale) * var(--card-padding));
     flex-direction: row;
     align-items: center;
@@ -981,22 +1029,18 @@ hr {
         left: 0%;
         right: 0%;
         bottom: 60%;
-        background: linear-gradient(
-            to bottom,
-            var(--card-bg-glow),
-            transparent
-        );
+        background: linear-gradient(to bottom,
+                var(--card-bg-glow),
+                transparent);
         mix-blend-mode: screen;
         pointer-events: none;
     }
 
     .card[data-is-menu]::before {
         content: "";
-        background: linear-gradient(
-            to top,
-            var(--js-card-glow-color),
-            transparent
-        );
+        background: linear-gradient(to top,
+                var(--js-card-glow-color),
+                transparent);
         top: 30%;
         left: 0%;
         right: 0%;
@@ -1109,8 +1153,7 @@ hr {
 .detail-view-content h5,
 .detail-view-content h6,
 .detail-view-content code,
-.detail-view-content summary
-{
+.detail-view-content summary {
     color: var(--text-color);
 }
 
@@ -1333,7 +1376,7 @@ a[data-open-card] {
 
 .card.internal[data-is-banner="true"]:has(.caption) {
     padding-top: calc(52px * var(--card-scale));
-    
+
     .caption {
         position: absolute;
         z-index: 1;
@@ -1496,7 +1539,8 @@ img {
     margin-bottom: 4px;
 }
 
-#searchText, input {
+#searchText,
+input {
     background: var(--search-text-bg);
     border: 2px solid var(--search-text-border);
     border-radius: calc(12px * var(--rounding));
@@ -1507,7 +1551,8 @@ img {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-#searchText:focus, input:focus {
+#searchText:focus,
+input:focus {
     border-color: var(--search-text-focus-border);
 }
 
